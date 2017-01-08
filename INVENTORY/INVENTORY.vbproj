@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BB05B079-2AE2-4EBC-8D73-500CE2B91146}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>INVENTORY.My.MyApplication</StartupObject>
+    <RootNamespace>INVENTORY</RootNamespace>
+    <AssemblyName>INVENTORY</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>INVENTORY.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>INVENTORY.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CATEGORY.designer.vb">
+      <DependentUpon>CATEGORY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CATEGORY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHANGE PASSWORD.Designer.vb">
+      <DependentUpon>CHANGE PASSWORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CHANGE PASSWORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CITY.designer.vb">
+      <DependentUpon>CITY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CITY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COMPANY.designer.vb">
+      <DependentUpon>COMPANY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COMPANY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COUNTRY.designer.vb">
+      <DependentUpon>COUNTRY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="COUNTRY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CREATE NEW USER.Designer.vb">
+      <DependentUpon>CREATE NEW USER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CREATE NEW USER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CUSTOMER.designer.vb">
+      <DependentUpon>CUSTOMER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORGET CHANGE PASSWORD.Designer.vb">
+      <DependentUpon>FORGET CHANGE PASSWORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORGET CHANGE PASSWORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORGET PASSWORD.Designer.vb">
+      <DependentUpon>FORGET PASSWORD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORGET PASSWORD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.vb">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NEELKANTH ENTERPRISE.Designer.vb">
+      <DependentUpon>NEELKANTH ENTERPRISE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NEELKANTH ENTERPRISE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAID PAYMENT.designer.vb">
+      <DependentUpon>PAID PAYMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PAID PAYMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCT.designer.vb">
+      <DependentUpon>PRODUCT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PURCHASE ORDER SELECTION.designer.vb">
+      <DependentUpon>PURCHASE ORDER SELECTION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PURCHASE ORDER SELECTION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PURCHASE ORDER.designer.vb">
+      <DependentUpon>PURCHASE ORDER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PURCHASE ORDER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PURCHASE RETURN.designer.vb">
+      <DependentUpon>PURCHASE RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PURCHASE RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PURCHASE SERACH.designer.vb">
+      <DependentUpon>PURCHASE SERACH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PURCHASE SERACH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PURCHASE.designer.vb">
+      <DependentUpon>PURCHASE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PURCHASE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RECEIVE PAYMENT.designer.vb">
+      <DependentUpon>RECEIVE PAYMENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RECEIVE PAYMENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SALES ORDER SEARCH.designer.vb">
+      <DependentUpon>SALES ORDER SEARCH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SALES ORDER SEARCH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SALES ORDER.designer.vb">
+      <DependentUpon>SALES ORDER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SALES ORDER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SALES RETURN.designer.vb">
+      <DependentUpon>SALES RETURN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SALES RETURN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SALES SERACH.designer.vb">
+      <DependentUpon>SALES SERACH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SALES SERACH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SALES.designer.vb">
+      <DependentUpon>SALES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SALES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STATE.designer.vb">
+      <DependentUpon>STATE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STATE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STATUS.designer.vb">
+      <DependentUpon>STATUS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STATUS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SUPPLIER.designer.vb">
+      <DependentUpon>SUPPLIER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SUPPLIER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UOM.designer.vb">
+      <DependentUpon>UOM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UOM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CATEGORY.resx">
+      <DependentUpon>CATEGORY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHANGE PASSWORD.resx">
+      <DependentUpon>CHANGE PASSWORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CITY.resx">
+      <DependentUpon>CITY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COMPANY.resx">
+      <DependentUpon>COMPANY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COUNTRY.resx">
+      <DependentUpon>COUNTRY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CREATE NEW USER.resx">
+      <DependentUpon>CREATE NEW USER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUSTOMER.resx">
+      <DependentUpon>CUSTOMER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORGET CHANGE PASSWORD.resx">
+      <DependentUpon>FORGET CHANGE PASSWORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORGET PASSWORD.resx">
+      <DependentUpon>FORGET PASSWORD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NEELKANTH ENTERPRISE.resx">
+      <DependentUpon>NEELKANTH ENTERPRISE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAID PAYMENT.resx">
+      <DependentUpon>PAID PAYMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCT.resx">
+      <DependentUpon>PRODUCT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PURCHASE ORDER SELECTION.resx">
+      <DependentUpon>PURCHASE ORDER SELECTION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PURCHASE ORDER.resx">
+      <DependentUpon>PURCHASE ORDER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PURCHASE RETURN.resx">
+      <DependentUpon>PURCHASE RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PURCHASE SERACH.resx">
+      <DependentUpon>PURCHASE SERACH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PURCHASE.resx">
+      <DependentUpon>PURCHASE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RECEIVE PAYMENT.resx">
+      <DependentUpon>RECEIVE PAYMENT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SALES ORDER SEARCH.resx">
+      <DependentUpon>SALES ORDER SEARCH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SALES ORDER.resx">
+      <DependentUpon>SALES ORDER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SALES RETURN.resx">
+      <DependentUpon>SALES RETURN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SALES SERACH.resx">
+      <DependentUpon>SALES SERACH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SALES.resx">
+      <DependentUpon>SALES.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STATE.resx">
+      <DependentUpon>STATE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STATUS.resx">
+      <DependentUpon>STATUS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SUPPLIER.resx">
+      <DependentUpon>SUPPLIER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UOM.resx">
+      <DependentUpon>UOM.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Company.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delivery-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Product-36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Category.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UOM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purchase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return Purchase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder-Open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\To do list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Product Report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Category Report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Supplier Report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customer Report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Status Report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neelkanthICON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NAME.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

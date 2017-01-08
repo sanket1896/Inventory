@@ -1,0 +1,84 @@
+F:\INVENTORY 2016\INVENTORY\INVENTORY\bin\Debug\INVENTORY.exe
+F:\INVENTORY 2016\INVENTORY\INVENTORY\bin\Debug\INVENTORY.pdb
+F:\INVENTORY 2016\INVENTORY\INVENTORY\bin\Debug\INVENTORY.xml
+F:\INVENTORY 2016\INVENTORY\INVENTORY\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\INVENTORY 2016\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.FORGET_CHANGE_PASSWORD.resources
+F:\INVENTORY 2016\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.FORGET_PASSWORD.resources
+F:\INVENTORY 2016\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.Login.resources
+F:\INVENTORY 2016\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.Resources.resources
+F:\INVENTORY 2016\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.NEELKANTH_ENTERPRISE.resources
+F:\INVENTORY 2016\INVENTORY\INVENTORY\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\INVENTORY 2016\INVENTORY\INVENTORY\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\INVENTORY 2016\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.exe
+F:\INVENTORY 2016\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.xml
+F:\INVENTORY 2016\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.pdb
+C:\Users\SANKET\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.exe
+C:\Users\SANKET\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.xml
+C:\Users\SANKET\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.pdb
+C:\Users\SANKET\Desktop\INVENTORY\INVENTORY\bin\Debug\INVENTORY.exe
+C:\Users\SANKET\Desktop\INVENTORY\INVENTORY\bin\Debug\INVENTORY.pdb
+C:\Users\SANKET\Desktop\INVENTORY\INVENTORY\bin\Debug\INVENTORY.xml
+C:\Users\SANKET\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.FORGET_CHANGE_PASSWORD.resources
+C:\Users\SANKET\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.FORGET_PASSWORD.resources
+C:\Users\SANKET\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.Login.resources
+C:\Users\SANKET\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.Resources.resources
+C:\Users\SANKET\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.NEELKANTH_ENTERPRISE.resources
+C:\Users\SANKET\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.vbproj.GenerateResource.Cache
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.exe
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.xml
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.pdb
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\bin\Debug\INVENTORY.exe
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\bin\Debug\INVENTORY.pdb
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\bin\Debug\INVENTORY.xml
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.FORGET_CHANGE_PASSWORD.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.FORGET_PASSWORD.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.Login.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.Resources.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.NEELKANTH_ENTERPRISE.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.vbproj.GenerateResource.Cache
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.CATEGORY.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.CHANGE_PASSWORD.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.CITY.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.COMPANY.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.COUNTRY.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.CREATE_NEW_USER.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.CUSTOMER.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PAID_PAYMENT.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PRODUCT.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_ORDER_SELECTION.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_ORDER.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_RETURN.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_SERACH.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.RECEIVE_PAYMENT.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SALES_ORDER_SEARCH.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SALES_ORDER.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SALES_RETURN.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SALES_SERACH.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SALES.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.STATE.resources
+C:\Users\sanket\Desktop\New folder\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.STATUS.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.CATEGORY.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.CHANGE_PASSWORD.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.CITY.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.COMPANY.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.COUNTRY.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.CREATE_NEW_USER.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.CUSTOMER.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PAID_PAYMENT.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PRODUCT.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_ORDER_SELECTION.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_ORDER.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_RETURN.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_SERACH.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.RECEIVE_PAYMENT.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SALES_ORDER_SEARCH.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SALES_ORDER.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SALES_RETURN.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SALES_SERACH.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SALES.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.STATE.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.STATUS.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SUPPLIER.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.UOM.resources
