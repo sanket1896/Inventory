@@ -74,6 +74,7 @@ Partial Class NEELKANTH_ENTERPRISE
         Me.CalculatorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NotepadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExplorerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -142,43 +143,43 @@ Partial Class NEELKANTH_ENTERPRISE
         Me.COMPANYToolStripMenuItem.Image = Global.INVENTORY.My.Resources.Resources.Company
         Me.COMPANYToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.COMPANYToolStripMenuItem.Name = "COMPANYToolStripMenuItem"
-        Me.COMPANYToolStripMenuItem.Size = New System.Drawing.Size(146, 42)
+        Me.COMPANYToolStripMenuItem.Size = New System.Drawing.Size(172, 42)
         Me.COMPANYToolStripMenuItem.Text = "Company"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(143, 6)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(169, 6)
         '
         'COUNTRYToolStripMenuItem
         '
         Me.COUNTRYToolStripMenuItem.Name = "COUNTRYToolStripMenuItem"
-        Me.COUNTRYToolStripMenuItem.Size = New System.Drawing.Size(146, 42)
+        Me.COUNTRYToolStripMenuItem.Size = New System.Drawing.Size(172, 42)
         Me.COUNTRYToolStripMenuItem.Text = "Country"
         '
         'STATEToolStripMenuItem
         '
         Me.STATEToolStripMenuItem.Name = "STATEToolStripMenuItem"
-        Me.STATEToolStripMenuItem.Size = New System.Drawing.Size(146, 42)
+        Me.STATEToolStripMenuItem.Size = New System.Drawing.Size(172, 42)
         Me.STATEToolStripMenuItem.Text = "State"
         '
         'CITYToolStripMenuItem
         '
         Me.CITYToolStripMenuItem.Name = "CITYToolStripMenuItem"
-        Me.CITYToolStripMenuItem.Size = New System.Drawing.Size(146, 42)
+        Me.CITYToolStripMenuItem.Size = New System.Drawing.Size(172, 42)
         Me.CITYToolStripMenuItem.Text = "City"
         '
         'ToolStripMenuItem3
         '
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(143, 6)
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(169, 6)
         '
         'SUPPLIERToolStripMenuItem
         '
         Me.SUPPLIERToolStripMenuItem.Image = Global.INVENTORY.My.Resources.Resources.Delivery_36
         Me.SUPPLIERToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.SUPPLIERToolStripMenuItem.Name = "SUPPLIERToolStripMenuItem"
-        Me.SUPPLIERToolStripMenuItem.Size = New System.Drawing.Size(146, 42)
+        Me.SUPPLIERToolStripMenuItem.Size = New System.Drawing.Size(172, 42)
         Me.SUPPLIERToolStripMenuItem.Text = "Supplier"
         '
         'CustomerToolStripMenuItem
@@ -186,20 +187,20 @@ Partial Class NEELKANTH_ENTERPRISE
         Me.CustomerToolStripMenuItem.Image = Global.INVENTORY.My.Resources.Resources.Customer
         Me.CustomerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.CustomerToolStripMenuItem.Name = "CustomerToolStripMenuItem"
-        Me.CustomerToolStripMenuItem.Size = New System.Drawing.Size(146, 42)
+        Me.CustomerToolStripMenuItem.Size = New System.Drawing.Size(172, 42)
         Me.CustomerToolStripMenuItem.Text = "Customer"
         '
         'ToolStripMenuItem4
         '
         Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(143, 6)
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(169, 6)
         '
         'ProductToolStripMenuItem
         '
         Me.ProductToolStripMenuItem.Image = Global.INVENTORY.My.Resources.Resources.New_Product_36
         Me.ProductToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ProductToolStripMenuItem.Name = "ProductToolStripMenuItem"
-        Me.ProductToolStripMenuItem.Size = New System.Drawing.Size(146, 42)
+        Me.ProductToolStripMenuItem.Size = New System.Drawing.Size(172, 42)
         Me.ProductToolStripMenuItem.Text = "Product"
         '
         'CategoryToolStripMenuItem
@@ -207,7 +208,7 @@ Partial Class NEELKANTH_ENTERPRISE
         Me.CategoryToolStripMenuItem.Image = Global.INVENTORY.My.Resources.Resources.Category
         Me.CategoryToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.CategoryToolStripMenuItem.Name = "CategoryToolStripMenuItem"
-        Me.CategoryToolStripMenuItem.Size = New System.Drawing.Size(146, 42)
+        Me.CategoryToolStripMenuItem.Size = New System.Drawing.Size(172, 42)
         Me.CategoryToolStripMenuItem.Text = "Category"
         '
         'UOMToolStripMenuItem
@@ -215,20 +216,20 @@ Partial Class NEELKANTH_ENTERPRISE
         Me.UOMToolStripMenuItem.Image = Global.INVENTORY.My.Resources.Resources.UOM
         Me.UOMToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.UOMToolStripMenuItem.Name = "UOMToolStripMenuItem"
-        Me.UOMToolStripMenuItem.Size = New System.Drawing.Size(146, 42)
+        Me.UOMToolStripMenuItem.Size = New System.Drawing.Size(172, 42)
         Me.UOMToolStripMenuItem.Text = "UOM"
         '
         'ToolStripMenuItem11
         '
         Me.ToolStripMenuItem11.Name = "ToolStripMenuItem11"
-        Me.ToolStripMenuItem11.Size = New System.Drawing.Size(143, 6)
+        Me.ToolStripMenuItem11.Size = New System.Drawing.Size(169, 6)
         '
         'StatusToolStripMenuItem1
         '
         Me.StatusToolStripMenuItem1.Image = Global.INVENTORY.My.Resources.Resources.Check_Book
         Me.StatusToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.StatusToolStripMenuItem1.Name = "StatusToolStripMenuItem1"
-        Me.StatusToolStripMenuItem1.Size = New System.Drawing.Size(146, 42)
+        Me.StatusToolStripMenuItem1.Size = New System.Drawing.Size(172, 42)
         Me.StatusToolStripMenuItem1.Text = "Status"
         '
         'TRANSACTIONToolStripMenuItem
@@ -426,11 +427,20 @@ Partial Class NEELKANTH_ENTERPRISE
         Me.ExplorerToolStripMenuItem.Size = New System.Drawing.Size(148, 42)
         Me.ExplorerToolStripMenuItem.Text = "Explorer"
         '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 431)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(748, 22)
+        Me.StatusStrip1.TabIndex = 3
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
         'NEELKANTH_ENTERPRISE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(748, 453)
+        Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True
@@ -496,4 +506,5 @@ Partial Class NEELKANTH_ENTERPRISE
     Friend WithEvents CalculatorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NotepadToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ExplorerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
 End Class

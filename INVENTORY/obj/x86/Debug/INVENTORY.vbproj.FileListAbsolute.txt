@@ -82,3 +82,5 @@ C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.STATE.resour
 C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.STATUS.resources
 C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SUPPLIER.resources
 C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.UOM.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\bin\Debug\INVANTORY.mdf
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\bin\Debug\INVANTORY_log.ldf
