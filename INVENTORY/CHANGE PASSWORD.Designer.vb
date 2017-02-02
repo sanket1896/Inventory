@@ -36,7 +36,7 @@ Partial Class CHANGE_PASSWORD
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(59, 39)
+        Me.Label1.Location = New System.Drawing.Point(59, 42)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(118, 13)
         Me.Label1.TabIndex = 0
@@ -45,7 +45,7 @@ Partial Class CHANGE_PASSWORD
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(59, 84)
+        Me.Label2.Location = New System.Drawing.Point(59, 83)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(95, 13)
         Me.Label2.TabIndex = 1
@@ -54,7 +54,7 @@ Partial Class CHANGE_PASSWORD
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(59, 128)
+        Me.Label3.Location = New System.Drawing.Point(59, 124)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(99, 13)
         Me.Label3.TabIndex = 2
@@ -71,7 +71,7 @@ Partial Class CHANGE_PASSWORD
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(113, 218)
+        Me.Button1.Location = New System.Drawing.Point(102, 218)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 4

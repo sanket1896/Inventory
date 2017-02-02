@@ -32,18 +32,18 @@ Partial Class CREATE_NEW_USER
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(43, 41)
+        Me.Label1.Location = New System.Drawing.Point(50, 38)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(112, 13)
         Me.Label1.TabIndex = 0
@@ -52,7 +52,7 @@ Partial Class CREATE_NEW_USER
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(43, 83)
+        Me.Label2.Location = New System.Drawing.Point(50, 80)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(71, 13)
         Me.Label2.TabIndex = 1
@@ -61,7 +61,7 @@ Partial Class CREATE_NEW_USER
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(43, 120)
+        Me.Label3.Location = New System.Drawing.Point(50, 117)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(70, 13)
         Me.Label3.TabIndex = 2
@@ -70,7 +70,7 @@ Partial Class CREATE_NEW_USER
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(43, 157)
+        Me.Label4.Location = New System.Drawing.Point(50, 154)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(122, 13)
         Me.Label4.TabIndex = 5
@@ -79,7 +79,7 @@ Partial Class CREATE_NEW_USER
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(43, 196)
+        Me.Label5.Location = New System.Drawing.Point(50, 193)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(120, 13)
         Me.Label5.TabIndex = 4
@@ -88,7 +88,7 @@ Partial Class CREATE_NEW_USER
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(43, 234)
+        Me.Label6.Location = New System.Drawing.Point(50, 231)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(112, 13)
         Me.Label6.TabIndex = 3
@@ -97,7 +97,7 @@ Partial Class CREATE_NEW_USER
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(43, 268)
+        Me.Label7.Location = New System.Drawing.Point(50, 265)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(94, 13)
         Me.Label7.TabIndex = 6
@@ -105,42 +105,35 @@ Partial Class CREATE_NEW_USER
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(174, 76)
+        Me.TextBox1.Location = New System.Drawing.Point(181, 73)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(125, 20)
         Me.TextBox1.TabIndex = 7
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(174, 113)
+        Me.TextBox2.Location = New System.Drawing.Point(181, 110)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(125, 20)
         Me.TextBox2.TabIndex = 8
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(174, 154)
+        Me.TextBox3.Location = New System.Drawing.Point(181, 151)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(125, 20)
         Me.TextBox3.TabIndex = 9
         '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(174, 189)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(125, 20)
-        Me.TextBox4.TabIndex = 10
-        '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(174, 227)
+        Me.TextBox5.Location = New System.Drawing.Point(181, 224)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(125, 20)
         Me.TextBox5.TabIndex = 11
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(45, 316)
+        Me.Button1.Location = New System.Drawing.Point(52, 313)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(54, 23)
         Me.Button1.TabIndex = 13
@@ -149,7 +142,7 @@ Partial Class CREATE_NEW_USER
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(143, 316)
+        Me.Button2.Location = New System.Drawing.Point(150, 313)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 14
@@ -158,20 +151,29 @@ Partial Class CREATE_NEW_USER
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(224, 316)
+        Me.Button3.Location = New System.Drawing.Point(231, 313)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 15
         Me.Button3.Text = "SUBMIT"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(181, 257)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(125, 21)
+        Me.ComboBox2.TabIndex = 16
+        '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(178, 260)
+        Me.ComboBox1.Items.AddRange(New Object() {"What is your fevourite color?", "What is your frist mobile number?", "What is your liberary card number?", "What is your fevourite teacher name?", "In which city you live when you were 8 year old?"})
+        Me.ComboBox1.Location = New System.Drawing.Point(181, 190)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 16
+        Me.ComboBox1.Size = New System.Drawing.Size(125, 21)
+        Me.ComboBox1.TabIndex = 17
         '
         'CREATE_NEW_USER
         '
@@ -179,11 +181,11 @@ Partial Class CREATE_NEW_USER
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(356, 375)
         Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
@@ -210,10 +212,10 @@ Partial Class CREATE_NEW_USER
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 End Class
