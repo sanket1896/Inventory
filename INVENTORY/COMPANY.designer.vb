@@ -22,6 +22,7 @@ Partial Class COMPANY
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -52,8 +53,15 @@ Partial Class COMPANY
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.CITYBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.cityDataSet = New INVENTORY.INVANTORYDataSet()
+        Me.CITYBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.CITYTableAdapter = New INVENTORY.INVANTORYDataSetTableAdapters.CITYTableAdapter()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.CITYBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cityDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CITYBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -309,11 +317,34 @@ Partial Class COMPANY
         '
         'ComboBox1
         '
+        Me.ComboBox1.DataSource = Me.CITYBindingSource
+        Me.ComboBox1.DisplayMember = "CITY_NAME"
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(222, 317)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(135, 21)
         Me.ComboBox1.TabIndex = 28
+        Me.ComboBox1.ValueMember = "CITY_ID"
+        '
+        'CITYBindingSource1
+        '
+        Me.CITYBindingSource1.DataMember = "CITY"
+        Me.CITYBindingSource1.DataSource = Me.cityDataSet
+        '
+        'cityDataSet
+        '
+        Me.cityDataSet.DataSetName = "cityDataSet"
+        Me.cityDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'CITYBindingSource
+        '
+        Me.CITYBindingSource.DataMember = "CITY"
+        Me.CITYBindingSource.DataSource = Me.cityDataSet
+        '
+        'CITYTableAdapter
+        '
+        Me.CITYTableAdapter.ClearBeforeFill = True
         '
         'COMPANY
         '
@@ -349,6 +380,9 @@ Partial Class COMPANY
         Me.Text = "COMPANY"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
+        CType(Me.CITYBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cityDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CITYBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -384,4 +418,8 @@ Partial Class COMPANY
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
 
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents cityDataSet As INVENTORY.INVANTORYDataSet
+    Friend WithEvents CITYBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents CITYTableAdapter As INVENTORY.INVANTORYDataSetTableAdapters.CITYTableAdapter
+    Friend WithEvents CITYBindingSource1 As System.Windows.Forms.BindingSource
 End Class

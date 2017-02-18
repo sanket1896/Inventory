@@ -3,4 +3,12 @@ forget password
 forget  change password
 Change Password
 Create New User (with combobox2 auto id pass)
-Company
+Company_MASTER
+COUNTRY
+STATE
+CITY
+SUPPLIER
+UOM
+CATEGORY
+STATUS
+PRODUCT

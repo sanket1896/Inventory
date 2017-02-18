@@ -75,8 +75,10 @@ Partial Class COUNTRY
         '
         'TextBox1
         '
+        Me.TextBox1.BackColor = System.Drawing.Color.White
         Me.TextBox1.Location = New System.Drawing.Point(238, 49)
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(138, 20)
         Me.TextBox1.TabIndex = 3
         '

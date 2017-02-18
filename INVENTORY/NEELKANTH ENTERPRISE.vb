@@ -93,4 +93,10 @@
         myChild.Show()
 
     End Sub
+
+    Private Sub PurchaseToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PurchaseToolStripMenuItem.Click
+        Dim myChild As New PURCHASE_ORDER
+        myChild.MdiParent = Me
+        myChild.Show()
+    End Sub
 End Class

@@ -36,9 +36,7 @@ Partial Class PURCHASE_ORDER
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.Button12 = New System.Windows.Forms.Button()
-        Me.Label12 = New System.Windows.Forms.Label()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
@@ -174,9 +172,7 @@ Partial Class PURCHASE_ORDER
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.DateTimePicker2)
         Me.GroupBox2.Controls.Add(Me.Button12)
-        Me.GroupBox2.Controls.Add(Me.Label12)
         Me.GroupBox2.Controls.Add(Me.TextBox6)
         Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.ComboBox2)
@@ -193,13 +189,6 @@ Partial Class PURCHASE_ORDER
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "PURCHASE ORDER DETAIL INFORMATION"
         '
-        'DateTimePicker2
-        '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(471, 33)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(131, 20)
-        Me.DateTimePicker2.TabIndex = 14
-        '
         'Button12
         '
         Me.Button12.Location = New System.Drawing.Point(430, 141)
@@ -208,15 +197,6 @@ Partial Class PURCHASE_ORDER
         Me.Button12.TabIndex = 13
         Me.Button12.Text = "INSERT"
         Me.Button12.UseVisualStyleBackColor = True
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(325, 35)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(140, 13)
-        Me.Label12.TabIndex = 11
-        Me.Label12.Text = "PURCHASE ORDER DATE"
         '
         'TextBox6
         '
@@ -356,7 +336,6 @@ Partial Class PURCHASE_ORDER
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Button12 As System.Windows.Forms.Button
-    Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
@@ -366,7 +345,6 @@ Partial Class PURCHASE_ORDER
     Friend WithEvents Button11 As System.Windows.Forms.Button
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class

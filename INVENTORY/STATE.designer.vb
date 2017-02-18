@@ -186,15 +186,19 @@ Partial Class STATE
         '
         'TextBox2
         '
+        Me.TextBox2.BackColor = System.Drawing.Color.White
         Me.TextBox2.Location = New System.Drawing.Point(236, 68)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(138, 20)
         Me.TextBox2.TabIndex = 20
         '
         'TextBox1
         '
+        Me.TextBox1.BackColor = System.Drawing.Color.White
         Me.TextBox1.Location = New System.Drawing.Point(236, 42)
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(138, 20)
         Me.TextBox1.TabIndex = 19
         '
@@ -236,6 +240,7 @@ Partial Class STATE
         '
         'ComboBox1
         '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(236, 101)
         Me.ComboBox1.Name = "ComboBox1"

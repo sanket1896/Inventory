@@ -5,7 +5,6 @@ Public Class CREATE_NEW_USER
     Dim ds As New DataSet
     Dim cmdb As New SqlCommandBuilder(da)
     Dim cmd As New SqlCommand
-
     Private Sub CREATE_NEW_USER_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Try
             da.Fill(ds, "COMPANY_MASTER")
@@ -65,4 +64,5 @@ Public Class CREATE_NEW_USER
             MsgBox("Enter user name", MsgBoxStyle.OkOnly, "INVENTORY")
         End If
     End Sub
+
 End Class

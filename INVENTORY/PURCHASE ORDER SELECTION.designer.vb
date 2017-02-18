@@ -23,11 +23,9 @@ Partial Class PURCHASE_ORDER_SELECTION
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -40,15 +38,6 @@ Partial Class PURCHASE_ORDER_SELECTION
         Me.Button3.TabIndex = 14
         Me.Button3.Text = "CLOSE"
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(147, 206)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 13
-        Me.Button2.Text = "DELETE"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -74,25 +63,14 @@ Partial Class PURCHASE_ORDER_SELECTION
         Me.TextBox1.Size = New System.Drawing.Size(151, 20)
         Me.TextBox1.TabIndex = 10
         '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(58, 61)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(112, 17)
-        Me.RadioButton1.TabIndex = 9
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "SUPPLIER NAME"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(30, 9)
+        Me.Label1.Location = New System.Drawing.Point(77, 64)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(171, 13)
+        Me.Label1.Size = New System.Drawing.Size(76, 13)
         Me.Label1.TabIndex = 15
-        Me.Label1.Text = "PURCHASE ORDER SELECTION"
+        Me.Label1.Text = "Supplier Name"
         '
         'PURCHASE_ORDER_SELECTION
         '
@@ -101,11 +79,9 @@ Partial Class PURCHASE_ORDER_SELECTION
         Me.ClientSize = New System.Drawing.Size(440, 251)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.RadioButton1)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "PURCHASE_ORDER_SELECTION"
@@ -116,10 +92,8 @@ Partial Class PURCHASE_ORDER_SELECTION
 
     End Sub
     Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
     Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

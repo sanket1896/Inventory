@@ -22,6 +22,7 @@ Partial Class SUPPLIER
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -48,22 +49,25 @@ Partial Class SUPPLIER
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
         Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.CITYBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.CITYTableAdapter = New INVENTORY.INVANTORYDataSet1TableAdapters.CITYTableAdapter()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CITYBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -184,8 +188,10 @@ Partial Class SUPPLIER
         '
         'TextBox1
         '
+        Me.TextBox1.BackColor = System.Drawing.Color.White
         Me.TextBox1.Location = New System.Drawing.Point(179, 29)
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(144, 20)
         Me.TextBox1.TabIndex = 13
         '
@@ -198,8 +204,10 @@ Partial Class SUPPLIER
         '
         'TextBox3
         '
+        Me.TextBox3.BackColor = System.Drawing.Color.White
         Me.TextBox3.Location = New System.Drawing.Point(179, 75)
         Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(144, 20)
         Me.TextBox3.TabIndex = 15
         '
@@ -283,23 +291,14 @@ Partial Class SUPPLIER
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "NEVIGATION BUTTONS"
         '
-        'Button3
+        'Button6
         '
-        Me.Button3.Location = New System.Drawing.Point(16, 31)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 0
-        Me.Button3.Text = "|<"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(120, 31)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 1
-        Me.Button4.Text = "<"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button6.Location = New System.Drawing.Point(326, 31)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.TabIndex = 3
+        Me.Button6.Text = ">|"
+        Me.Button6.UseVisualStyleBackColor = True
         '
         'Button5
         '
@@ -310,14 +309,23 @@ Partial Class SUPPLIER
         Me.Button5.Text = ">"
         Me.Button5.UseVisualStyleBackColor = True
         '
-        'Button6
+        'Button4
         '
-        Me.Button6.Location = New System.Drawing.Point(326, 31)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
-        Me.Button6.TabIndex = 3
-        Me.Button6.Text = ">|"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.Button4.Location = New System.Drawing.Point(120, 31)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 1
+        Me.Button4.Text = "<"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(16, 31)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 0
+        Me.Button3.Text = "|<"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
@@ -336,16 +344,56 @@ Partial Class SUPPLIER
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "SUPPLIER SELECTION"
         '
-        'RadioButton1
+        'Button10
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(28, 27)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(83, 17)
-        Me.RadioButton1.TabIndex = 0
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "CITY NAME"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.Button10.Location = New System.Drawing.Point(532, 128)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(75, 23)
+        Me.Button10.TabIndex = 7
+        Me.Button10.Text = "CLOSE"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.Location = New System.Drawing.Point(532, 99)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(75, 23)
+        Me.Button9.TabIndex = 6
+        Me.Button9.Text = "DELETE"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(532, 70)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(75, 23)
+        Me.Button8.TabIndex = 5
+        Me.Button8.Text = "UPDATE"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(16, 92)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(498, 64)
+        Me.DataGridView1.TabIndex = 4
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(342, 42)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(75, 23)
+        Me.Button7.TabIndex = 3
+        Me.Button7.Text = "ALL"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'TextBox11
+        '
+        Me.TextBox11.Location = New System.Drawing.Point(164, 42)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(146, 20)
+        Me.TextBox11.TabIndex = 2
         '
         'RadioButton2
         '
@@ -358,56 +406,20 @@ Partial Class SUPPLIER
         Me.RadioButton2.Text = "AREA"
         Me.RadioButton2.UseVisualStyleBackColor = True
         '
-        'TextBox11
+        'RadioButton1
         '
-        Me.TextBox11.Location = New System.Drawing.Point(164, 42)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(146, 20)
-        Me.TextBox11.TabIndex = 2
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(28, 27)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(83, 17)
+        Me.RadioButton1.TabIndex = 0
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "CITY NAME"
+        Me.RadioButton1.UseVisualStyleBackColor = True
         '
-        'Button7
+        'CITYTableAdapter
         '
-        Me.Button7.Location = New System.Drawing.Point(342, 42)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(75, 23)
-        Me.Button7.TabIndex = 3
-        Me.Button7.Text = "ALL"
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(16, 92)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(498, 64)
-        Me.DataGridView1.TabIndex = 4
-        '
-        'Button8
-        '
-        Me.Button8.Location = New System.Drawing.Point(532, 70)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(75, 23)
-        Me.Button8.TabIndex = 5
-        Me.Button8.Text = "UPDATE"
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'Button9
-        '
-        Me.Button9.Location = New System.Drawing.Point(532, 99)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(75, 23)
-        Me.Button9.TabIndex = 6
-        Me.Button9.Text = "DELETE"
-        Me.Button9.UseVisualStyleBackColor = True
-        '
-        'Button10
-        '
-        Me.Button10.Location = New System.Drawing.Point(532, 128)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(75, 23)
-        Me.Button10.TabIndex = 7
-        Me.Button10.Text = "CLOSE"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.CITYTableAdapter.ClearBeforeFill = True
         '
         'SUPPLIER
         '
@@ -449,6 +461,7 @@ Partial Class SUPPLIER
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CITYBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -492,4 +505,6 @@ Partial Class SUPPLIER
     Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
     Friend WithEvents RadioButton2 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
+    Friend WithEvents CITYBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents CITYTableAdapter As INVENTORY.INVANTORYDataSet1TableAdapters.CITYTableAdapter
 End Class
