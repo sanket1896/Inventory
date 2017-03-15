@@ -67,7 +67,7 @@
     End Sub
 
     Private Sub ProductToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProductToolStripMenuItem.Click
-        Dim myChild As New CUSTOMER
+        Dim myChild As New PRODUCT
         myChild.MdiParent = Me
         myChild.Show()
 
@@ -95,8 +95,45 @@
     End Sub
 
     Private Sub PurchaseToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PurchaseToolStripMenuItem.Click
+        Dim myChild As New PURCHASE
+        myChild.MdiParent = Me
+        myChild.Show()
+    End Sub
+
+    Private Sub CalculatorToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CalculatorToolStripMenuItem.Click
+        Shell("Calc", AppWinStyle.NormalFocus)
+    End Sub
+
+    Private Sub NotepadToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NotepadToolStripMenuItem.Click
+        Shell("Notepad", AppWinStyle.NormalFocus)
+    End Sub
+
+    Private Sub ExplorerToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ExplorerToolStripMenuItem.Click
+        Shell("Explorer", AppWinStyle.NormalFocus)
+    End Sub
+
+    Private Sub PaidPaymentToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PaidPaymentToolStripMenuItem1.Click
+        Dim myChild As New PAID_PAYMENT
+        myChild.MdiParent = Me
+        myChild.Show()
+    End Sub
+
+    Private Sub ReceivePaymentToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ReceivePaymentToolStripMenuItem1.Click
+        Dim myChild As New RECEIVE_PAYMENT
+        myChild.MdiParent = Me
+        myChild.Show()
+    End Sub
+
+    Private Sub ToolStripMenuItem12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripMenuItem12.Click
         Dim myChild As New PURCHASE_ORDER
         myChild.MdiParent = Me
         myChild.Show()
+    End Sub
+
+    Private Sub ToolStripMenuItem13_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripMenuItem13.Click
+        Dim myChild As New SALES_ORDER
+        myChild.MdiParent = Me
+        myChild.Show()
+
     End Sub
 End Class

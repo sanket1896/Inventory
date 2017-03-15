@@ -182,11 +182,6 @@ Public Class PURCHASE_ORDER
             Exit Sub
         End If
 
-
-
-
-
-
         If ComboBox1.Text = "" Then
             MsgBox("Select PRODUCT name", MsgBoxStyle.OkOnly, "INVENTORY")
             Exit Sub

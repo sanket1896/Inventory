@@ -223,63 +223,55 @@ Public Class PURCHASE
 
     End Sub
 
-    'Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
-    '    'UPDATE BUTTON CLICK FROM PURCHASE DETAILS SECTION
-    '    'Try
-    '    cmd.CommandText = "select QTY from PURCHASE_DETAILS where Purchase_id='" & DataGridView1.CurrentRow.Cells(0).Value & "'"
-    '    cmd.Connection = Login.cn
-    '    Dim w As Integer = cmd.ExecuteScalar() 'QTY_PURCHASE_DETAILS
+    Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
+        'UPDATE BUTTON CLICK FROM PURCHASE DETAILS SECTION
+        Try
+            cmd.CommandText = "select QTY from PURCHASE_DETAILS where Purchase_id='" & DataGridView1.CurrentRow.Cells(0).Value & "'"
+            cmd.Connection = Login.cn
+            Dim w As Integer = cmd.ExecuteScalar() 'QTY_PURCHASE_DETAILS
 
-    '    Dim proid As Integer    'PRODUCT_ID
-    '    cmd.CommandText = "select Product_id from PRODUCT where Product_name='" & DataGridView1.CurrentRow.Cells(1).Value & "'"
-    '    cmd.Connection = Login.cn
-    '    proid = cmd.ExecuteScalar
+            Dim proid As Integer    'PRODUCT_ID
+            cmd.CommandText = "select Product_id from PRODUCT where Product_name='" & DataGridView1.CurrentRow.Cells(1).Value & "'"
+            cmd.Connection = Login.cn
+            proid = cmd.ExecuteScalar
 
-    '    cmd.CommandText = "UPDATE PURCHASE_DETAILS SET PRODUCT_ID=" & proid & ", QTY=" & DataGridView1.CurrentRow.Cells(2).Value & ", PRICE=" & DataGridView1.CurrentRow.Cells(3).Value & " WHERE PURCHASE_ID=" & DataGridView1.CurrentRow.Cells(0).Value & " AND PRODUCT_ID=" & proid
-    '    cmd.Connection = Login.cn
-    '    cmd.ExecuteNonQuery()
+            cmd.CommandText = "UPDATE PURCHASE_DETAILS SET PRODUCT_ID=" & proid & ", QTY=" & DataGridView1.CurrentRow.Cells(2).Value & ", PRICE=" & DataGridView1.CurrentRow.Cells(3).Value & " WHERE PURCHASE_ID=" & DataGridView1.CurrentRow.Cells(0).Value & " AND PRODUCT_ID=" & proid
+            cmd.Connection = Login.cn
+            cmd.ExecuteNonQuery()
 
-    '    cmd.CommandText = "select QOH from PRODUCT where PRODUCT_ID=" & proid
-    '    cmd.Connection = Login.cn
-    '    Dim t2 As Integer   'QOH_PRODUCT
-    '    t2 = cmd.ExecuteScalar
+            cmd.CommandText = "select QOH from PRODUCT where PRODUCT_ID=" & proid
+            cmd.Connection = Login.cn
+            Dim t2 As Integer   'QOH_PRODUCT
+            t2 = cmd.ExecuteScalar
 
-    '    Dim p As Integer
-    '    If (w < DataGridView1.CurrentRow.Cells(2).Value) Then
+            Dim p As Integer
+            If (w < DataGridView1.CurrentRow.Cells(2).Value) Then
 
-    '        p = DataGridView1.CurrentRow.Cells(2).Value - w
+                p = DataGridView1.CurrentRow.Cells(2).Value - w
 
-    '        'MsgBox(t2 + p)
-    '        cmd.CommandText = "update PRODUCT set QOH='" & t2 + p & "' where PRODUCT_id='" & proid & "'"
-    '        cmd.Connection = Login.cn
-    '        cmd.ExecuteNonQuery()
-    '    ElseIf (w > DataGridView1.CurrentRow.Cells(2).Value) Then
+                'MsgBox(t2 + p)
+                cmd.CommandText = "update PRODUCT set QOH='" & t2 + p & "' where PRODUCT_id='" & proid & "'"
+                cmd.Connection = Login.cn
+                cmd.ExecuteNonQuery()
+            ElseIf (w > DataGridView1.CurrentRow.Cells(2).Value) Then
 
-    '        p = w - DataGridView1.CurrentRow.Cells(3).Value
+                p = w - DataGridView1.CurrentRow.Cells(3).Value
 
-    '        'MsgBox(t2 - p)
-    '        cmd.CommandText = "update PRODUCT set QOH='" & t2 - p & "' where PRODUCT_id='" & proid & "'"
-    '        cmd.Connection = Login.cn
-    '        cmd.ExecuteNonQuery()
+                'MsgBox(t2 - p)
+                cmd.CommandText = "update PRODUCT set QOH='" & t2 - p & "' where PRODUCT_id='" & proid & "'"
+                cmd.Connection = Login.cn
+                cmd.ExecuteNonQuery()
 
-    '    End If
+            End If
 
-    '    Dim ds4 As New DataSet
-    '    ds4.Clear()
-    '    Dim DA11 As New SqlDataAdapter("SELECT PURCHASE_DETAILS.PURCHASE_ID, PRODUCT.PRODUCT_NAME, PURCHASE_DETAILS.QTY, PURCHASE_DETAILS.PRICE FROM PRODUCT INNER JOIN PURCHASE_DETAILS ON PRODUCT.PRODUCT_ID = PURCHASE_DETAILS.PRODUCT_ID WHERE PURCHASE_ID=" & Val(TextBox1.Text), Login.cn)
-    '    DA11.Fill(ds4, "PURCHASE_DETAILS")
-    '    DataGridView1.DataSource = ds4.Tables(0)
+            Dim ds4 As New DataSet
+            ds4.Clear()
+            Dim DA11 As New SqlDataAdapter("SELECT PURCHASE_DETAILS.PURCHASE_ID, PRODUCT.PRODUCT_NAME, PURCHASE_DETAILS.QTY, PURCHASE_DETAILS.PRICE FROM PRODUCT INNER JOIN PURCHASE_DETAILS ON PRODUCT.PRODUCT_ID = PURCHASE_DETAILS.PRODUCT_ID WHERE PURCHASE_ID=" & Val(TextBox1.Text), Login.cn)
+            DA11.Fill(ds4, "PURCHASE_DETAILS")
+            DataGridView1.DataSource = ds4.Tables(0)
 
-    '    'Catch ex As Exception
-    '    'MsgBox(ex.Message)
-    '    'End Try
-    'End Sub
-
-    Private Sub TextBox8_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox8.KeyPress, TextBox3.KeyPress, TextBox4.KeyPress, TextBox5.KeyPress, TextBox6.KeyPress, TextBox7.KeyPress
-        If e.KeyChar = vbBack Then Exit Sub 'BackSpace
-
-        If Not (e.KeyChar) Like "[0-9]" Then  'not 0-9 then ignore
-            e.Handled = True
-        End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 End Class

@@ -34,6 +34,7 @@ Partial Class SALES_ORDER
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.Button8 = New System.Windows.Forms.Button()
@@ -50,7 +51,6 @@ Partial Class SALES_ORDER
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -92,7 +92,7 @@ Partial Class SALES_ORDER
         '
         'Button12
         '
-        Me.Button12.Location = New System.Drawing.Point(385, 64)
+        Me.Button12.Location = New System.Drawing.Point(385, 72)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(75, 23)
         Me.Button12.TabIndex = 13
@@ -118,7 +118,7 @@ Partial Class SALES_ORDER
         '
         'Button10
         '
-        Me.Button10.Location = New System.Drawing.Point(385, 146)
+        Me.Button10.Location = New System.Drawing.Point(385, 152)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(75, 23)
         Me.Button10.TabIndex = 6
@@ -127,7 +127,7 @@ Partial Class SALES_ORDER
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(385, 117)
+        Me.Button9.Location = New System.Drawing.Point(385, 125)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(75, 23)
         Me.Button9.TabIndex = 5
@@ -173,6 +173,14 @@ Partial Class SALES_ORDER
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "SALES ORDER DETAIL INFORMATION"
         '
+        'ComboBox3
+        '
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Location = New System.Drawing.Point(109, 64)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(74, 21)
+        Me.ComboBox3.TabIndex = 61
+        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -191,7 +199,7 @@ Partial Class SALES_ORDER
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(385, 93)
+        Me.Button8.Location = New System.Drawing.Point(385, 99)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 23)
         Me.Button8.TabIndex = 4
@@ -313,14 +321,6 @@ Partial Class SALES_ORDER
         Me.Button3.TabIndex = 61
         Me.Button3.Text = "SEARCH"
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(109, 64)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(74, 21)
-        Me.ComboBox3.TabIndex = 61
         '
         'SALES_ORDER
         '

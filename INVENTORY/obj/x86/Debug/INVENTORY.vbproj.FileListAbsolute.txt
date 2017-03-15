@@ -284,3 +284,43 @@ F:\RESENT INVENTORY\pd backup_sanket\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY
 F:\RESENT INVENTORY\pd backup_sanket\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.UOM.resources
 F:\RESENT INVENTORY\pd backup_sanket\INVENTORY\INVENTORY\obj\x86\Debug\GenerateResource.read.1.tlog
 F:\RESENT INVENTORY\pd backup_sanket\INVENTORY\INVENTORY\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.exe
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.xml
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.pdb
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.CATEGORY.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.CHANGE_PASSWORD.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.CITY.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.COMPANY.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.COUNTRY.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.CREATE_NEW_USER.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.CUSTOMER.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.FORGET_CHANGE_PASSWORD.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.FORGET_PASSWORD.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.Login.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.Resources.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.NEELKANTH_ENTERPRISE.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PAID_PAYMENT.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PRODUCT.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_ORDER_SELECTION.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_ORDER.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_RETURN.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_SERACH.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.RECEIVE_PAYMENT.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SALES_ORDER_SEARCH.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SALES_ORDER.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SALES_RETURN.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SALES_SERACH.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SALES.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.STATE.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.STATUS.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SUPPLIER.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.UOM.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\bin\Debug\INVANTORY.mdf
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\bin\Debug\INVANTORY_log.ldf
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\bin\Debug\INVENTORY.exe
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\bin\Debug\INVENTORY.pdb
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\bin\Debug\INVENTORY.xml

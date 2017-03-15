@@ -29,7 +29,6 @@ Partial Class PURCHASE_RETURN
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Button6 = New System.Windows.Forms.Button()
@@ -45,6 +44,7 @@ Partial Class PURCHASE_RETURN
         Me.Button8 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -108,18 +108,9 @@ Partial Class PURCHASE_RETURN
         Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
         Me.DateTimePicker1.TabIndex = 6
         '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(325, 145)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 22
-        Me.Button3.Text = "SEARCH"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(104, 145)
+        Me.Button1.Location = New System.Drawing.Point(147, 145)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 20
@@ -260,14 +251,23 @@ Partial Class PURCHASE_RETURN
         Me.Label10.TabIndex = 0
         Me.Label10.Text = "PRODUCT NAME"
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(261, 145)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 49
+        Me.Button2.Text = "SAVE"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'PURCHASE_RETURN
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(697, 515)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Label4)
@@ -295,7 +295,6 @@ Partial Class PURCHASE_RETURN
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Button6 As System.Windows.Forms.Button
@@ -311,4 +310,5 @@ Partial Class PURCHASE_RETURN
     Friend WithEvents Button8 As System.Windows.Forms.Button
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class

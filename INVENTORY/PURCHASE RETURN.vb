@@ -11,7 +11,7 @@ Public Class PURCHASE_RETURN
     Dim cmd As New SqlCommand
     Dim net As Double = 0
     Dim qty As Integer = 0
-    Private Sub PURCHASE_RETURN_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub PURCHASE_RETURN_Load(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
         da.Fill(ds, "PURCHASE_RETURN_MASTER")
         da1.Fill(ds1, "PRODUCT")
@@ -52,7 +52,7 @@ Public Class PURCHASE_RETURN
         DataGridView1.Refresh()
     End Sub
 
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         'INSERT BUTTON
         TextBox1.Text = Val(ds.Tables(0).Rows(ds.Tables(0).Rows.Count - 1).Item(0)) + 1
         DateTimePicker1.Text = Date.Today
@@ -136,6 +136,15 @@ Public Class PURCHASE_RETURN
         'LAST BUTTON
         rpos = (ds.Tables(0).Rows.Count) - 1
         showdata()
+
+        DataGridView1.Refresh()
+        Dim ds4 As New DataSet
+        ds4.Clear()
+        Dim DA11 As New SqlDataAdapter("SELECT PURCHASE_RETURN_DETAIL.PURCHASE_RETURN_ID, PRODUCT.PRODUCT_NAME, PURCHASE_RETURN_DETAIL.QTY FROM PRODUCT INNER JOIN PURCHASE_RETURN_DETAIL ON PRODUCT.PRODUCT_ID = PURCHASE_RETURN_DETAIL.PRODUCT_ID WHERE PURCHASE_RETURN_DETAIL.PURCHASE_RETURN_ID=" & TextBox1.Text, Login.cn)
+        DA11.Fill(ds4, "PURCHASE_RETURN_DETAIL")
+        DataGridView1.DataSource = ds4.Tables(0)
+        DataGridView1.Refresh()
+
     End Sub
 
     Private Sub Button10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button10.Click
@@ -182,53 +191,53 @@ Public Class PURCHASE_RETURN
     End Sub
 
     Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
-        '        Try
-        Dim id As Integer
-        cmd.CommandText = "select PRODUCT_id from PRODUCT where PRODUCT_name='" & DataGridView1.CurrentRow.Cells(1).Value & "'"
-        cmd.Connection = Login.cn
-        id = cmd.ExecuteScalar()
+        Try
+            Dim id As Integer
+            cmd.CommandText = "select PRODUCT_id from PRODUCT where PRODUCT_name='" & DataGridView1.CurrentRow.Cells(1).Value & "'"
+            cmd.Connection = Login.cn
+            id = cmd.ExecuteScalar()
 
 
-        cmd.CommandText = "select QTY from PURCHASE_RETURN_DETAIL where PURCHASE_RETURN_ID='" & DataGridView1.CurrentRow.Cells(0).Value & "'"
-        cmd.Connection = Login.cn
-        Dim w As Integer = cmd.ExecuteScalar()
+            cmd.CommandText = "select QTY from PURCHASE_RETURN_DETAIL where PURCHASE_RETURN_ID='" & DataGridView1.CurrentRow.Cells(0).Value & "'"
+            cmd.Connection = Login.cn
+            Dim w As Integer = cmd.ExecuteScalar()
 
 
-        Dim ds2 As New DataSet
-        'Dim adap As SqlDataAdapter
-        cmd.CommandText = "update PURCHASE_RETURN_DETAIL set QTY='" & DataGridView1.CurrentRow.Cells(2).Value & "' where PURCHASE_RETURN_id='" & DataGridView1.CurrentRow.Cells(0).Value & "' and PRODUCT_id='" & id & "'"
-        cmd.Connection = Login.cn
-        cmd.ExecuteNonQuery()
-        MsgBox("Record sucessfully Updated", MsgBoxStyle.OkOnly, "INVENTORY")
-
-        cmd.CommandText = "select QOH from PRODUCT where PRODUCT_id='" & id & "'"
-        cmd.Connection = Login.cn
-        Dim t2 As Integer
-        t2 = cmd.ExecuteScalar
-
-        Dim p As Integer
-        If (w < DataGridView1.CurrentRow.Cells(2).Value) Then
-            p = DataGridView1.CurrentRow.Cells(2).Value - w
-
-            cmd.CommandText = "update PRODUCT set QOH='" & t2 - p & "' where PRODUCT_id='" & id & "'"
+            Dim ds2 As New DataSet
+            'Dim adap As SqlDataAdapter
+            cmd.CommandText = "update PURCHASE_RETURN_DETAIL set QTY='" & DataGridView1.CurrentRow.Cells(2).Value & "' where PURCHASE_RETURN_id='" & DataGridView1.CurrentRow.Cells(0).Value & "' and PRODUCT_id='" & id & "'"
             cmd.Connection = Login.cn
             cmd.ExecuteNonQuery()
-        Else
-            p = w - DataGridView1.CurrentRow.Cells(3).Value
-            cmd.CommandText = "update PRODUCT set QOH='" & t2 + p & "' where PRODUCT_id='" & id & "'"
-            cmd.Connection = Login.cn
-            cmd.ExecuteNonQuery()
+            MsgBox("Record sucessfully Updated", MsgBoxStyle.OkOnly, "INVENTORY")
 
-            DataGridView1.Refresh()
-            Dim ds4 As New DataSet
-            ds4.Clear()
-            Dim DA11 As New SqlDataAdapter("SELECT PURCHASE_RETURN_DETAIL.PURCHASE_RETURN_ID, PRODUCT.PRODUCT_NAME, PURCHASE_RETURN_DETAIL.QTY FROM PRODUCT INNER JOIN PURCHASE_RETURN_DETAIL ON PRODUCT.PRODUCT_ID = PURCHASE_RETURN_DETAIL.PRODUCT_ID WHERE PURCHASE_RETURN_DETAIL.PURCHASE_RETURN_ID=" & TextBox1.Text, Login.cn)
-            DA11.Fill(ds4, "PURCHASE_RETURN_DETAIL")
-            DataGridView1.DataSource = ds4.Tables(0)
-            DataGridView1.Refresh()
-        End If
-        'Catch ex As Exception
-        '    MsgBox("Record Can Not be Updated... It Has Reference Records ", MsgBoxStyle.OkOnly, "INVENTORY")
-        'End Try
+            cmd.CommandText = "select QOH from PRODUCT where PRODUCT_id='" & id & "'"
+            cmd.Connection = Login.cn
+            Dim t2 As Integer
+            t2 = cmd.ExecuteScalar
+
+            Dim p As Integer
+            If (w < DataGridView1.CurrentRow.Cells(2).Value) Then
+                p = DataGridView1.CurrentRow.Cells(2).Value - w
+
+                cmd.CommandText = "update PRODUCT set QOH='" & t2 - p & "' where PRODUCT_id='" & id & "'"
+                cmd.Connection = Login.cn
+                cmd.ExecuteNonQuery()
+            Else
+                p = w - DataGridView1.CurrentRow.Cells(2).Value
+                cmd.CommandText = "update PRODUCT set QOH='" & t2 + p & "' where PRODUCT_id='" & id & "'"
+                cmd.Connection = Login.cn
+                cmd.ExecuteNonQuery()
+
+                DataGridView1.Refresh()
+                Dim ds4 As New DataSet
+                ds4.Clear()
+                Dim DA11 As New SqlDataAdapter("SELECT PURCHASE_RETURN_DETAIL.PURCHASE_RETURN_ID, PRODUCT.PRODUCT_NAME, PURCHASE_RETURN_DETAIL.QTY FROM PRODUCT INNER JOIN PURCHASE_RETURN_DETAIL ON PRODUCT.PRODUCT_ID = PURCHASE_RETURN_DETAIL.PRODUCT_ID WHERE PURCHASE_RETURN_DETAIL.PURCHASE_RETURN_ID=" & TextBox1.Text, Login.cn)
+                DA11.Fill(ds4, "PURCHASE_RETURN_DETAIL")
+                DataGridView1.DataSource = ds4.Tables(0)
+                DataGridView1.Refresh()
+            End If
+        Catch ex As Exception
+            MsgBox("Record Can Not be Updated... It Has Reference Records ", MsgBoxStyle.OkOnly, "INVENTORY")
+        End Try
     End Sub
 End Class

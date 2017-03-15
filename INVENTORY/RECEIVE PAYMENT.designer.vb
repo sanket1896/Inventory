@@ -22,18 +22,12 @@ Partial Class RECEIVE_PAYMENT
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -42,50 +36,16 @@ Partial Class RECEIVE_PAYMENT
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(425, 128)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(121, 20)
-        Me.TextBox6.TabIndex = 39
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(313, 128)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(102, 13)
-        Me.Label9.TabIndex = 38
-        Me.Label9.Text = "CUSTOMER NAME"
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(342, 173)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 37
-        Me.Button3.Text = "CLEAR"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(222, 173)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 36
-        Me.Button2.Text = "SAVE"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(98, 173)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 35
-        Me.Button1.Text = "INSERT"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox5
         '
@@ -105,9 +65,9 @@ Partial Class RECEIVE_PAYMENT
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(394, 62)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(425, 62)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(121, 20)
         Me.DateTimePicker1.TabIndex = 32
         '
         'Label7
@@ -134,13 +94,6 @@ Partial Class RECEIVE_PAYMENT
         Me.Label6.Size = New System.Drawing.Size(62, 13)
         Me.Label6.TabIndex = 29
         Me.Label6.Text = "CHECK NO"
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(176, 121)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(121, 20)
-        Me.TextBox3.TabIndex = 28
         '
         'Label5
         '
@@ -209,23 +162,106 @@ Partial Class RECEIVE_PAYMENT
         Me.Label1.TabIndex = 20
         Me.Label1.Text = "RECEIVE PAYMENT INFORMATION"
         '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(176, 121)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox2.TabIndex = 40
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(447, 167)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.TabIndex = 48
+        Me.Button5.Text = ">|"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(342, 167)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.TabIndex = 47
+        Me.Button6.Text = ">"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(222, 167)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(75, 23)
+        Me.Button7.TabIndex = 46
+        Me.Button7.Text = "<"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(102, 167)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(75, 23)
+        Me.Button8.TabIndex = 45
+        Me.Button8.Text = "|<"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(447, 219)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 44
+        Me.Button4.Text = "CLOSE"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(342, 219)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 43
+        Me.Button3.Text = "UPDATE"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(222, 219)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 42
+        Me.Button2.Text = "SAVE"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(102, 219)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 41
+        Me.Button1.Text = "INSERT"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'RECEIVE_PAYMENT
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(625, 302)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label4)
@@ -242,18 +278,12 @@ Partial Class RECEIVE_PAYMENT
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
@@ -262,4 +292,13 @@ Partial Class RECEIVE_PAYMENT
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

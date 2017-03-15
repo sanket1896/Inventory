@@ -32,16 +32,13 @@ Partial Class SALES_RETURN
         Me.Label11 = New System.Windows.Forms.Label()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button9 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
@@ -66,7 +63,7 @@ Partial Class SALES_RETURN
         '
         'Button12
         '
-        Me.Button12.Location = New System.Drawing.Point(430, 141)
+        Me.Button12.Location = New System.Drawing.Point(385, 83)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(75, 23)
         Me.Button12.TabIndex = 13
@@ -133,21 +130,12 @@ Partial Class SALES_RETURN
         '
         'Button10
         '
-        Me.Button10.Location = New System.Drawing.Point(478, 112)
+        Me.Button10.Location = New System.Drawing.Point(385, 141)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(75, 23)
         Me.Button10.TabIndex = 6
         Me.Button10.Text = "CLOSE"
         Me.Button10.UseVisualStyleBackColor = True
-        '
-        'Button11
-        '
-        Me.Button11.Location = New System.Drawing.Point(385, 83)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(75, 23)
-        Me.Button11.TabIndex = 3
-        Me.Button11.Text = "ALL"
-        Me.Button11.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
@@ -166,9 +154,7 @@ Partial Class SALES_RETURN
         Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.ComboBox2)
         Me.GroupBox2.Controls.Add(Me.Button10)
-        Me.GroupBox2.Controls.Add(Me.Button9)
         Me.GroupBox2.Controls.Add(Me.Button8)
-        Me.GroupBox2.Controls.Add(Me.Button11)
         Me.GroupBox2.Controls.Add(Me.DataGridView1)
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Location = New System.Drawing.Point(31, 290)
@@ -177,15 +163,6 @@ Partial Class SALES_RETURN
         Me.GroupBox2.TabIndex = 60
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "PURCHASE RETURN DETAIL INFORMATION"
-        '
-        'Button9
-        '
-        Me.Button9.Location = New System.Drawing.Point(478, 83)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(75, 23)
-        Me.Button9.TabIndex = 5
-        Me.Button9.Text = "DELETE"
-        Me.Button9.UseVisualStyleBackColor = True
         '
         'Button8
         '
@@ -236,18 +213,9 @@ Partial Class SALES_RETURN
         Me.Button4.Text = "<"
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(332, 157)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 58
-        Me.Button3.Text = "SEARCH"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(219, 157)
+        Me.Button2.Location = New System.Drawing.Point(271, 161)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 57
@@ -256,7 +224,7 @@ Partial Class SALES_RETURN
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(111, 157)
+        Me.Button1.Location = New System.Drawing.Point(163, 161)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 56
@@ -320,7 +288,6 @@ Partial Class SALES_RETURN
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DateTimePicker1)
@@ -351,16 +318,13 @@ Partial Class SALES_RETURN
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
     Friend WithEvents Button10 As System.Windows.Forms.Button
-    Friend WithEvents Button11 As System.Windows.Forms.Button
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents Button9 As System.Windows.Forms.Button
     Friend WithEvents Button8 As System.Windows.Forms.Button
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
