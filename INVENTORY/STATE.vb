@@ -144,7 +144,7 @@ Public Class STATE
         '  Me.WindowState = FormWindowState.Maximized
 
         Dim ds3 As New DataSet
-        Dim da2 As New SqlClient.SqlDataAdapter("select p.STATE_ID as [STATE ID],p.STATE NAME as [STATE NAME],p1.COUNTY_NAME [COUNTRY NAME] from STATE P, STATE p1 where p.COUNTRY_ID=p1.COUNTRY_ID", Login.cn)
+        Dim da2 As New SqlClient.SqlDataAdapter("select p.STATE_ID as [STATE ID],p.STATE_NAME as [STATE NAME],p1.COUNTRY_NAME [COUNTRY NAME] from STATE P, COUNTRY p1 where p.COUNTRY_ID=p1.COUNTRY_ID", Login.cn)
         ds3.Clear()
         da2.Fill(ds3, "STATE")
         DataGridView1.DataSource = ds3.Tables(0)

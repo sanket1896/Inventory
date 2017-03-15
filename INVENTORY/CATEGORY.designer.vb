@@ -22,6 +22,7 @@ Partial Class CATEGORY
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CATEGORY))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
@@ -56,16 +57,16 @@ Partial Class CATEGORY
         Me.GroupBox2.Controls.Add(Me.DataGridView1)
         Me.GroupBox2.Controls.Add(Me.TextBox9)
         Me.GroupBox2.Controls.Add(Me.Label10)
-        Me.GroupBox2.Location = New System.Drawing.Point(29, 278)
+        Me.GroupBox2.Location = New System.Drawing.Point(23, 255)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(474, 146)
+        Me.GroupBox2.Size = New System.Drawing.Size(474, 202)
         Me.GroupBox2.TabIndex = 44
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "CATEGORY SELECTION"
         '
         'Button10
         '
-        Me.Button10.Location = New System.Drawing.Point(385, 112)
+        Me.Button10.Location = New System.Drawing.Point(377, 154)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(75, 23)
         Me.Button10.TabIndex = 6
@@ -74,7 +75,7 @@ Partial Class CATEGORY
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(385, 84)
+        Me.Button9.Location = New System.Drawing.Point(377, 125)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(75, 23)
         Me.Button9.TabIndex = 5
@@ -83,7 +84,7 @@ Partial Class CATEGORY
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(385, 55)
+        Me.Button8.Location = New System.Drawing.Point(377, 96)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 23)
         Me.Button8.TabIndex = 4
@@ -92,7 +93,7 @@ Partial Class CATEGORY
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(385, 26)
+        Me.Button7.Location = New System.Drawing.Point(377, 67)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 23)
         Me.Button7.TabIndex = 3
@@ -102,22 +103,22 @@ Partial Class CATEGORY
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(27, 67)
+        Me.DataGridView1.Location = New System.Drawing.Point(30, 53)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(326, 68)
+        Me.DataGridView1.Size = New System.Drawing.Size(326, 143)
         Me.DataGridView1.TabIndex = 2
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(171, 28)
+        Me.TextBox9.Location = New System.Drawing.Point(142, 27)
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(155, 20)
+        Me.TextBox9.Size = New System.Drawing.Size(214, 20)
         Me.TextBox9.TabIndex = 1
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(27, 35)
+        Me.Label10.Location = New System.Drawing.Point(27, 30)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(100, 13)
         Me.Label10.TabIndex = 0
@@ -129,16 +130,16 @@ Partial Class CATEGORY
         Me.GroupBox1.Controls.Add(Me.Button5)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Location = New System.Drawing.Point(29, 179)
+        Me.GroupBox1.Location = New System.Drawing.Point(23, 167)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(412, 77)
+        Me.GroupBox1.Size = New System.Drawing.Size(474, 77)
         Me.GroupBox1.TabIndex = 43
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "NEVIGATION BUTTONS"
+        Me.GroupBox1.Text = "NEVIGATION"
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(325, 37)
+        Me.Button6.Location = New System.Drawing.Point(354, 32)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 23)
         Me.Button6.TabIndex = 3
@@ -147,7 +148,7 @@ Partial Class CATEGORY
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(218, 37)
+        Me.Button5.Location = New System.Drawing.Point(247, 32)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 2
@@ -156,7 +157,7 @@ Partial Class CATEGORY
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(113, 37)
+        Me.Button4.Location = New System.Drawing.Point(142, 32)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 1
@@ -165,7 +166,7 @@ Partial Class CATEGORY
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(16, 37)
+        Me.Button3.Location = New System.Drawing.Point(45, 32)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 0
@@ -174,7 +175,7 @@ Partial Class CATEGORY
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(194, 125)
+        Me.Button2.Location = New System.Drawing.Point(341, 131)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 42
@@ -183,7 +184,7 @@ Partial Class CATEGORY
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(74, 125)
+        Me.Button1.Location = New System.Drawing.Point(241, 131)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 41
@@ -192,22 +193,24 @@ Partial Class CATEGORY
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(183, 75)
+        Me.TextBox2.Location = New System.Drawing.Point(252, 84)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(145, 20)
         Me.TextBox2.TabIndex = 30
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(183, 42)
+        Me.TextBox1.BackColor = System.Drawing.Color.White
+        Me.TextBox1.Location = New System.Drawing.Point(252, 51)
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(145, 20)
         Me.TextBox1.TabIndex = 29
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(55, 82)
+        Me.Label2.Location = New System.Drawing.Point(124, 91)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(100, 13)
         Me.Label2.TabIndex = 26
@@ -216,7 +219,7 @@ Partial Class CATEGORY
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(55, 49)
+        Me.Label5.Location = New System.Drawing.Point(124, 58)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(80, 13)
         Me.Label5.TabIndex = 25
@@ -235,7 +238,7 @@ Partial Class CATEGORY
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(520, 433)
+        Me.ClientSize = New System.Drawing.Size(520, 469)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button2)
@@ -245,6 +248,7 @@ Partial Class CATEGORY
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "CATEGORY"

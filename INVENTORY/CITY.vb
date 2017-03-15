@@ -1,10 +1,12 @@
 ﻿Imports System.Data.SqlClient
+Imports System.Text.RegularExpressions
+
 Public Class CITY
     Dim da As New SqlDataAdapter("select * from CITY", Login.cn)
     Dim da1 As New SqlDataAdapter("select * from STATE", Login.cn)
     Dim ds As New DataSet
     Dim rpos As Integer
-    Dim addmodd As Boolean
+    Dim addmodd As Boolean = False
     Dim cmdb As New SqlCommandBuilder(da)
     Dim cmd As New SqlCommand
 
@@ -23,6 +25,7 @@ Public Class CITY
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         'INSERT BUTTON
         'CLEAR ALL TEXTBOXES
+
         Dim ds3 As New DataSet
         Dim da2 As New SqlClient.SqlDataAdapter("select p.CITY_ID as [CITY ID],p.CITY_NAME as [CITY NAME],p1.STATE_NAME as [STATE NAME] from CITY P, STATE p1 where p.STATE_ID=p1.STATE_ID", Login.cn)
         ds3.Clear()
@@ -33,19 +36,27 @@ Public Class CITY
         TextBox2.Clear()
         TextBox1.Text = Val(ds3.Tables(0).Rows(ds3.Tables(0).Rows.Count - 1).Item(0)) + 1
         TextBox2.ReadOnly = False
+        addmodd = True
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         'SAVE BUTTON
+        If addmodd = False Then
+            MsgBox("First do Insert", MsgBoxStyle.Exclamation)
+            Exit Sub
+        End If
+
         If TextBox2.Text = "" Then
             MsgBox("Enter CITY name", MsgBoxStyle.OkOnly, "INVENTORY")
             TextBox2.Focus()
             Exit Sub
         End If
+
         If ComboBox1.Text = "" Then
             MsgBox("Select STATE name", MsgBoxStyle.OkOnly, "INVENTORY")
             Exit Sub
         End If
+
         cmd.CommandText = "select STATE_ID from STATE where STATE_NAME='" & ComboBox1.SelectedItem & "'"
         cmd.Connection = Login.cn
         Dim str As Integer
@@ -54,7 +65,7 @@ Public Class CITY
         Try
             Dim dr As DataRow = ds.Tables(0).Rows.Add
             dr.Item(0) = TextBox1.Text
-            dr.Item(1) = TextBox2.Text
+            dr.Item(1) = TextBox2.Text.Trim
             dr.Item(2) = str
 
             da.Update(ds, "CITY")
@@ -71,7 +82,7 @@ Public Class CITY
         DataGridView1.Refresh()
     End Sub
 
-    Private Sub TextBox2_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox3.KeyPress
+    Private Sub TextBox3_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox3.KeyPress
         'VALIDATION OF THE COUNTRY NAME
         If e.KeyChar = vbBack Then Exit Sub
         If Char.IsWhiteSpace(e.KeyChar) Then Exit Sub
@@ -85,7 +96,7 @@ Public Class CITY
     Private Sub TextBox3_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox3.TextChanged
         'SEARCHING THE STATE
         Dim ds3 As New DataSet
-        Dim da2 As New SqlClient.SqlDataAdapter("SELECT CITY_ID, CITY_NAME FROM CITY WHERE CITY_NAME LIKE '" & TextBox3.Text & "%'", Login.cn)
+        Dim da2 As New SqlClient.SqlDataAdapter("SELECT CITY.CITY_ID, CITY.CITY_NAME, STATE.STATE_NAME FROM CITY INNER JOIN STATE ON CITY.STATE_ID = STATE.STATE_ID WHERE (CITY.CITY_NAME LIKE '" & TextBox3.Text & "%')", Login.cn)
         ds3.Clear()
         da2.Fill(ds3, "CITY")
         DataGridView1.DataSource = ds3.Tables(0)
@@ -133,7 +144,7 @@ Public Class CITY
 
         Dim dr1 As SqlDataReader
         cmd.CommandText = "select STATE_NAME from STATE"
-        cmd.Connection = LOGIN.cn
+        cmd.Connection = Login.cn
         dr1 = cmd.ExecuteReader
         Do While dr1.Read
             ComboBox1.Items.Add(dr1.GetValue(0).ToString)
@@ -144,7 +155,7 @@ Public Class CITY
         '  Me.WindowState = FormWindowState.Maximized
 
         Dim ds3 As New DataSet
-        Dim da2 As New SqlClient.SqlDataAdapter("select p.CITY_ID as [CITY ID],p.CITY_NAME as [CITY NAME],p1.STATE_NAME [STATE NAME] from CITY P, CITY p1 where p.STATE_ID=p1.STATE_ID", Login.cn)
+        Dim da2 As New SqlClient.SqlDataAdapter("select p.CITY_ID as [CITY ID],p.CITY_NAME as [CITY NAME],p1.STATE_NAME [STATE NAME] from CITY P, STATE p1 where p.STATE_ID=p1.STATE_ID", Login.cn)
         ds3.Clear()
         da2.Fill(ds3, "CITY")
         DataGridView1.DataSource = ds3.Tables(0)
@@ -247,5 +258,15 @@ Public Class CITY
         Catch ex As Exception
             MsgBox("Record Can Not be Deleted.. It Has Reference Records ", MsgBoxStyle.OkOnly, "INVENTORY")
         End Try
+    End Sub
+
+
+    Private Sub TextBox2_Leave(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox2.Leave
+        TextBox2.Text = TextBox2.Text.Trim
+        If Not Regex.Match(TextBox2.Text, "^[a-z]*$", RegexOptions.IgnoreCase).Success Then
+            MsgBox("Enter valid City name.", MsgBoxStyle.Exclamation)
+            TextBox2.Focus()
+
+        End If
     End Sub
 End Class

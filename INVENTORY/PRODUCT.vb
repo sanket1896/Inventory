@@ -94,6 +94,77 @@ Public Class PRODUCT
         'SAVE BUTTON CLICK
         'INSERT QUERRY
 
+        If TextBox1.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            TextBox1.Focus()
+            Exit Sub
+        End If
+        If TextBox2.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            TextBox2.Focus()
+            Exit Sub
+        End If
+
+
+        If TextBox4.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            TextBox4.Focus()
+            Exit Sub
+        End If
+
+        If TextBox5.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            TextBox5.Focus()
+            Exit Sub
+        End If
+
+        If TextBox6.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            TextBox6.Focus()
+            Exit Sub
+        End If
+
+        If TextBox7.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            TextBox7.Focus()
+            Exit Sub
+        End If
+
+        If ComboBox1.Text.Trim = "" Then
+            MsgBox("Select Valid value", MsgBoxStyle.Exclamation)
+            ComboBox1.Focus()
+            Exit Sub
+        End If
+        If Not ComboBox1.Text.Trim = "" Then
+            Dim i As String
+            i = ComboBox1.Items.IndexOf(ComboBox1.Text)
+            If i = -1 Then
+                MsgBox("Select currect UOM.")
+                Exit Sub
+            End If
+            ComboBox1.Focus()
+        End If
+
+        If ComboBox2.Text.Trim = "" Then
+            MsgBox("Select Valid value", MsgBoxStyle.Exclamation)
+            ComboBox2.Focus()
+            Exit Sub
+        End If
+        If Not ComboBox2.Text.Trim = "" Then
+            Dim i As String
+            i = ComboBox2.Items.IndexOf(ComboBox2.Text)
+            If i = -1 Then
+                MsgBox("Select currect Category.")
+                Exit Sub
+            End If
+            ComboBox2.Focus()
+        End If
+
+
+
+
+
+
         Try
             cmd.CommandText = "select UOM_ID from UOM where UOM_name='" & ComboBox1.SelectedItem.ToString & "'"
             cmd.Connection = Login.cn
@@ -274,5 +345,14 @@ Public Class PRODUCT
             MsgBox("Record Can Not be Deleted.. It Has Reference Records ", MsgBoxStyle.OkOnly, "INVENTORY")
         End Try
 
+    End Sub
+
+   
+    Private Sub TextBox5_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox5.KeyPress, TextBox6.KeyPress, TextBox7.KeyPress, TextBox4.KeyPress
+        If e.KeyChar = vbBack Then Exit Sub 'BackSpace
+
+        If Not (e.KeyChar) Like "[0-9]" Then  'not 0-9 then ignore
+            e.Handled = True
+        End If
     End Sub
 End Class

@@ -1,4 +1,6 @@
 ﻿Imports System.Data.SqlClient
+Imports System.Text.RegularExpressions
+
 Public Class COMPANY
     Dim da As New SqlDataAdapter("select * from COMPANY_MASTER", Login.cn)
     Dim da1 As New SqlDataAdapter("select * from CITY", Login.cn)
@@ -73,12 +75,60 @@ Public Class COMPANY
 
 
         TextBox2.Focus()
-        
+
         addmode = True
     End Sub
 
     Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
         'INSERT OR UPDATE BUTTON
+
+        If TextBox1.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            Exit Sub
+        End If
+        If TextBox2.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            Exit Sub
+        End If
+
+        If TextBox3.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            Exit Sub
+        End If
+
+        If TextBox4.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            Exit Sub
+        End If
+
+        If TextBox5.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            Exit Sub
+        End If
+
+        If TextBox6.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            Exit Sub
+        End If
+
+        If TextBox7.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            Exit Sub
+        End If
+
+        If TextBox8.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            Exit Sub
+        End If
+
+        If TextBox9.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            Exit Sub
+        End If
+
+
+
+
 
         cmd.CommandText = "select CITY_ID from CITY where CITY_NAME='" & combocname & "'"     'TO FETCH THE CITY ID FROM THE CITY TABLE WHERE THE CITY NAME WOULD BE SELECTED FROM THE COMBOBOX1
         cmd.Connection = Login.cn
@@ -120,6 +170,7 @@ Public Class COMPANY
                 MsgBox("Record sucessfully updated", MsgBoxStyle.OkOnly, "INVENTORY")
             End If
         Catch ex As Exception
+            MsgBox("Can't able to insert data because of data conflict.", MsgBoxStyle.Critical)
             MsgBox(ex.Message)
         End Try
     End Sub
@@ -130,5 +181,30 @@ Public Class COMPANY
 
     Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedIndexChanged
         combocname = ComboBox1.Text
+    End Sub
+
+    Private Sub TextBox7_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox7.KeyPress, TextBox8.KeyPress, TextBox5.KeyPress, TextBox6.KeyPress
+
+        If e.KeyChar = vbBack Then Exit Sub 'BackSpace
+
+        If Not (e.KeyChar) Like "[0-9]" Then  'not 0-9 then ignore
+            e.Handled = True
+        End If
+
+    End Sub
+
+    Private Sub TextBox9_Leave(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox9.Leave
+        Dim pattern As String = "^[a-z][a-z|0-9|]*([_][a-z|0-9]+)*([.][a-z|0-9]+([_][a-z|0-9]+)*)?@[a-z][a-z|0-9|]*\.([a-z][a-z|0-9]*(\.[a-z][a-z|0-9]*)?)$"
+
+
+        Dim match As System.Text.RegularExpressions.Match = Regex.Match(TextBox9.Text.Trim(), pattern, RegexOptions.IgnoreCase)
+        If (match.Success) Then
+            'MsgBox("done")
+        Else
+            MsgBox("Please enter valid mail id", MsgBoxStyle.Exclamation)
+            ' TextBox9.Clear()
+            TextBox9.Focus()
+
+        End If
     End Sub
 End Class

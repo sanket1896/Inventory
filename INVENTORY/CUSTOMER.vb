@@ -1,4 +1,6 @@
 ﻿Imports System.Data.SqlClient
+Imports System.Text.RegularExpressions
+
 Public Class CUSTOMER
     Dim da As New SqlDataAdapter("select * from CUSTOMER", Login.cn)
     Dim da1 As New SqlDataAdapter("select * from CITY", Login.cn)
@@ -16,7 +18,7 @@ Public Class CUSTOMER
         da2.Fill(ds, "STATE")
 
         showdata()
-        MsgBox("hello")
+
         Dim dr As SqlDataReader
         cmd.CommandText = "select City_name from CITY"
         cmd.Connection = Login.cn
@@ -61,7 +63,7 @@ Public Class CUSTOMER
         ComboBox1.SelectedValue = cityname
         ComboBox1.Text = cityname
 
-        ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
+        ' ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
@@ -145,6 +147,86 @@ Public Class CUSTOMER
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         'SAVE BUTTON CLICK
         'INSERT QUERRY
+
+
+        If TextBox1.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            TextBox1.Focus()
+            Exit Sub
+        End If
+        If TextBox2.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            TextBox2.Focus()
+            Exit Sub
+        End If
+
+        If TextBox3.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            TextBox3.Focus()
+            Exit Sub
+        End If
+
+        If TextBox4.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            TextBox4.Focus()
+            Exit Sub
+        End If
+
+        If TextBox5.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            TextBox5.Focus()
+            Exit Sub
+        End If
+
+        If TextBox6.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            TextBox6.Focus()
+            Exit Sub
+        End If
+
+        If TextBox7.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            TextBox7.Focus()
+            Exit Sub
+        End If
+
+        If TextBox8.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            TextBox8.Focus()
+            Exit Sub
+        End If
+
+        If TextBox9.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            TextBox9.Focus()
+            Exit Sub
+        End If
+
+        If TextBox10.Text.Trim = "" Then
+            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            TextBox10.Focus()
+            Exit Sub
+        End If
+
+        If ComboBox1.Text.Trim = "" Then
+            MsgBox("Select Valid value", MsgBoxStyle.Exclamation)
+            ComboBox1.Focus()
+            Exit Sub
+        End If
+
+        If Not ComboBox1.Text.Trim = "" Then
+            Dim i As String
+            i = ComboBox1.Items.IndexOf(ComboBox1.Text)
+            If i = -1 Then
+                MsgBox("Select currect City.")
+                Exit Sub
+            End If
+            ComboBox1.Focus()
+        End If
+
+
+
+
 
         Try
             cmd.CommandText = "select City_id from CITY where City_name='" & ComboBox1.SelectedItem.ToString & "'"
@@ -279,4 +361,31 @@ Public Class CUSTOMER
         End Try
 
     End Sub
+
+    Private Sub TextBox7_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox10.KeyPress, TextBox8.KeyPress, TextBox7.KeyPress, TextBox9.KeyPress
+
+        If e.KeyChar = vbBack Then Exit Sub 'BackSpace
+
+        If Not (e.KeyChar) Like "[0-9]" Then  'not 0-9 then ignore
+            e.Handled = True
+        End If
+
+    End Sub
+
+    Private Sub TextBox6_Leave(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox6.Leave
+        Dim pattern As String = "^[a-z][a-z|0-9|]*([_][a-z|0-9]+)*([.][a-z|0-9]+([_][a-z|0-9]+)*)?@[a-z][a-z|0-9|]*\.([a-z][a-z|0-9]*(\.[a-z][a-z|0-9]*)?)$"
+
+
+        Dim match As System.Text.RegularExpressions.Match = Regex.Match(TextBox6.Text.Trim(), pattern, RegexOptions.IgnoreCase)
+        If (match.Success) Then
+            'MsgBox("done")
+        Else
+            MsgBox("Please enter valid mail id", MsgBoxStyle.Exclamation)
+            ' TextBox9.Clear()
+            TextBox6.Focus()
+
+        End If
+    End Sub
+
+   
 End Class

@@ -32,7 +32,7 @@ Partial Class PURCHASE_ORDER_SELECTION
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(249, 206)
+        Me.Button3.Location = New System.Drawing.Point(250, 284)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 14
@@ -41,7 +41,7 @@ Partial Class PURCHASE_ORDER_SELECTION
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(46, 206)
+        Me.Button1.Location = New System.Drawing.Point(113, 284)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 12
@@ -51,14 +51,14 @@ Partial Class PURCHASE_ORDER_SELECTION
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(33, 113)
+        Me.DataGridView1.Location = New System.Drawing.Point(41, 62)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(358, 87)
+        Me.DataGridView1.Size = New System.Drawing.Size(358, 202)
         Me.DataGridView1.TabIndex = 11
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(207, 61)
+        Me.TextBox1.Location = New System.Drawing.Point(207, 27)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(151, 20)
         Me.TextBox1.TabIndex = 10
@@ -66,17 +66,17 @@ Partial Class PURCHASE_ORDER_SELECTION
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(77, 64)
+        Me.Label1.Location = New System.Drawing.Point(82, 30)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(76, 13)
+        Me.Label1.Size = New System.Drawing.Size(94, 13)
         Me.Label1.TabIndex = 15
-        Me.Label1.Text = "Supplier Name"
+        Me.Label1.Text = "SUPPLIER NAME"
         '
         'PURCHASE_ORDER_SELECTION
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(440, 251)
+        Me.ClientSize = New System.Drawing.Size(440, 325)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button1)

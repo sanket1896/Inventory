@@ -23,6 +23,7 @@ Partial Class COMPANY
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(COMPANY))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -53,15 +54,15 @@ Partial Class COMPANY
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.CITYBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.cityDataSet = New INVENTORY.INVANTORYDataSet()
         Me.CITYBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.cityDataSet = New INVENTORY.INVANTORYDataSet()
+        Me.CITYBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.CITYTableAdapter = New INVENTORY.INVANTORYDataSetTableAdapters.CITYTableAdapter()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.CITYBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.cityDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CITYBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cityDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CITYBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -84,8 +85,10 @@ Partial Class COMPANY
         '
         'TextBox1
         '
+        Me.TextBox1.BackColor = System.Drawing.Color.White
         Me.TextBox1.Location = New System.Drawing.Point(222, 53)
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(135, 20)
         Me.TextBox1.TabIndex = 2
         Me.TextBox1.Text = "1"
@@ -327,20 +330,20 @@ Partial Class COMPANY
         Me.ComboBox1.TabIndex = 28
         Me.ComboBox1.ValueMember = "CITY_ID"
         '
-        'CITYBindingSource1
+        'CITYBindingSource
         '
-        Me.CITYBindingSource1.DataMember = "CITY"
-        Me.CITYBindingSource1.DataSource = Me.cityDataSet
+        Me.CITYBindingSource.DataMember = "CITY"
+        Me.CITYBindingSource.DataSource = Me.cityDataSet
         '
         'cityDataSet
         '
         Me.cityDataSet.DataSetName = "cityDataSet"
         Me.cityDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'CITYBindingSource
+        'CITYBindingSource1
         '
-        Me.CITYBindingSource.DataMember = "CITY"
-        Me.CITYBindingSource.DataSource = Me.cityDataSet
+        Me.CITYBindingSource1.DataMember = "CITY"
+        Me.CITYBindingSource1.DataSource = Me.cityDataSet
         '
         'CITYTableAdapter
         '
@@ -374,15 +377,16 @@ Partial Class COMPANY
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "COMPANY"
         Me.Text = "COMPANY"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
-        CType(Me.CITYBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.cityDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CITYBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cityDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CITYBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

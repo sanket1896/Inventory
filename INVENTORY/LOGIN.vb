@@ -6,7 +6,7 @@ Public Class Login
 
 
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        cn.ConnectionString = ("Data Source=.\SQLEXPRESS;AttachDbFilename=D:\Users\Shadow\Desktop\RESENT INVENTORY\pd backup_sanket\INVENTORY\INVENTORY\INVANTORY.mdf;Integrated Security=True;User Instance=True")
+        cn.ConnectionString = ("Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\sanket\Desktop\INVENTORY\INVENTORY\INVANTORY.mdf;Integrated Security=True;User Instance=True")
         cn.Open()
 
         'SqlConnectionDB   ' hidden connection (not shown in code)////////////
@@ -20,7 +20,7 @@ Public Class Login
 
         ' Declare sql connection and command text
         cmd.CommandText = "select PASSWORD from LOGIN where USER_ID = '" & TextBox1.Text & "'"
-        cmd.Connection = cn
+        cmd.Connection = Login.cn
         Dim str As String
         str = cmd.ExecuteScalar
 
@@ -42,8 +42,9 @@ Public Class Login
         ElseIf TextBox2.Text = str Then
             userid = TextBox1.Text
             'NEELKANTH_ENTERPRISE.Show()
-            PURCHASE_ORDER.Show()
-           
+            SALES_ORDER.Show()
+            'COMPANY.Show()
+            'PURCHASE_ORDER.Show()
             Me.Hide()
         Else
             MsgBox("Invalid Username or Password", MsgBoxStyle.OkOnly, "INVENTORY")

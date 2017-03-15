@@ -34,11 +34,9 @@ Partial Class SALES_ORDER
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
@@ -52,6 +50,7 @@ Partial Class SALES_ORDER
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
@@ -93,7 +92,7 @@ Partial Class SALES_ORDER
         '
         'Button12
         '
-        Me.Button12.Location = New System.Drawing.Point(430, 141)
+        Me.Button12.Location = New System.Drawing.Point(385, 64)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(75, 23)
         Me.Button12.TabIndex = 13
@@ -119,7 +118,7 @@ Partial Class SALES_ORDER
         '
         'Button10
         '
-        Me.Button10.Location = New System.Drawing.Point(478, 112)
+        Me.Button10.Location = New System.Drawing.Point(385, 146)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(75, 23)
         Me.Button10.TabIndex = 6
@@ -128,7 +127,7 @@ Partial Class SALES_ORDER
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(478, 83)
+        Me.Button9.Location = New System.Drawing.Point(385, 117)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(75, 23)
         Me.Button9.TabIndex = 5
@@ -154,7 +153,7 @@ Partial Class SALES_ORDER
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.TextBox2)
+        Me.GroupBox2.Controls.Add(Me.ComboBox3)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Controls.Add(Me.DateTimePicker2)
         Me.GroupBox2.Controls.Add(Me.Button12)
@@ -165,7 +164,6 @@ Partial Class SALES_ORDER
         Me.GroupBox2.Controls.Add(Me.Button10)
         Me.GroupBox2.Controls.Add(Me.Button9)
         Me.GroupBox2.Controls.Add(Me.Button8)
-        Me.GroupBox2.Controls.Add(Me.Button11)
         Me.GroupBox2.Controls.Add(Me.DataGridView1)
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Location = New System.Drawing.Point(20, 294)
@@ -174,13 +172,6 @@ Partial Class SALES_ORDER
         Me.GroupBox2.TabIndex = 59
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "SALES ORDER DETAIL INFORMATION"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(47, 61)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(121, 20)
-        Me.TextBox2.TabIndex = 16
         '
         'Label5
         '
@@ -200,21 +191,12 @@ Partial Class SALES_ORDER
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(385, 112)
+        Me.Button8.Location = New System.Drawing.Point(385, 93)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 23)
         Me.Button8.TabIndex = 4
         Me.Button8.Text = "UPDATE"
         Me.Button8.UseVisualStyleBackColor = True
-        '
-        'Button11
-        '
-        Me.Button11.Location = New System.Drawing.Point(385, 83)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(75, 23)
-        Me.Button11.TabIndex = 3
-        Me.Button11.Text = "ALL"
-        Me.Button11.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
@@ -274,7 +256,7 @@ Partial Class SALES_ORDER
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(252, 68)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(252, 72)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
         Me.DateTimePicker1.TabIndex = 52
@@ -291,7 +273,7 @@ Partial Class SALES_ORDER
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(86, 74)
+        Me.Label3.Location = New System.Drawing.Point(73, 78)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(115, 13)
         Me.Label3.TabIndex = 50
@@ -300,7 +282,7 @@ Partial Class SALES_ORDER
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(86, 44)
+        Me.Label2.Location = New System.Drawing.Point(91, 44)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(97, 13)
         Me.Label2.TabIndex = 49
@@ -331,6 +313,14 @@ Partial Class SALES_ORDER
         Me.Button3.TabIndex = 61
         Me.Button3.Text = "SEARCH"
         Me.Button3.UseVisualStyleBackColor = True
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Location = New System.Drawing.Point(109, 64)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(74, 21)
+        Me.ComboBox3.TabIndex = 61
         '
         'SALES_ORDER
         '
@@ -375,7 +365,6 @@ Partial Class SALES_ORDER
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
     Friend WithEvents Button8 As System.Windows.Forms.Button
-    Friend WithEvents Button11 As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button7 As System.Windows.Forms.Button
@@ -388,7 +377,7 @@ Partial Class SALES_ORDER
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
 End Class

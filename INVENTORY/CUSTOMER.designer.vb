@@ -22,6 +22,7 @@ Partial Class CUSTOMER
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CUSTOMER))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
@@ -76,16 +77,16 @@ Partial Class CUSTOMER
         Me.GroupBox2.Controls.Add(Me.TextBox11)
         Me.GroupBox2.Controls.Add(Me.RadioButton2)
         Me.GroupBox2.Controls.Add(Me.RadioButton1)
-        Me.GroupBox2.Location = New System.Drawing.Point(49, 321)
+        Me.GroupBox2.Location = New System.Drawing.Point(39, 272)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(634, 167)
+        Me.GroupBox2.Size = New System.Drawing.Size(634, 214)
         Me.GroupBox2.TabIndex = 53
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "CUSTOMER SELECTION"
         '
         'Button10
         '
-        Me.Button10.Location = New System.Drawing.Point(532, 128)
+        Me.Button10.Location = New System.Drawing.Point(531, 150)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(75, 23)
         Me.Button10.TabIndex = 7
@@ -94,7 +95,7 @@ Partial Class CUSTOMER
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(532, 99)
+        Me.Button9.Location = New System.Drawing.Point(531, 121)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(75, 23)
         Me.Button9.TabIndex = 6
@@ -103,7 +104,7 @@ Partial Class CUSTOMER
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(532, 70)
+        Me.Button8.Location = New System.Drawing.Point(531, 92)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 23)
         Me.Button8.TabIndex = 5
@@ -113,14 +114,14 @@ Partial Class CUSTOMER
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(16, 92)
+        Me.DataGridView1.Location = New System.Drawing.Point(16, 73)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(498, 64)
+        Me.DataGridView1.Size = New System.Drawing.Size(498, 135)
         Me.DataGridView1.TabIndex = 4
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(342, 42)
+        Me.Button7.Location = New System.Drawing.Point(332, 33)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 23)
         Me.Button7.TabIndex = 3
@@ -129,15 +130,15 @@ Partial Class CUSTOMER
         '
         'TextBox11
         '
-        Me.TextBox11.Location = New System.Drawing.Point(164, 42)
+        Me.TextBox11.Location = New System.Drawing.Point(140, 35)
         Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(146, 20)
+        Me.TextBox11.Size = New System.Drawing.Size(163, 20)
         Me.TextBox11.TabIndex = 2
         '
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(28, 59)
+        Me.RadioButton2.Location = New System.Drawing.Point(28, 50)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(54, 17)
         Me.RadioButton2.TabIndex = 1
@@ -162,16 +163,16 @@ Partial Class CUSTOMER
         Me.GroupBox1.Controls.Add(Me.Button5)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Location = New System.Drawing.Point(48, 246)
+        Me.GroupBox1.Location = New System.Drawing.Point(147, 201)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(418, 60)
         Me.GroupBox1.TabIndex = 52
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "NEVIGATION BUTTONS"
+        Me.GroupBox1.Text = "NEVIGATION"
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(326, 31)
+        Me.Button6.Location = New System.Drawing.Point(326, 26)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 23)
         Me.Button6.TabIndex = 3
@@ -180,7 +181,7 @@ Partial Class CUSTOMER
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(225, 31)
+        Me.Button5.Location = New System.Drawing.Point(225, 26)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 2
@@ -189,7 +190,7 @@ Partial Class CUSTOMER
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(120, 31)
+        Me.Button4.Location = New System.Drawing.Point(120, 26)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 1
@@ -198,7 +199,7 @@ Partial Class CUSTOMER
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(16, 31)
+        Me.Button3.Location = New System.Drawing.Point(16, 26)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 0
@@ -207,7 +208,7 @@ Partial Class CUSTOMER
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(371, 190)
+        Me.Button2.Location = New System.Drawing.Point(371, 168)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 51
@@ -216,7 +217,7 @@ Partial Class CUSTOMER
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(257, 190)
+        Me.Button1.Location = New System.Drawing.Point(267, 168)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 50
@@ -227,35 +228,35 @@ Partial Class CUSTOMER
         '
         Me.TextBox6.Location = New System.Drawing.Point(504, 110)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(180, 20)
+        Me.TextBox6.Size = New System.Drawing.Size(144, 20)
         Me.TextBox6.TabIndex = 49
         '
         'TextBox7
         '
         Me.TextBox7.Location = New System.Drawing.Point(504, 87)
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(180, 20)
+        Me.TextBox7.Size = New System.Drawing.Size(144, 20)
         Me.TextBox7.TabIndex = 48
         '
         'TextBox8
         '
         Me.TextBox8.Location = New System.Drawing.Point(504, 65)
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(180, 20)
+        Me.TextBox8.Size = New System.Drawing.Size(144, 20)
         Me.TextBox8.TabIndex = 47
         '
         'TextBox9
         '
         Me.TextBox9.Location = New System.Drawing.Point(504, 42)
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(180, 20)
+        Me.TextBox9.Size = New System.Drawing.Size(144, 20)
         Me.TextBox9.TabIndex = 46
         '
         'TextBox10
         '
         Me.TextBox10.Location = New System.Drawing.Point(504, 19)
         Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(180, 20)
+        Me.TextBox10.Size = New System.Drawing.Size(144, 20)
         Me.TextBox10.TabIndex = 45
         '
         'TextBox5
@@ -288,15 +289,17 @@ Partial Class CUSTOMER
         '
         'TextBox1
         '
+        Me.TextBox1.BackColor = System.Drawing.Color.White
         Me.TextBox1.Location = New System.Drawing.Point(179, 26)
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(144, 20)
         Me.TextBox1.TabIndex = 40
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(179, 138)
+        Me.ComboBox1.Location = New System.Drawing.Point(179, 140)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(144, 21)
         Me.ComboBox1.TabIndex = 39
@@ -304,7 +307,7 @@ Partial Class CUSTOMER
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(368, 117)
+        Me.Label12.Location = New System.Drawing.Point(375, 113)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(53, 13)
         Me.Label12.TabIndex = 38
@@ -313,7 +316,7 @@ Partial Class CUSTOMER
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(371, 94)
+        Me.Label11.Location = New System.Drawing.Point(375, 90)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(97, 13)
         Me.Label11.TabIndex = 37
@@ -322,7 +325,7 @@ Partial Class CUSTOMER
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(371, 72)
+        Me.Label10.Location = New System.Drawing.Point(375, 68)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(95, 13)
         Me.Label10.TabIndex = 36
@@ -331,7 +334,7 @@ Partial Class CUSTOMER
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(371, 49)
+        Me.Label9.Location = New System.Drawing.Point(375, 45)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(44, 13)
         Me.Label9.TabIndex = 35
@@ -340,7 +343,7 @@ Partial Class CUSTOMER
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(371, 26)
+        Me.Label8.Location = New System.Drawing.Point(375, 22)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(55, 13)
         Me.Label8.TabIndex = 34
@@ -349,7 +352,7 @@ Partial Class CUSTOMER
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(45, 146)
+        Me.Label7.Location = New System.Drawing.Point(45, 143)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(65, 13)
         Me.Label7.TabIndex = 33
@@ -358,7 +361,7 @@ Partial Class CUSTOMER
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(45, 124)
+        Me.Label6.Location = New System.Drawing.Point(45, 120)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(36, 13)
         Me.Label6.TabIndex = 32
@@ -367,7 +370,7 @@ Partial Class CUSTOMER
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(45, 101)
+        Me.Label5.Location = New System.Drawing.Point(45, 97)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(59, 13)
         Me.Label5.TabIndex = 31
@@ -376,7 +379,7 @@ Partial Class CUSTOMER
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(45, 79)
+        Me.Label4.Location = New System.Drawing.Point(45, 75)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(94, 13)
         Me.Label4.TabIndex = 30
@@ -385,7 +388,7 @@ Partial Class CUSTOMER
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(45, 56)
+        Me.Label3.Location = New System.Drawing.Point(45, 52)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(102, 13)
         Me.Label3.TabIndex = 29
@@ -394,7 +397,7 @@ Partial Class CUSTOMER
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(45, 33)
+        Me.Label2.Location = New System.Drawing.Point(45, 29)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(82, 13)
         Me.Label2.TabIndex = 28
@@ -441,6 +444,7 @@ Partial Class CUSTOMER
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "CUSTOMER"

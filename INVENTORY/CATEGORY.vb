@@ -1,11 +1,12 @@
 ﻿Imports System.Data.SqlClient
+Imports System.Text.RegularExpressions
 
 Public Class CATEGORY
     Dim cmd As New SqlCommand
     Dim da As New SqlDataAdapter("select * from CATEGORY", Login.cn)
     Dim ds As New DataSet
     Dim rpos As Integer
-    Dim addmodd As Boolean
+    Dim addmodd As Boolean = False
     Dim cmdb As New SqlCommandBuilder(da)
 
     Private Sub CATEGORY_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -164,6 +165,7 @@ Public Class CATEGORY
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         'INSERT BUTTON
         'CLEAR ALL TEXTBOXES
+        addmodd = True
         Dim ds3 As New DataSet
         Dim da2 As New SqlClient.SqlDataAdapter("SELECT * FROM CATEGORY ", Login.cn)
         ds3.Clear()
@@ -176,6 +178,10 @@ Public Class CATEGORY
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         'SAVE BUTTON
         'INSERT QUERRY
+        If addmodd = False Then
+            MsgBox("First do Insert.", MsgBoxStyle.Exclamation)
+            Exit Sub
+        End If
         If TextBox2.Text = "" Then
             MsgBox("Enter CATEGORY name", MsgBoxStyle.OkOnly, "INVENTORY")
             TextBox2.Focus()
@@ -199,5 +205,16 @@ Public Class CATEGORY
         da1.Fill(ds1, "CATEGORY")
         DataGridView1.DataSource = ds1.Tables(0)
         DataGridView1.Refresh()
+        addmodd = False
     End Sub
+
+    Private Sub TextBox2_Leave(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox2.Leave
+        TextBox2.Text = TextBox2.Text.Trim
+        If Not Regex.Match(TextBox2.Text, "^[a-z]*$", RegexOptions.IgnoreCase).Success Then
+            MsgBox("Enter valid Category name.", MsgBoxStyle.Exclamation)
+            TextBox2.Focus()
+        End If
+    End Sub
+
+  
 End Class
