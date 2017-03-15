@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class PURCHASE_ORDER
+Partial Class PURCHASE_ORDER_MASTER
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,6 +22,7 @@ Partial Class PURCHASE_ORDER
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PURCHASE_ORDER_MASTER))
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -50,7 +51,7 @@ Partial Class PURCHASE_ORDER
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(219, 138)
+        Me.Button2.Location = New System.Drawing.Point(227, 138)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 18
@@ -59,7 +60,7 @@ Partial Class PURCHASE_ORDER
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(111, 138)
+        Me.Button1.Location = New System.Drawing.Point(120, 138)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 17
@@ -68,22 +69,22 @@ Partial Class PURCHASE_ORDER
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(258, 37)
+        Me.TextBox1.Location = New System.Drawing.Point(262, 37)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(200, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(169, 20)
         Me.TextBox1.TabIndex = 15
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(258, 64)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(262, 64)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(169, 20)
         Me.DateTimePicker1.TabIndex = 14
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(92, 102)
+        Me.Label4.Location = New System.Drawing.Point(96, 102)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(94, 13)
         Me.Label4.TabIndex = 13
@@ -92,7 +93,7 @@ Partial Class PURCHASE_ORDER
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(92, 70)
+        Me.Label3.Location = New System.Drawing.Point(96, 70)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(140, 13)
         Me.Label3.TabIndex = 12
@@ -101,7 +102,7 @@ Partial Class PURCHASE_ORDER
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(92, 40)
+        Me.Label2.Location = New System.Drawing.Point(96, 40)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(122, 13)
         Me.Label2.TabIndex = 11
@@ -122,16 +123,16 @@ Partial Class PURCHASE_ORDER
         Me.GroupBox1.Controls.Add(Me.Button5)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button7)
-        Me.GroupBox1.Location = New System.Drawing.Point(46, 195)
+        Me.GroupBox1.Location = New System.Drawing.Point(26, 180)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(412, 77)
+        Me.GroupBox1.Size = New System.Drawing.Size(474, 77)
         Me.GroupBox1.TabIndex = 46
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "NEVIGATION BUTTONS"
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(325, 37)
+        Me.Button6.Location = New System.Drawing.Point(354, 34)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 23)
         Me.Button6.TabIndex = 3
@@ -140,7 +141,7 @@ Partial Class PURCHASE_ORDER
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(218, 37)
+        Me.Button5.Location = New System.Drawing.Point(247, 34)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 2
@@ -149,7 +150,7 @@ Partial Class PURCHASE_ORDER
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(113, 37)
+        Me.Button4.Location = New System.Drawing.Point(142, 34)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 1
@@ -158,7 +159,7 @@ Partial Class PURCHASE_ORDER
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(16, 37)
+        Me.Button7.Location = New System.Drawing.Point(45, 34)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 23)
         Me.Button7.TabIndex = 0
@@ -168,9 +169,9 @@ Partial Class PURCHASE_ORDER
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(258, 102)
+        Me.ComboBox1.Location = New System.Drawing.Point(262, 94)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(200, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(169, 21)
         Me.ComboBox1.TabIndex = 48
         '
         'Button3
@@ -185,14 +186,14 @@ Partial Class PURCHASE_ORDER
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(6, 38)
+        Me.DataGridView1.Location = New System.Drawing.Point(6, 19)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(360, 126)
+        Me.DataGridView1.Size = New System.Drawing.Size(360, 147)
         Me.DataGridView1.TabIndex = 2
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(478, 83)
+        Me.Button8.Location = New System.Drawing.Point(385, 67)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 23)
         Me.Button8.TabIndex = 4
@@ -201,7 +202,7 @@ Partial Class PURCHASE_ORDER
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(385, 112)
+        Me.Button9.Location = New System.Drawing.Point(385, 96)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(75, 23)
         Me.Button9.TabIndex = 5
@@ -210,7 +211,7 @@ Partial Class PURCHASE_ORDER
         '
         'Button10
         '
-        Me.Button10.Location = New System.Drawing.Point(478, 112)
+        Me.Button10.Location = New System.Drawing.Point(385, 125)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(75, 23)
         Me.Button10.TabIndex = 6
@@ -219,7 +220,7 @@ Partial Class PURCHASE_ORDER
         '
         'Button12
         '
-        Me.Button12.Location = New System.Drawing.Point(385, 83)
+        Me.Button12.Location = New System.Drawing.Point(385, 38)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(75, 23)
         Me.Button12.TabIndex = 13
@@ -233,18 +234,18 @@ Partial Class PURCHASE_ORDER
         Me.GroupBox2.Controls.Add(Me.Button9)
         Me.GroupBox2.Controls.Add(Me.Button8)
         Me.GroupBox2.Controls.Add(Me.DataGridView1)
-        Me.GroupBox2.Location = New System.Drawing.Point(26, 289)
+        Me.GroupBox2.Location = New System.Drawing.Point(26, 263)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(619, 191)
+        Me.GroupBox2.Size = New System.Drawing.Size(474, 191)
         Me.GroupBox2.TabIndex = 47
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "PURCHASE ORDER DETAIL INFORMATION"
         '
-        'PURCHASE_ORDER
+        'PURCHASE_ORDER_MASTER
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(657, 515)
+        Me.ClientSize = New System.Drawing.Size(526, 464)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.GroupBox2)
@@ -257,9 +258,10 @@ Partial Class PURCHASE_ORDER
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "PURCHASE_ORDER"
+        Me.Name = "PURCHASE_ORDER_MASTER"
         Me.Text = "PURCHASE ORDER"
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

@@ -67,7 +67,7 @@ Public Class PURCHASE_ORDER
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         'SAVE BUTTON
         If ComboBox1.Items.IndexOf(ComboBox1.Text) = -1 Then
-            MsgBox("-1")
+
             MsgBox("Select correct Supplier name.", MsgBoxStyle.Exclamation)
             ComboBox1.Focus()
             Exit Sub
@@ -176,7 +176,7 @@ Public Class PURCHASE_ORDER
         'Insert PURCHASE_DETAILS
 
         If ComboBox2.Items.IndexOf(ComboBox2.Text) = -1 Then
-            MsgBox("-1")
+
             MsgBox("Select correct Product", MsgBoxStyle.Exclamation)
             ComboBox2.Focus()
             Exit Sub

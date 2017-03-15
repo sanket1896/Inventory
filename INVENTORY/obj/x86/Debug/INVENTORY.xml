@@ -6,59 +6,7 @@ INVENTORY
 </name>
 </assembly>
 <members>
-<member name="T:INVENTORY.INVANTORYDataSet.CITYDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:INVENTORY.INVANTORYDataSet.CITYRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:INVENTORY.INVANTORYDataSet.CITYRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:INVENTORY.INVANTORYDataSet">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="T:INVENTORY.INVANTORYDataSetTableAdapters.CITYTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="M:INVENTORY.INVANTORYDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(INVENTORY.INVANTORYDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Update rows in top-down order.
-</summary>
-</member><member name="M:INVENTORY.INVANTORYDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(INVENTORY.INVANTORYDataSet,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Insert rows in top-down order.
-</summary>
-</member><member name="M:INVENTORY.INVANTORYDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(INVENTORY.INVANTORYDataSet,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Delete rows in bottom-up order.
-</summary>
-</member><member name="M:INVENTORY.INVANTORYDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
-</summary>
-</member><member name="M:INVENTORY.INVANTORYDataSetTableAdapters.TableAdapterManager.UpdateAll(INVENTORY.INVANTORYDataSet)">
-	<summary>
-Update all changes to the dataset.
-</summary>
-</member><member name="T:INVENTORY.INVANTORYDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
-	<summary>
-Update Order Option
-</summary>
-</member><member name="T:INVENTORY.INVANTORYDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
-	<summary>
-Used to sort self-referenced table's rows
-</summary>
-</member><member name="T:INVENTORY.INVANTORYDataSetTableAdapters.TableAdapterManager">
-	<summary>
-TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
-</summary>
-</member><member name="T:INVENTORY.INVANTORYDataSet2.UOMDataTable">
+<member name="T:INVENTORY.INVANTORYDataSet2.UOMDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -77,38 +25,6 @@ Represents a strongly typed in-memory cache of data.
 </member><member name="T:INVENTORY.INVANTORYDataSet2TableAdapters.UOMTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="M:INVENTORY.INVANTORYDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(INVENTORY.INVANTORYDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Update rows in top-down order.
-</summary>
-</member><member name="M:INVENTORY.INVANTORYDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(INVENTORY.INVANTORYDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Insert rows in top-down order.
-</summary>
-</member><member name="M:INVENTORY.INVANTORYDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(INVENTORY.INVANTORYDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Delete rows in bottom-up order.
-</summary>
-</member><member name="M:INVENTORY.INVANTORYDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
-</summary>
-</member><member name="M:INVENTORY.INVANTORYDataSet2TableAdapters.TableAdapterManager.UpdateAll(INVENTORY.INVANTORYDataSet2)">
-	<summary>
-Update all changes to the dataset.
-</summary>
-</member><member name="T:INVENTORY.INVANTORYDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
-	<summary>
-Update Order Option
-</summary>
-</member><member name="T:INVENTORY.INVANTORYDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
-	<summary>
-Used to sort self-referenced table's rows
-</summary>
-</member><member name="T:INVENTORY.INVANTORYDataSet2TableAdapters.TableAdapterManager">
-	<summary>
-TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
 </member><member name="T:INVENTORY.INVANTORYDataSet1.CITYDataTable">
 	<summary>
@@ -146,37 +62,25 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="M:INVENTORY.INVANTORYDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(INVENTORY.INVANTORYDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="T:INVENTORY.INVANTORYDataSet.CITYDataTable">
 	<summary>
-Update rows in top-down order.
+Represents the strongly named DataTable class.
 </summary>
-</member><member name="M:INVENTORY.INVANTORYDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(INVENTORY.INVANTORYDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="T:INVENTORY.INVANTORYDataSet.CITYRow">
 	<summary>
-Insert rows in top-down order.
+Represents strongly named DataRow class.
 </summary>
-</member><member name="M:INVENTORY.INVANTORYDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(INVENTORY.INVANTORYDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="T:INVENTORY.INVANTORYDataSet.CITYRowChangeEvent">
 	<summary>
-Delete rows in bottom-up order.
+Row event argument class
 </summary>
-</member><member name="M:INVENTORY.INVANTORYDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+</member><member name="T:INVENTORY.INVANTORYDataSet">
 	<summary>
-Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+Represents a strongly typed in-memory cache of data.
 </summary>
-</member><member name="M:INVENTORY.INVANTORYDataSet1TableAdapters.TableAdapterManager.UpdateAll(INVENTORY.INVANTORYDataSet1)">
+</member><member name="T:INVENTORY.INVANTORYDataSetTableAdapters.CITYTableAdapter">
 	<summary>
-Update all changes to the dataset.
-</summary>
-</member><member name="T:INVENTORY.INVANTORYDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
-	<summary>
-Update Order Option
-</summary>
-</member><member name="T:INVENTORY.INVANTORYDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
-	<summary>
-Used to sort self-referenced table's rows
-</summary>
-</member><member name="T:INVENTORY.INVANTORYDataSet1TableAdapters.TableAdapterManager">
-	<summary>
-TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+Represents the connection and commands used to retrieve and save data.
 </summary>
 </member><member name="P:INVENTORY.My.Resources.Resources.ResourceManager">
 	<summary>

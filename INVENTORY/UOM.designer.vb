@@ -22,6 +22,7 @@ Partial Class UOM
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(UOM))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -59,7 +60,7 @@ Partial Class UOM
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(56, 38)
+        Me.Label2.Location = New System.Drawing.Point(129, 38)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(46, 13)
         Me.Label2.TabIndex = 1
@@ -68,7 +69,7 @@ Partial Class UOM
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(56, 67)
+        Me.Label3.Location = New System.Drawing.Point(129, 67)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(66, 13)
         Me.Label3.TabIndex = 2
@@ -76,33 +77,35 @@ Partial Class UOM
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(155, 31)
+        Me.TextBox1.BackColor = System.Drawing.Color.White
+        Me.TextBox1.Location = New System.Drawing.Point(228, 31)
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(147, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.TextBox1.TabIndex = 0
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(155, 60)
+        Me.TextBox2.Location = New System.Drawing.Point(228, 60)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(147, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.TextBox2.TabIndex = 1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(88, 103)
+        Me.Button1.Location = New System.Drawing.Point(161, 103)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 5
+        Me.Button1.TabIndex = 2
         Me.Button1.Text = "INSERT"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(192, 103)
+        Me.Button2.Location = New System.Drawing.Point(265, 103)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 6
+        Me.Button2.TabIndex = 3
         Me.Button2.Text = "SAVE"
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -112,16 +115,16 @@ Partial Class UOM
         Me.GroupBox1.Controls.Add(Me.Button5)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Location = New System.Drawing.Point(24, 156)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 156)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(412, 77)
+        Me.GroupBox1.Size = New System.Drawing.Size(475, 77)
         Me.GroupBox1.TabIndex = 23
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "NEVIGATION BUTTONS"
+        Me.GroupBox1.Text = "NEVIGATION"
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(325, 37)
+        Me.Button6.Location = New System.Drawing.Point(354, 34)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 23)
         Me.Button6.TabIndex = 3
@@ -130,7 +133,7 @@ Partial Class UOM
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(218, 37)
+        Me.Button5.Location = New System.Drawing.Point(247, 34)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 2
@@ -139,7 +142,7 @@ Partial Class UOM
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(113, 37)
+        Me.Button4.Location = New System.Drawing.Point(142, 34)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 1
@@ -148,7 +151,7 @@ Partial Class UOM
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(16, 37)
+        Me.Button3.Location = New System.Drawing.Point(45, 34)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 0
@@ -166,44 +169,44 @@ Partial Class UOM
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Location = New System.Drawing.Point(12, 239)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(475, 141)
+        Me.GroupBox2.Size = New System.Drawing.Size(475, 159)
         Me.GroupBox2.TabIndex = 24
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "UOM SELECTION"
         '
         'Button10
         '
-        Me.Button10.Location = New System.Drawing.Point(385, 112)
+        Me.Button10.Location = New System.Drawing.Point(375, 116)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(75, 23)
-        Me.Button10.TabIndex = 6
+        Me.Button10.TabIndex = 4
         Me.Button10.Text = "CLOSE"
         Me.Button10.UseVisualStyleBackColor = True
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(385, 84)
+        Me.Button9.Location = New System.Drawing.Point(375, 88)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(75, 23)
-        Me.Button9.TabIndex = 5
+        Me.Button9.TabIndex = 3
         Me.Button9.Text = "DELETE"
         Me.Button9.UseVisualStyleBackColor = True
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(385, 55)
+        Me.Button8.Location = New System.Drawing.Point(375, 59)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 23)
-        Me.Button8.TabIndex = 4
+        Me.Button8.TabIndex = 2
         Me.Button8.Text = "UPDATE"
         Me.Button8.UseVisualStyleBackColor = True
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(385, 26)
+        Me.Button7.Location = New System.Drawing.Point(375, 30)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 23)
-        Me.Button7.TabIndex = 3
+        Me.Button7.TabIndex = 1
         Me.Button7.Text = "ALL"
         Me.Button7.UseVisualStyleBackColor = True
         '
@@ -211,22 +214,22 @@ Partial Class UOM
         '
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(27, 67)
+        Me.DataGridView1.Location = New System.Drawing.Point(27, 54)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(326, 68)
-        Me.DataGridView1.TabIndex = 2
+        Me.DataGridView1.Size = New System.Drawing.Size(326, 99)
+        Me.DataGridView1.TabIndex = 5
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(171, 28)
+        Me.TextBox9.Location = New System.Drawing.Point(142, 28)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(155, 20)
-        Me.TextBox9.TabIndex = 1
+        Me.TextBox9.TabIndex = 0
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(27, 35)
+        Me.Label10.Location = New System.Drawing.Point(54, 31)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(66, 13)
         Me.Label10.TabIndex = 0
@@ -246,6 +249,8 @@ Partial Class UOM
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "UOM"

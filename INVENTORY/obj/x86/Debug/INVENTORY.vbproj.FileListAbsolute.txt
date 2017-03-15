@@ -324,3 +324,6 @@ D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\bin\Debug\INVANTORY_log.ldf
 D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\bin\Debug\INVENTORY.exe
 D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\bin\Debug\INVENTORY.pdb
 D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\bin\Debug\INVENTORY.xml
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_ORDER_DETAIL.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_ORDER_MASTER.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\bin\Debug\INVENTORY.exe.config

@@ -14,7 +14,8 @@
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -197,6 +198,18 @@
     <Compile Include="PRODUCT.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PURCHASE ORDER DETAIL.Designer.vb">
+      <DependentUpon>PURCHASE ORDER DETAIL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PURCHASE ORDER DETAIL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PURCHASE ORDER MASTER.designer.vb">
+      <DependentUpon>PURCHASE ORDER MASTER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PURCHASE ORDER MASTER.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PURCHASE ORDER SELECTION.designer.vb">
       <DependentUpon>PURCHASE ORDER SELECTION.vb</DependentUpon>
     </Compile>
@@ -334,6 +347,12 @@
     <EmbeddedResource Include="PRODUCT.resx">
       <DependentUpon>PRODUCT.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PURCHASE ORDER DETAIL.resx">
+      <DependentUpon>PURCHASE ORDER DETAIL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PURCHASE ORDER MASTER.resx">
+      <DependentUpon>PURCHASE ORDER MASTER.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PURCHASE ORDER SELECTION.resx">
       <DependentUpon>PURCHASE ORDER SELECTION.vb</DependentUpon>
     </EmbeddedResource>
@@ -381,6 +400,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="cityDataSet.xsc">
       <DependentUpon>cityDataSet.xsd</DependentUpon>
     </None>

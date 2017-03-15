@@ -22,6 +22,7 @@ Partial Class RECEIVE_PAYMENT
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RECEIVE_PAYMENT))
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
@@ -49,7 +50,7 @@ Partial Class RECEIVE_PAYMENT
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(425, 96)
+        Me.TextBox5.Location = New System.Drawing.Point(393, 83)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(121, 20)
         Me.TextBox5.TabIndex = 34
@@ -57,7 +58,7 @@ Partial Class RECEIVE_PAYMENT
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(313, 96)
+        Me.Label8.Location = New System.Drawing.Point(305, 86)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(70, 13)
         Me.Label8.TabIndex = 33
@@ -65,7 +66,7 @@ Partial Class RECEIVE_PAYMENT
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(425, 62)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(393, 57)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(121, 20)
         Me.DateTimePicker1.TabIndex = 32
@@ -73,7 +74,7 @@ Partial Class RECEIVE_PAYMENT
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(313, 65)
+        Me.Label7.Location = New System.Drawing.Point(305, 60)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(75, 13)
         Me.Label7.TabIndex = 31
@@ -81,7 +82,7 @@ Partial Class RECEIVE_PAYMENT
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(425, 31)
+        Me.TextBox4.Location = New System.Drawing.Point(393, 31)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(121, 20)
         Me.TextBox4.TabIndex = 30
@@ -89,7 +90,7 @@ Partial Class RECEIVE_PAYMENT
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(313, 38)
+        Me.Label6.Location = New System.Drawing.Point(305, 34)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(62, 13)
         Me.Label6.TabIndex = 29
@@ -98,7 +99,7 @@ Partial Class RECEIVE_PAYMENT
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(78, 124)
+        Me.Label5.Location = New System.Drawing.Point(45, 112)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(50, 13)
         Me.Label5.TabIndex = 27
@@ -106,7 +107,7 @@ Partial Class RECEIVE_PAYMENT
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(176, 89)
+        Me.TextBox2.Location = New System.Drawing.Point(168, 83)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(121, 20)
         Me.TextBox2.TabIndex = 26
@@ -114,7 +115,7 @@ Partial Class RECEIVE_PAYMENT
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(78, 96)
+        Me.Label4.Location = New System.Drawing.Point(45, 86)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(103, 13)
         Me.Label4.TabIndex = 25
@@ -122,15 +123,17 @@ Partial Class RECEIVE_PAYMENT
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(176, 31)
+        Me.TextBox1.BackColor = System.Drawing.Color.White
+        Me.TextBox1.Location = New System.Drawing.Point(168, 31)
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(121, 20)
         Me.TextBox1.TabIndex = 24
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(176, 62)
+        Me.ComboBox1.Location = New System.Drawing.Point(168, 57)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox1.TabIndex = 23
@@ -138,7 +141,7 @@ Partial Class RECEIVE_PAYMENT
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(78, 70)
+        Me.Label3.Location = New System.Drawing.Point(45, 60)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(64, 13)
         Me.Label3.TabIndex = 22
@@ -147,7 +150,7 @@ Partial Class RECEIVE_PAYMENT
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(78, 38)
+        Me.Label2.Location = New System.Drawing.Point(45, 34)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(67, 13)
         Me.Label2.TabIndex = 21
@@ -165,14 +168,14 @@ Partial Class RECEIVE_PAYMENT
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(176, 121)
+        Me.ComboBox2.Location = New System.Drawing.Point(168, 109)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox2.TabIndex = 40
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(447, 167)
+        Me.Button5.Location = New System.Drawing.Point(402, 156)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 48
@@ -181,7 +184,7 @@ Partial Class RECEIVE_PAYMENT
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(342, 167)
+        Me.Button6.Location = New System.Drawing.Point(295, 156)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 23)
         Me.Button6.TabIndex = 47
@@ -190,7 +193,7 @@ Partial Class RECEIVE_PAYMENT
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(222, 167)
+        Me.Button7.Location = New System.Drawing.Point(188, 156)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 23)
         Me.Button7.TabIndex = 46
@@ -199,7 +202,7 @@ Partial Class RECEIVE_PAYMENT
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(102, 167)
+        Me.Button8.Location = New System.Drawing.Point(81, 156)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 23)
         Me.Button8.TabIndex = 45
@@ -208,7 +211,7 @@ Partial Class RECEIVE_PAYMENT
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(447, 219)
+        Me.Button4.Location = New System.Drawing.Point(402, 201)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 44
@@ -217,7 +220,7 @@ Partial Class RECEIVE_PAYMENT
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(342, 219)
+        Me.Button3.Location = New System.Drawing.Point(295, 201)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 43
@@ -226,7 +229,7 @@ Partial Class RECEIVE_PAYMENT
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(222, 219)
+        Me.Button2.Location = New System.Drawing.Point(188, 201)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 42
@@ -235,7 +238,7 @@ Partial Class RECEIVE_PAYMENT
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(102, 219)
+        Me.Button1.Location = New System.Drawing.Point(81, 201)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 41
@@ -246,7 +249,7 @@ Partial Class RECEIVE_PAYMENT
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(625, 302)
+        Me.ClientSize = New System.Drawing.Size(558, 250)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button7)
@@ -270,6 +273,8 @@ Partial Class RECEIVE_PAYMENT
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "RECEIVE_PAYMENT"

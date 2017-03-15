@@ -69,6 +69,15 @@ Public Class SALES_ORDER
     End Sub
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         'SAVE BUTTON
+
+        If ComboBox1.Items.IndexOf(ComboBox1.Text) = -1 Then
+            MsgBox("Select correct customer name.", MsgBoxStyle.Exclamation)
+            ComboBox1.Focus()
+            Exit Sub
+        End If
+
+
+
         If addmodd = True Then
             Dim i As Integer
             cmd.CommandText = "select CUSTOMER_ID from CUSTOMER WHERE CUSTOMER_NAME LIKE'" & ComboBox1.SelectedItem.ToString & "'"
@@ -158,6 +167,23 @@ Public Class SALES_ORDER
 
     Private Sub Button12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button12.Click
         'INSERT BUTTON SALES ORDER DETAILS
+
+
+        If ComboBox2.Items.IndexOf(ComboBox2.Text) = -1 Then
+            MsgBox("Select correct Product name.", MsgBoxStyle.Exclamation)
+            ComboBox2.Focus()
+            Exit Sub
+        End If
+        If ComboBox3.Items.IndexOf(ComboBox3.Text) = -1 Then
+            MsgBox("Select correct UOM.", MsgBoxStyle.Exclamation)
+            ComboBox3.Focus()
+            Exit Sub
+        End If
+
+
+
+
+
         Dim proid As Integer    'Product ID
         cmd.CommandText = "select Product_id from PRODUCT where Product_name='" & ComboBox2.Text & "'"
         cmd.Connection = Login.cn
@@ -250,4 +276,14 @@ Public Class SALES_ORDER
     Private Sub Button10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button10.Click
         Me.Close()
     End Sub
+
+    Private Sub TextBox6_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox6.KeyPress
+        If e.KeyChar = vbBack Then Exit Sub 'BackSpace
+
+        If Not (e.KeyChar) Like "[0-9]" Then  'not 0-9 then ignore
+            e.Handled = True
+        End If
+    End Sub
+
+    
 End Class

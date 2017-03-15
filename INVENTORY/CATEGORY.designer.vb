@@ -57,7 +57,7 @@ Partial Class CATEGORY
         Me.GroupBox2.Controls.Add(Me.DataGridView1)
         Me.GroupBox2.Controls.Add(Me.TextBox9)
         Me.GroupBox2.Controls.Add(Me.Label10)
-        Me.GroupBox2.Location = New System.Drawing.Point(23, 255)
+        Me.GroupBox2.Location = New System.Drawing.Point(23, 246)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(474, 202)
         Me.GroupBox2.TabIndex = 44
@@ -130,7 +130,7 @@ Partial Class CATEGORY
         Me.GroupBox1.Controls.Add(Me.Button5)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Location = New System.Drawing.Point(23, 167)
+        Me.GroupBox1.Location = New System.Drawing.Point(23, 152)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(474, 77)
         Me.GroupBox1.TabIndex = 43
@@ -175,7 +175,7 @@ Partial Class CATEGORY
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(341, 131)
+        Me.Button2.Location = New System.Drawing.Point(341, 123)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 42
@@ -184,7 +184,7 @@ Partial Class CATEGORY
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(241, 131)
+        Me.Button1.Location = New System.Drawing.Point(241, 123)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 41
@@ -248,6 +248,7 @@ Partial Class CATEGORY
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False

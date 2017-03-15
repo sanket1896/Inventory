@@ -62,6 +62,32 @@ Public Class SALES
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         'SAVE BUTTON
+
+        If ComboBox1.Items.IndexOf(ComboBox1.Text) = -1 Then
+
+            MsgBox("Select correct Sales Order ID.", MsgBoxStyle.Exclamation)
+            ComboBox1.Focus()
+            Exit Sub
+        End If
+
+
+        If TextBox3.Text = "" Then
+            MsgBox("Enter Correct value.", MsgBoxStyle.Exclamation)
+            TextBox3.Focus()
+            Exit Sub
+        End If
+        If TextBox4.Text = "" Then
+            MsgBox("Enter Correct value.", MsgBoxStyle.Exclamation)
+            TextBox4.Focus()
+            Exit Sub
+        End If
+        If TextBox5.Text = "" Then
+            MsgBox("Enter Correct value.", MsgBoxStyle.Exclamation)
+            TextBox5.Focus()
+            Exit Sub
+        End If
+
+
         If addmodd = True Then
             Try
                 Dim dr As DataRow = ds.Tables(0).Rows.Add
@@ -122,6 +148,23 @@ Public Class SALES
 
     Private Sub Button12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button12.Click
         'INSERT BUTTON FROM PURCHASE DETAILS SECTION
+
+        If ComboBox2.Items.IndexOf(ComboBox2.Text) = -1 Then
+            MsgBox("Select Product Name.", MsgBoxStyle.Exclamation)
+            ComboBox2.Focus()
+            Exit Sub
+        End If
+
+        If TextBox6.Text = "" Then
+            MsgBox("Enter Quantity.", MsgBoxStyle.OkOnly, "INVENTORY")
+            Exit Sub
+        End If
+        If TextBox7.Text = "" Then
+            MsgBox("Enter Price.", MsgBoxStyle.OkOnly, "INVENTORY")
+            Exit Sub
+        End If
+
+
         Try
             Dim proid As Integer    'PRODUCT_ID
             cmd.CommandText = "select Product_id from PRODUCT where Product_name='" & ComboBox2.Text & "'"
@@ -218,5 +261,14 @@ Public Class SALES
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+    End Sub
+
+   
+    Private Sub TextBox3_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox3.KeyPress, TextBox4.KeyPress, TextBox5.KeyPress, TextBox6.KeyPress, TextBox7.KeyPress
+        If e.KeyChar = vbBack Then Exit Sub 'BackSpace
+
+        If Not (e.KeyChar) Like "[0-9]" Then  'not 0-9 then ignore
+            e.Handled = True
+        End If
     End Sub
 End Class

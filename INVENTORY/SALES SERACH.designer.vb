@@ -22,6 +22,7 @@ Partial Class SALES_SERACH
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SALES_SERACH))
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
@@ -33,7 +34,7 @@ Partial Class SALES_SERACH
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(245, 286)
+        Me.Button3.Location = New System.Drawing.Point(218, 311)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 17
@@ -42,7 +43,7 @@ Partial Class SALES_SERACH
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(33, 286)
+        Me.Button1.Location = New System.Drawing.Point(91, 311)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 15
@@ -52,14 +53,14 @@ Partial Class SALES_SERACH
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(16, 169)
+        Me.DataGridView1.Location = New System.Drawing.Point(16, 66)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(358, 87)
+        Me.DataGridView1.Size = New System.Drawing.Size(358, 239)
         Me.DataGridView1.TabIndex = 14
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(186, 66)
+        Me.TextBox1.Location = New System.Drawing.Point(182, 40)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(151, 20)
         Me.TextBox1.TabIndex = 13
@@ -76,7 +77,7 @@ Partial Class SALES_SERACH
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(52, 69)
+        Me.Label2.Location = New System.Drawing.Point(48, 43)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(102, 13)
         Me.Label2.TabIndex = 18
@@ -93,6 +94,8 @@ Partial Class SALES_SERACH
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "SALES_SERACH"

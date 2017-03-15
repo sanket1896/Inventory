@@ -22,6 +22,7 @@ Partial Class SALES_RETURN
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SALES_RETURN))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button12 = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -63,7 +64,7 @@ Partial Class SALES_RETURN
         '
         'Button12
         '
-        Me.Button12.Location = New System.Drawing.Point(385, 83)
+        Me.Button12.Location = New System.Drawing.Point(421, 99)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(75, 23)
         Me.Button12.TabIndex = 13
@@ -73,7 +74,7 @@ Partial Class SALES_RETURN
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(325, 35)
+        Me.Label12.Location = New System.Drawing.Point(5, 70)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(122, 13)
         Me.Label12.TabIndex = 11
@@ -81,7 +82,7 @@ Partial Class SALES_RETURN
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(325, 37)
+        Me.Button6.Location = New System.Drawing.Point(368, 30)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 23)
         Me.Button6.TabIndex = 3
@@ -90,7 +91,7 @@ Partial Class SALES_RETURN
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(218, 37)
+        Me.Button5.Location = New System.Drawing.Point(261, 30)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 2
@@ -99,14 +100,14 @@ Partial Class SALES_RETURN
         '
         'DateTimePicker2
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(478, 34)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(133, 64)
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(131, 20)
         Me.DateTimePicker2.TabIndex = 14
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(258, 35)
+        Me.TextBox6.Location = New System.Drawing.Point(354, 33)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(61, 20)
         Me.TextBox6.TabIndex = 10
@@ -114,7 +115,7 @@ Partial Class SALES_RETURN
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(190, 38)
+        Me.Label11.Location = New System.Drawing.Point(283, 36)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(62, 13)
         Me.Label11.TabIndex = 9
@@ -125,12 +126,12 @@ Partial Class SALES_RETURN
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Location = New System.Drawing.Point(109, 33)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(74, 21)
+        Me.ComboBox2.Size = New System.Drawing.Size(155, 21)
         Me.ComboBox2.TabIndex = 8
         '
         'Button10
         '
-        Me.Button10.Location = New System.Drawing.Point(385, 141)
+        Me.Button10.Location = New System.Drawing.Point(421, 157)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(75, 23)
         Me.Button10.TabIndex = 6
@@ -140,9 +141,9 @@ Partial Class SALES_RETURN
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(27, 67)
+        Me.DataGridView1.Location = New System.Drawing.Point(8, 90)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(326, 68)
+        Me.DataGridView1.Size = New System.Drawing.Size(407, 130)
         Me.DataGridView1.TabIndex = 2
         '
         'GroupBox2
@@ -157,16 +158,16 @@ Partial Class SALES_RETURN
         Me.GroupBox2.Controls.Add(Me.Button8)
         Me.GroupBox2.Controls.Add(Me.DataGridView1)
         Me.GroupBox2.Controls.Add(Me.Label10)
-        Me.GroupBox2.Location = New System.Drawing.Point(31, 290)
+        Me.GroupBox2.Location = New System.Drawing.Point(14, 246)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(619, 191)
+        Me.GroupBox2.Size = New System.Drawing.Size(502, 226)
         Me.GroupBox2.TabIndex = 60
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "PURCHASE RETURN DETAIL INFORMATION"
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(385, 112)
+        Me.Button8.Location = New System.Drawing.Point(421, 128)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 23)
         Me.Button8.TabIndex = 4
@@ -184,7 +185,7 @@ Partial Class SALES_RETURN
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(16, 37)
+        Me.Button7.Location = New System.Drawing.Point(59, 30)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 23)
         Me.Button7.TabIndex = 0
@@ -197,16 +198,16 @@ Partial Class SALES_RETURN
         Me.GroupBox1.Controls.Add(Me.Button5)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button7)
-        Me.GroupBox1.Location = New System.Drawing.Point(50, 207)
+        Me.GroupBox1.Location = New System.Drawing.Point(14, 169)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(412, 77)
+        Me.GroupBox1.Size = New System.Drawing.Size(502, 71)
         Me.GroupBox1.TabIndex = 59
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "NEVIGATION BUTTONS"
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(113, 37)
+        Me.Button4.Location = New System.Drawing.Point(156, 30)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 1
@@ -215,7 +216,7 @@ Partial Class SALES_RETURN
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(271, 161)
+        Me.Button2.Location = New System.Drawing.Point(281, 140)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 57
@@ -224,7 +225,7 @@ Partial Class SALES_RETURN
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(163, 161)
+        Me.Button1.Location = New System.Drawing.Point(174, 140)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 56
@@ -233,15 +234,15 @@ Partial Class SALES_RETURN
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(238, 116)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(254, 104)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(169, 20)
         Me.DateTimePicker1.TabIndex = 55
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(73, 114)
+        Me.Label4.Location = New System.Drawing.Point(108, 110)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(122, 13)
         Me.Label4.TabIndex = 54
@@ -250,15 +251,15 @@ Partial Class SALES_RETURN
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(238, 87)
+        Me.ComboBox1.Location = New System.Drawing.Point(254, 75)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(200, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(169, 21)
         Me.ComboBox1.TabIndex = 53
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(70, 87)
+        Me.Label3.Location = New System.Drawing.Point(108, 78)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(80, 13)
         Me.Label3.TabIndex = 52
@@ -266,15 +267,15 @@ Partial Class SALES_RETURN
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(238, 58)
+        Me.TextBox1.Location = New System.Drawing.Point(254, 46)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(200, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(169, 20)
         Me.TextBox1.TabIndex = 51
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(70, 61)
+        Me.Label2.Location = New System.Drawing.Point(108, 49)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(64, 13)
         Me.Label2.TabIndex = 50
@@ -284,7 +285,7 @@ Partial Class SALES_RETURN
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(669, 502)
+        Me.ClientSize = New System.Drawing.Size(530, 481)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -296,6 +297,8 @@ Partial Class SALES_RETURN
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "SALES_RETURN"

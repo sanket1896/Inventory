@@ -22,6 +22,7 @@ Partial Class PURCHASE_ORDER_DETAIL
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PURCHASE_ORDER_DETAIL))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Button12 = New System.Windows.Forms.Button()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
@@ -104,6 +105,8 @@ Partial Class PURCHASE_ORDER_DETAIL
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(426, 220)
         Me.Controls.Add(Me.GroupBox2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "PURCHASE_ORDER_DETAIL"
         Me.Text = "PURCHASE_ORDER_DETAIL"
         Me.GroupBox2.ResumeLayout(False)

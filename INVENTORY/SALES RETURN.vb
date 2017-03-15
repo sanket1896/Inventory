@@ -64,6 +64,16 @@ Public Class SALES_RETURN
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         'SAVE BUTTON CLICK
+
+        If ComboBox1.Items.IndexOf(ComboBox1.Text) = -1 Then
+            MsgBox("Select correct Purchase ID.", MsgBoxStyle.Exclamation)
+            ComboBox1.Focus()
+            Exit Sub
+        End If
+
+
+
+
         cmd.CommandText = "select SALES_date from SALES_MASTER where INVOICE_id='" & ComboBox1.SelectedItem.ToString & "'"
         cmd.Connection = Login.cn
         Dim str As Date
@@ -151,6 +161,21 @@ Public Class SALES_RETURN
 
     Private Sub Button12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button12.Click
         'INSERT BUTTON OF PURCHASE RETURN SECTION
+
+        If ComboBox2.Items.IndexOf(ComboBox2.Text) = -1 Then
+            MsgBox("Select correct Product name.", MsgBoxStyle.Exclamation)
+            ComboBox2.Focus()
+            Exit Sub
+        End If
+
+        If TextBox6.Text = "" Then
+            MsgBox("Enter Quantity.")
+            TextBox6.Focus()
+
+        End If
+
+
+
         Dim proid As Integer
         cmd.CommandText = "select PRODUCT_id from PRODUCT where PRODUCT_name='" & ComboBox2.SelectedItem & "'"
         cmd.Connection = Login.cn
@@ -238,5 +263,13 @@ Public Class SALES_RETURN
         Catch ex As Exception
             MsgBox("Record Can Not be Updated... It Has Reference Records ", MsgBoxStyle.OkOnly, "INVENTORY")
         End Try
+    End Sub
+
+    Private Sub TextBox6_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox6.KeyPress
+        If e.KeyChar = vbBack Then Exit Sub 'BackSpace
+
+        If Not (e.KeyChar) Like "[0-9]" Then  'not 0-9 then ignore
+            e.Handled = True
+        End If
     End Sub
 End Class

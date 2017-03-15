@@ -44,6 +44,8 @@ Partial Class NEELKANTH_ENTERPRISE
         Me.UOMToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem11 = New System.Windows.Forms.ToolStripSeparator()
         Me.StatusToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PaidPaymentToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReceivePaymentToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.TRANSACTIONToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem12 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PurchaseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -75,8 +77,6 @@ Partial Class NEELKANTH_ENTERPRISE
         Me.CalculatorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NotepadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExplorerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PaidPaymentToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ReceivePaymentToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -226,6 +226,18 @@ Partial Class NEELKANTH_ENTERPRISE
         Me.StatusToolStripMenuItem1.Name = "StatusToolStripMenuItem1"
         Me.StatusToolStripMenuItem1.Size = New System.Drawing.Size(184, 42)
         Me.StatusToolStripMenuItem1.Text = "Status"
+        '
+        'PaidPaymentToolStripMenuItem1
+        '
+        Me.PaidPaymentToolStripMenuItem1.Name = "PaidPaymentToolStripMenuItem1"
+        Me.PaidPaymentToolStripMenuItem1.Size = New System.Drawing.Size(184, 42)
+        Me.PaidPaymentToolStripMenuItem1.Text = "Paid Payment"
+        '
+        'ReceivePaymentToolStripMenuItem1
+        '
+        Me.ReceivePaymentToolStripMenuItem1.Name = "ReceivePaymentToolStripMenuItem1"
+        Me.ReceivePaymentToolStripMenuItem1.Size = New System.Drawing.Size(184, 42)
+        Me.ReceivePaymentToolStripMenuItem1.Text = "Receive Payment"
         '
         'TRANSACTIONToolStripMenuItem
         '
@@ -415,7 +427,7 @@ Partial Class NEELKANTH_ENTERPRISE
         Me.CalculatorToolStripMenuItem.Image = Global.INVENTORY.My.Resources.Resources.Calculator
         Me.CalculatorToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.CalculatorToolStripMenuItem.Name = "CalculatorToolStripMenuItem"
-        Me.CalculatorToolStripMenuItem.Size = New System.Drawing.Size(172, 42)
+        Me.CalculatorToolStripMenuItem.Size = New System.Drawing.Size(148, 42)
         Me.CalculatorToolStripMenuItem.Text = "Calculator"
         '
         'NotepadToolStripMenuItem
@@ -423,7 +435,7 @@ Partial Class NEELKANTH_ENTERPRISE
         Me.NotepadToolStripMenuItem.Image = Global.INVENTORY.My.Resources.Resources.To_do_list
         Me.NotepadToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.NotepadToolStripMenuItem.Name = "NotepadToolStripMenuItem"
-        Me.NotepadToolStripMenuItem.Size = New System.Drawing.Size(172, 42)
+        Me.NotepadToolStripMenuItem.Size = New System.Drawing.Size(148, 42)
         Me.NotepadToolStripMenuItem.Text = "Notepad"
         '
         'ExplorerToolStripMenuItem
@@ -431,20 +443,8 @@ Partial Class NEELKANTH_ENTERPRISE
         Me.ExplorerToolStripMenuItem.Image = Global.INVENTORY.My.Resources.Resources.Folder_Open
         Me.ExplorerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ExplorerToolStripMenuItem.Name = "ExplorerToolStripMenuItem"
-        Me.ExplorerToolStripMenuItem.Size = New System.Drawing.Size(172, 42)
+        Me.ExplorerToolStripMenuItem.Size = New System.Drawing.Size(148, 42)
         Me.ExplorerToolStripMenuItem.Text = "Explorer"
-        '
-        'PaidPaymentToolStripMenuItem1
-        '
-        Me.PaidPaymentToolStripMenuItem1.Name = "PaidPaymentToolStripMenuItem1"
-        Me.PaidPaymentToolStripMenuItem1.Size = New System.Drawing.Size(184, 42)
-        Me.PaidPaymentToolStripMenuItem1.Text = "Paid Payment"
-        '
-        'ReceivePaymentToolStripMenuItem1
-        '
-        Me.ReceivePaymentToolStripMenuItem1.Name = "ReceivePaymentToolStripMenuItem1"
-        Me.ReceivePaymentToolStripMenuItem1.Size = New System.Drawing.Size(184, 42)
-        Me.ReceivePaymentToolStripMenuItem1.Text = "Receive Payment"
         '
         'NEELKANTH_ENTERPRISE
         '

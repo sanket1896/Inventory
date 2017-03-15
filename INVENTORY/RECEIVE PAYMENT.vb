@@ -87,6 +87,33 @@ Public Class RECEIVE_PAYMENT
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         'SAVE BUTTON
+
+
+        If ComboBox1.Items.IndexOf(ComboBox1.Text) = -1 Then
+            MsgBox("Select correct Receive ID.", MsgBoxStyle.Exclamation)
+            ComboBox1.Focus()
+            Exit Sub
+        End If
+
+        If ComboBox1.Text = "" Then
+            MsgBox("Select Receive ID.", MsgBoxStyle.OkOnly, "INVENTORY")
+            Exit Sub
+        End If
+
+
+        If ComboBox2.Items.IndexOf(ComboBox2.Text) = -1 Then
+            MsgBox("Select correct Status.", MsgBoxStyle.Exclamation)
+            ComboBox2.Focus()
+            Exit Sub
+        End If
+
+        If ComboBox2.Text = "" Then
+            MsgBox("Select Status.", MsgBoxStyle.OkOnly, "INVENTORY")
+            Exit Sub
+        End If
+
+
+
         If addmodd = True Then
             Try
 
@@ -132,4 +159,11 @@ Public Class RECEIVE_PAYMENT
         End Try
     End Sub
 
+    Private Sub TextBox2_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox2.KeyPress
+        If e.KeyChar = vbBack Then Exit Sub 'BackSpace
+
+        If Not (e.KeyChar) Like "[0-9]" Then  'not 0-9 then ignore
+            e.Handled = True
+        End If
+    End Sub
 End Class

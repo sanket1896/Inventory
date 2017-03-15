@@ -1,5 +1,5 @@
 ﻿Imports System.Data.SqlClient
-Public Class PURCHASE_ORDER
+Public Class PURCHASE_ORDER_MASTER
     Dim da As New SqlDataAdapter("SELECT * FROM PURCHASE_ORDER_MASTER", Login.cn)
     Dim da1 As New SqlDataAdapter("SELECT * FROM SUPPLIER", Login.cn)
     Dim da2 As New SqlDataAdapter("SELECT * FROM PRODUCT", Login.cn)
@@ -33,7 +33,7 @@ Public Class PURCHASE_ORDER
 
         Dim sid As Integer
         sid = ds.Tables(0).Rows(rpos).Item(2).ToString
-        
+
         Dim sname As String
         cmd.CommandText = "SELECT SUPPLIER_NAME FROM SUPPLIER WHERE SUPPLIER_ID=" & sid
         cmd.Connection = Login.cn

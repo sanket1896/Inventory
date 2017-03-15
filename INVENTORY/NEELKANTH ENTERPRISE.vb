@@ -136,4 +136,22 @@
         myChild.Show()
 
     End Sub
+
+    Private Sub PurchaseReturnToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PurchaseReturnToolStripMenuItem.Click
+        Dim myChild As New PURCHASE_RETURN
+        myChild.MdiParent = Me
+        myChild.Show()
+    End Sub
+
+    Private Sub SalesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SalesToolStripMenuItem.Click
+        Dim myChild As New SALES
+        myChild.MdiParent = Me
+        myChild.Show()
+    End Sub
+
+    Private Sub SalesToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SalesToolStripMenuItem1.Click
+        Dim myChild As New SALES_RETURN
+        myChild.MdiParent = Me
+        myChild.Show()
+    End Sub
 End Class
