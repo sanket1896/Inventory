@@ -65,11 +65,18 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -246,6 +253,95 @@
     <Compile Include="RECEIVE PAYMENT.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ReportDataset.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CustomerReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CustomerRep.Designer.vb">
+      <DependentUpon>CustomerRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CustomerRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ProductCategoryRep.Designer.vb">
+      <DependentUpon>ProductCategoryRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ProductCategoryRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ProductCategoryReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductCategoryReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ProductRep.Designer.vb">
+      <DependentUpon>ProductRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ProductRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ProductReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\PurchaseRep.Designer.vb">
+      <DependentUpon>PurchaseRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PurchaseRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\PurchaseReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\PurchaseReturnRep.Designer.vb">
+      <DependentUpon>PurchaseReturnRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PurchaseReturnRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\PurchaseReturnReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PurchaseReturnReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SalesRep.Designer.vb">
+      <DependentUpon>SalesRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SalesRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\SalesReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SalesReturnRep.Designer.vb">
+      <DependentUpon>SalesReturnRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SalesReturnRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\SalesReturnReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesReturnReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="SALES ORDER SEARCH.designer.vb">
       <DependentUpon>SALES ORDER SEARCH.vb</DependentUpon>
     </Compile>
@@ -371,6 +467,55 @@
     <EmbeddedResource Include="RECEIVE PAYMENT.resx">
       <DependentUpon>RECEIVE PAYMENT.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CustomerReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CustomerReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CustomerRep.resx">
+      <DependentUpon>CustomerRep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ProductCategoryRep.resx">
+      <DependentUpon>ProductCategoryRep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ProductCategoryReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProductCategoryReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ProductRep.resx">
+      <DependentUpon>ProductRep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ProductReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProductReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PurchaseRep.resx">
+      <DependentUpon>PurchaseRep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PurchaseReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PurchaseReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PurchaseReturnRep.resx">
+      <DependentUpon>PurchaseReturnRep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PurchaseReturnReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PurchaseReturnReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SalesRep.resx">
+      <DependentUpon>SalesRep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SalesReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalesReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SalesReturnRep.resx">
+      <DependentUpon>SalesReturnRep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SalesReturnReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalesReturnReport.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="SALES ORDER SEARCH.resx">
       <DependentUpon>SALES ORDER SEARCH.vb</DependentUpon>
     </EmbeddedResource>
@@ -445,6 +590,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="ReportDataset.xsc">
+      <DependentUpon>ReportDataset.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportDataset.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ReportDataset.xss">
+      <DependentUpon>ReportDataset.xsd</DependentUpon>
+    </None>
     <None Include="Resources\Company.png" />
   </ItemGroup>
   <ItemGroup>
@@ -553,6 +709,9 @@
       <ProductName>Windows Installer 4.5</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
