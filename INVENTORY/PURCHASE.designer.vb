@@ -96,6 +96,7 @@ Partial Class PURCHASE
         'TextBox7
         '
         Me.TextBox7.Location = New System.Drawing.Point(455, 24)
+        Me.TextBox7.MaxLength = 7
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(100, 20)
         Me.TextBox7.TabIndex = 12
@@ -112,6 +113,7 @@ Partial Class PURCHASE
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(332, 24)
+        Me.TextBox6.MaxLength = 4
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(61, 20)
         Me.TextBox6.TabIndex = 10
@@ -220,6 +222,7 @@ Partial Class PURCHASE
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(441, 113)
+        Me.TextBox5.MaxLength = 7
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(123, 20)
         Me.TextBox5.TabIndex = 64
@@ -236,6 +239,7 @@ Partial Class PURCHASE
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(441, 87)
+        Me.TextBox4.MaxLength = 2
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(123, 20)
         Me.TextBox4.TabIndex = 62
@@ -252,6 +256,7 @@ Partial Class PURCHASE
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(441, 61)
+        Me.TextBox3.MaxLength = 2
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(123, 20)
         Me.TextBox3.TabIndex = 60
@@ -296,7 +301,7 @@ Partial Class PURCHASE
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(69, 23)
         Me.Button2.TabIndex = 55
-        Me.Button2.Text = "SAVE"
+        Me.Button2.Text = "INSERT"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
@@ -305,7 +310,7 @@ Partial Class PURCHASE
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(69, 23)
         Me.Button1.TabIndex = 54
-        Me.Button1.Text = "INSERT"
+        Me.Button1.Text = "ADD"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox1
@@ -356,6 +361,7 @@ Partial Class PURCHASE
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(180, 87)
+        Me.TextBox2.MaxLength = 30
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(123, 20)
         Me.TextBox2.TabIndex = 68
@@ -363,6 +369,7 @@ Partial Class PURCHASE
         'TextBox8
         '
         Me.TextBox8.Location = New System.Drawing.Point(441, 36)
+        Me.TextBox8.MaxLength = 7
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(123, 20)
         Me.TextBox8.TabIndex = 70

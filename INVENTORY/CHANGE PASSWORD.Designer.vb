@@ -91,21 +91,27 @@ Partial Class CHANGE_PASSWORD
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(211, 80)
+        Me.TextBox1.MaxLength = 30
         Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.TextBox1.Size = New System.Drawing.Size(132, 20)
         Me.TextBox1.TabIndex = 6
         '
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(211, 121)
+        Me.TextBox2.MaxLength = 30
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.TextBox2.Size = New System.Drawing.Size(132, 20)
         Me.TextBox2.TabIndex = 7
         '
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(211, 164)
+        Me.TextBox3.MaxLength = 30
         Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.TextBox3.Size = New System.Drawing.Size(132, 20)
         Me.TextBox3.TabIndex = 8
         '

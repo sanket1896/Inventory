@@ -1,10 +1,10 @@
 ﻿Imports System.Data.SqlClient
 
-Public Class Form1
+Public Class CustomerRep
     Dim cmd As New SqlCommand
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-
+        Me.WindowState = FormWindowState.Maximized
         SqlDataAdapter1.Fill(ReportDataset1, "Customer")
         Dim cr1 As New CustomerReport
         cr1.SetDataSource(ReportDataset1.Tables(0))
@@ -36,7 +36,7 @@ Public Class Form1
         dr1.Close()
     End Sub
 
-   
+
     Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox1.SelectedIndexChanged
         Dim ds3 As New DataSet
         Dim da2 As New SqlClient.SqlDataAdapter("SELECT CUSTOMER.Customer_name,CUSTOMER.Address, CITY.City_name,  CUSTOMER.Area,CUSTOMER.TIN_NO, CUSTOMER.Mobile_number,CUSTOMER.Email_id FROM CUSTOMER INNER JOIN  CITY ON CUSTOMER.City_id = CITY.City_id where City_name='" & ComboBox1.SelectedItem.ToString & "'", Login.cn)

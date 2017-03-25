@@ -173,7 +173,7 @@ Partial Class STATE
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 22
-        Me.Button2.Text = "SAVE"
+        Me.Button2.Text = "INSERT"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
@@ -182,13 +182,14 @@ Partial Class STATE
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 21
-        Me.Button1.Text = "INSERT"
+        Me.Button1.Text = "ADD"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox2
         '
         Me.TextBox2.BackColor = System.Drawing.Color.White
         Me.TextBox2.Location = New System.Drawing.Point(218, 68)
+        Me.TextBox2.MaxLength = 30
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
         Me.TextBox2.Size = New System.Drawing.Size(138, 20)

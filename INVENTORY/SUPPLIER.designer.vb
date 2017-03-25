@@ -199,6 +199,7 @@ Partial Class SUPPLIER
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(172, 52)
+        Me.TextBox2.MaxLength = 30
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(144, 20)
         Me.TextBox2.TabIndex = 14
@@ -207,6 +208,7 @@ Partial Class SUPPLIER
         '
         Me.TextBox3.BackColor = System.Drawing.Color.White
         Me.TextBox3.Location = New System.Drawing.Point(172, 75)
+        Me.TextBox3.MaxLength = 30
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(144, 20)
@@ -215,6 +217,7 @@ Partial Class SUPPLIER
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(172, 98)
+        Me.TextBox4.MaxLength = 30
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(144, 20)
         Me.TextBox4.TabIndex = 16
@@ -222,6 +225,7 @@ Partial Class SUPPLIER
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(172, 121)
+        Me.TextBox5.MaxLength = 30
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(144, 20)
         Me.TextBox5.TabIndex = 17
@@ -229,6 +233,7 @@ Partial Class SUPPLIER
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(479, 121)
+        Me.TextBox6.MaxLength = 50
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(144, 20)
         Me.TextBox6.TabIndex = 22
@@ -236,6 +241,7 @@ Partial Class SUPPLIER
         'TextBox7
         '
         Me.TextBox7.Location = New System.Drawing.Point(479, 98)
+        Me.TextBox7.MaxLength = 15
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(144, 20)
         Me.TextBox7.TabIndex = 21
@@ -243,6 +249,7 @@ Partial Class SUPPLIER
         'TextBox8
         '
         Me.TextBox8.Location = New System.Drawing.Point(479, 75)
+        Me.TextBox8.MaxLength = 11
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(144, 20)
         Me.TextBox8.TabIndex = 20
@@ -250,6 +257,7 @@ Partial Class SUPPLIER
         'TextBox9
         '
         Me.TextBox9.Location = New System.Drawing.Point(479, 52)
+        Me.TextBox9.MaxLength = 16
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(144, 20)
         Me.TextBox9.TabIndex = 19
@@ -257,6 +265,7 @@ Partial Class SUPPLIER
         'TextBox10
         '
         Me.TextBox10.Location = New System.Drawing.Point(479, 29)
+        Me.TextBox10.MaxLength = 6
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(144, 20)
         Me.TextBox10.TabIndex = 18
@@ -267,7 +276,7 @@ Partial Class SUPPLIER
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 23
-        Me.Button1.Text = "INSERT"
+        Me.Button1.Text = "ADD"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
@@ -276,7 +285,7 @@ Partial Class SUPPLIER
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 24
-        Me.Button2.Text = "SAVE"
+        Me.Button2.Text = "INSERT"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'GroupBox1

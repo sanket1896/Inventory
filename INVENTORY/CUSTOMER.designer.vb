@@ -212,7 +212,7 @@ Partial Class CUSTOMER
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 51
-        Me.Button2.Text = "SAVE"
+        Me.Button2.Text = "INSERT"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
@@ -221,12 +221,13 @@ Partial Class CUSTOMER
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 50
-        Me.Button1.Text = "INSERT"
+        Me.Button1.Text = "ADD"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(504, 110)
+        Me.TextBox6.MaxLength = 50
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(144, 20)
         Me.TextBox6.TabIndex = 49
@@ -234,6 +235,7 @@ Partial Class CUSTOMER
         'TextBox7
         '
         Me.TextBox7.Location = New System.Drawing.Point(504, 87)
+        Me.TextBox7.MaxLength = 15
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(144, 20)
         Me.TextBox7.TabIndex = 48
@@ -241,6 +243,7 @@ Partial Class CUSTOMER
         'TextBox8
         '
         Me.TextBox8.Location = New System.Drawing.Point(504, 65)
+        Me.TextBox8.MaxLength = 11
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(144, 20)
         Me.TextBox8.TabIndex = 47
@@ -248,6 +251,7 @@ Partial Class CUSTOMER
         'TextBox9
         '
         Me.TextBox9.Location = New System.Drawing.Point(504, 42)
+        Me.TextBox9.MaxLength = 16
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(144, 20)
         Me.TextBox9.TabIndex = 46
@@ -255,6 +259,7 @@ Partial Class CUSTOMER
         'TextBox10
         '
         Me.TextBox10.Location = New System.Drawing.Point(504, 19)
+        Me.TextBox10.MaxLength = 6
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(144, 20)
         Me.TextBox10.TabIndex = 45
@@ -262,6 +267,7 @@ Partial Class CUSTOMER
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(179, 117)
+        Me.TextBox5.MaxLength = 30
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(144, 20)
         Me.TextBox5.TabIndex = 44
@@ -269,6 +275,7 @@ Partial Class CUSTOMER
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(179, 94)
+        Me.TextBox4.MaxLength = 30
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(144, 20)
         Me.TextBox4.TabIndex = 43
@@ -276,6 +283,7 @@ Partial Class CUSTOMER
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(179, 72)
+        Me.TextBox3.MaxLength = 30
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(144, 20)
         Me.TextBox3.TabIndex = 42
@@ -283,6 +291,7 @@ Partial Class CUSTOMER
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(179, 49)
+        Me.TextBox2.MaxLength = 30
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(144, 20)
         Me.TextBox2.TabIndex = 41

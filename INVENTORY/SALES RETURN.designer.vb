@@ -108,6 +108,7 @@ Partial Class SALES_RETURN
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(354, 33)
+        Me.TextBox6.MaxLength = 4
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(61, 20)
         Me.TextBox6.TabIndex = 10
@@ -220,7 +221,7 @@ Partial Class SALES_RETURN
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 57
-        Me.Button2.Text = "SAVE"
+        Me.Button2.Text = "INSERT"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
@@ -229,7 +230,7 @@ Partial Class SALES_RETURN
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 56
-        Me.Button1.Text = "INSERT"
+        Me.Button1.Text = "ADD"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'DateTimePicker1

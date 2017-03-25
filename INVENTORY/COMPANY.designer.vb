@@ -105,6 +105,7 @@ Partial Class COMPANY
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(222, 79)
+        Me.TextBox2.MaxLength = 20
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(135, 20)
         Me.TextBox2.TabIndex = 4
@@ -130,6 +131,7 @@ Partial Class COMPANY
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(222, 107)
+        Me.TextBox3.MaxLength = 20
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(135, 20)
         Me.TextBox3.TabIndex = 8
@@ -155,6 +157,7 @@ Partial Class COMPANY
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(222, 194)
+        Me.TextBox6.MaxLength = 16
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(135, 20)
         Me.TextBox6.TabIndex = 13
@@ -198,6 +201,7 @@ Partial Class COMPANY
         'TextBox7
         '
         Me.TextBox7.Location = New System.Drawing.Point(222, 225)
+        Me.TextBox7.MaxLength = 11
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(135, 20)
         Me.TextBox7.TabIndex = 18
@@ -205,6 +209,7 @@ Partial Class COMPANY
         'TextBox8
         '
         Me.TextBox8.Location = New System.Drawing.Point(222, 255)
+        Me.TextBox8.MaxLength = 15
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(135, 20)
         Me.TextBox8.TabIndex = 19
@@ -212,6 +217,7 @@ Partial Class COMPANY
         'TextBox9
         '
         Me.TextBox9.Location = New System.Drawing.Point(222, 285)
+        Me.TextBox9.MaxLength = 50
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(135, 20)
         Me.TextBox9.TabIndex = 20
@@ -307,6 +313,7 @@ Partial Class COMPANY
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(222, 133)
+        Me.TextBox4.MaxLength = 15
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(135, 20)
         Me.TextBox4.TabIndex = 26
@@ -314,6 +321,7 @@ Partial Class COMPANY
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(222, 163)
+        Me.TextBox5.MaxLength = 6
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(135, 20)
         Me.TextBox5.TabIndex = 27

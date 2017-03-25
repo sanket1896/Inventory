@@ -86,6 +86,7 @@ Partial Class COUNTRY
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(238, 82)
+        Me.TextBox2.MaxLength = 30
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(138, 20)
         Me.TextBox2.TabIndex = 4
@@ -96,7 +97,7 @@ Partial Class COUNTRY
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 5
-        Me.Button1.Text = "INSERT"
+        Me.Button1.Text = "ADD"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
@@ -105,7 +106,7 @@ Partial Class COUNTRY
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 6
-        Me.Button2.Text = "SAVE"
+        Me.Button2.Text = "INSERT"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'GroupBox1

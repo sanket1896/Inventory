@@ -41,8 +41,7 @@ Public Class Login
             Exit Sub
         ElseIf TextBox2.Text = str Then
             userid = TextBox1.Text
-            'NEELKANTH_ENTERPRISE.Show()
-            SalesReturnRep.Show()
+            NEELKANTH_ENTERPRISE.Show()
             Me.Hide()
         Else
             MsgBox("Invalid Username or Password", MsgBoxStyle.OkOnly, "INVENTORY")
@@ -53,4 +52,15 @@ Public Class Login
         End If
     End Sub
 
+  
+
+
+
+    Private Sub Button2_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Button2.MouseDown
+        TextBox2.PasswordChar = ""
+    End Sub
+
+    Private Sub Button2_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Button2.MouseUp
+        TextBox2.PasswordChar = "•"
+    End Sub
 End Class

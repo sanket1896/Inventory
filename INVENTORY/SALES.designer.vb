@@ -72,6 +72,7 @@ Partial Class SALES
         'TextBox7
         '
         Me.TextBox7.Location = New System.Drawing.Point(400, 33)
+        Me.TextBox7.MaxLength = 7
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(100, 20)
         Me.TextBox7.TabIndex = 12
@@ -124,6 +125,7 @@ Partial Class SALES
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(294, 33)
+        Me.TextBox6.MaxLength = 4
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(61, 20)
         Me.TextBox6.TabIndex = 10
@@ -215,6 +217,7 @@ Partial Class SALES
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(411, 91)
+        Me.TextBox5.MaxLength = 7
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(123, 20)
         Me.TextBox5.TabIndex = 44
@@ -231,6 +234,7 @@ Partial Class SALES
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(411, 65)
+        Me.TextBox4.MaxLength = 2
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(123, 20)
         Me.TextBox4.TabIndex = 42
@@ -247,6 +251,7 @@ Partial Class SALES
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(411, 39)
+        Me.TextBox3.MaxLength = 2
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(123, 20)
         Me.TextBox3.TabIndex = 40
@@ -291,7 +296,7 @@ Partial Class SALES
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(69, 30)
         Me.Button2.TabIndex = 33
-        Me.Button2.Text = "SAVE"
+        Me.Button2.Text = "INSERT"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
@@ -300,7 +305,7 @@ Partial Class SALES
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(69, 30)
         Me.Button1.TabIndex = 32
-        Me.Button1.Text = "INSERT"
+        Me.Button1.Text = "ADD"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBox1

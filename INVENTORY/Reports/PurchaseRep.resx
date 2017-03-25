@@ -123,6 +123,9 @@
   <metadata name="SqlSelectCommand1.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <metadata name="SqlSelectCommand1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
   <data name="SqlSelectCommand1.CommandText" xml:space="preserve">
     <value>SELECT        PURCHASE_DETAILS.PURCHASE_ID, SUPPLIER.SUPPLIER_NAME, PRODUCT.PRODUCT_NAME, PURCHASE_DETAILS.QTY, PURCHASE_DETAILS.PRICE, PURCHASE_MASTER.BILL_NO, 
                          PURCHASE_MASTER.NET_AMOUNT

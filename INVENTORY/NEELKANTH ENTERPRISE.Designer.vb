@@ -54,6 +54,8 @@ Partial Class NEELKANTH_ENTERPRISE
         Me.ToolStripMenuItem13 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalesToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem15 = New System.Windows.Forms.ToolStripSeparator()
+        Me.SearchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.REPORTSToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProductToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.CategoryToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -61,22 +63,18 @@ Partial Class NEELKANTH_ENTERPRISE
         Me.SupplierToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.CustemerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem7 = New System.Windows.Forms.ToolStripSeparator()
-        Me.PurchaseOrderToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PurchaseReturnToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PurchaseReturnToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem8 = New System.Windows.Forms.ToolStripSeparator()
-        Me.SalesToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalesToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalesReturnToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem9 = New System.Windows.Forms.ToolStripSeparator()
-        Me.StatusToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem10 = New System.Windows.Forms.ToolStripSeparator()
-        Me.PaidPaymentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ReceivePaymentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UTILITYToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CalculatorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NotepadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExplorerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InvoiceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -229,25 +227,31 @@ Partial Class NEELKANTH_ENTERPRISE
         '
         'PaidPaymentToolStripMenuItem1
         '
+        Me.PaidPaymentToolStripMenuItem1.Image = Global.INVENTORY.My.Resources.Resources.Coins_Filled_36
+        Me.PaidPaymentToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.PaidPaymentToolStripMenuItem1.Name = "PaidPaymentToolStripMenuItem1"
         Me.PaidPaymentToolStripMenuItem1.Size = New System.Drawing.Size(184, 42)
         Me.PaidPaymentToolStripMenuItem1.Text = "Paid Payment"
         '
         'ReceivePaymentToolStripMenuItem1
         '
+        Me.ReceivePaymentToolStripMenuItem1.Image = Global.INVENTORY.My.Resources.Resources.Coins_Filled_36
+        Me.ReceivePaymentToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ReceivePaymentToolStripMenuItem1.Name = "ReceivePaymentToolStripMenuItem1"
         Me.ReceivePaymentToolStripMenuItem1.Size = New System.Drawing.Size(184, 42)
         Me.ReceivePaymentToolStripMenuItem1.Text = "Receive Payment"
         '
         'TRANSACTIONToolStripMenuItem
         '
-        Me.TRANSACTIONToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem12, Me.PurchaseToolStripMenuItem, Me.PurchaseReturnToolStripMenuItem, Me.ToolStripMenuItem5, Me.ToolStripMenuItem13, Me.SalesToolStripMenuItem, Me.SalesToolStripMenuItem1})
+        Me.TRANSACTIONToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem12, Me.PurchaseToolStripMenuItem, Me.PurchaseReturnToolStripMenuItem, Me.ToolStripMenuItem5, Me.ToolStripMenuItem13, Me.SalesToolStripMenuItem, Me.SalesToolStripMenuItem1, Me.ToolStripMenuItem15, Me.SearchToolStripMenuItem})
         Me.TRANSACTIONToolStripMenuItem.Name = "TRANSACTIONToolStripMenuItem"
         Me.TRANSACTIONToolStripMenuItem.Size = New System.Drawing.Size(100, 20)
         Me.TRANSACTIONToolStripMenuItem.Text = "&TRANSACTION"
         '
         'ToolStripMenuItem12
         '
+        Me.ToolStripMenuItem12.Image = Global.INVENTORY.My.Resources.Resources.Purchase_Order
+        Me.ToolStripMenuItem12.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ToolStripMenuItem12.Name = "ToolStripMenuItem12"
         Me.ToolStripMenuItem12.Size = New System.Drawing.Size(214, 42)
         Me.ToolStripMenuItem12.Text = "Purchase Order Master"
@@ -275,6 +279,8 @@ Partial Class NEELKANTH_ENTERPRISE
         '
         'ToolStripMenuItem13
         '
+        Me.ToolStripMenuItem13.Image = Global.INVENTORY.My.Resources.Resources.Purchase_Order1
+        Me.ToolStripMenuItem13.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ToolStripMenuItem13.Name = "ToolStripMenuItem13"
         Me.ToolStripMenuItem13.Size = New System.Drawing.Size(214, 42)
         Me.ToolStripMenuItem13.Text = "Sales Order Master"
@@ -295,9 +301,23 @@ Partial Class NEELKANTH_ENTERPRISE
         Me.SalesToolStripMenuItem1.Size = New System.Drawing.Size(214, 42)
         Me.SalesToolStripMenuItem1.Text = "Sales Return"
         '
+        'ToolStripMenuItem15
+        '
+        Me.ToolStripMenuItem15.Name = "ToolStripMenuItem15"
+        Me.ToolStripMenuItem15.Size = New System.Drawing.Size(211, 6)
+        '
+        'SearchToolStripMenuItem
+        '
+        Me.SearchToolStripMenuItem.Image = Global.INVENTORY.My.Resources.Resources.Search_36
+        Me.SearchToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.SearchToolStripMenuItem.Name = "SearchToolStripMenuItem"
+        Me.SearchToolStripMenuItem.ShowShortcutKeys = False
+        Me.SearchToolStripMenuItem.Size = New System.Drawing.Size(214, 42)
+        Me.SearchToolStripMenuItem.Text = "Search"
+        '
         'REPORTSToolStripMenuItem
         '
-        Me.REPORTSToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductToolStripMenuItem1, Me.CategoryToolStripMenuItem1, Me.ToolStripMenuItem6, Me.SupplierToolStripMenuItem1, Me.CustemerToolStripMenuItem, Me.ToolStripMenuItem7, Me.PurchaseOrderToolStripMenuItem, Me.PurchaseReturnToolStripMenuItem1, Me.PurchaseReturnToolStripMenuItem2, Me.ToolStripMenuItem8, Me.SalesToolStripMenuItem2, Me.SalesToolStripMenuItem3, Me.SalesReturnToolStripMenuItem, Me.ToolStripMenuItem9, Me.StatusToolStripMenuItem, Me.ToolStripMenuItem10, Me.PaidPaymentToolStripMenuItem, Me.ReceivePaymentToolStripMenuItem})
+        Me.REPORTSToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductToolStripMenuItem1, Me.CategoryToolStripMenuItem1, Me.ToolStripMenuItem6, Me.SupplierToolStripMenuItem1, Me.CustemerToolStripMenuItem, Me.ToolStripMenuItem7, Me.PurchaseReturnToolStripMenuItem1, Me.PurchaseReturnToolStripMenuItem2, Me.ToolStripMenuItem8, Me.SalesToolStripMenuItem3, Me.SalesReturnToolStripMenuItem, Me.ToolStripMenuItem9, Me.ToolStripMenuItem10, Me.InvoiceToolStripMenuItem})
         Me.REPORTSToolStripMenuItem.Name = "REPORTSToolStripMenuItem"
         Me.REPORTSToolStripMenuItem.Size = New System.Drawing.Size(68, 20)
         Me.REPORTSToolStripMenuItem.Text = "&REPORTS"
@@ -307,7 +327,7 @@ Partial Class NEELKANTH_ENTERPRISE
         Me.ProductToolStripMenuItem1.Image = Global.INVENTORY.My.Resources.Resources.Product_Report
         Me.ProductToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.ProductToolStripMenuItem1.Name = "ProductToolStripMenuItem1"
-        Me.ProductToolStripMenuItem1.Size = New System.Drawing.Size(184, 42)
+        Me.ProductToolStripMenuItem1.Size = New System.Drawing.Size(180, 42)
         Me.ProductToolStripMenuItem1.Text = "Product"
         '
         'CategoryToolStripMenuItem1
@@ -315,20 +335,20 @@ Partial Class NEELKANTH_ENTERPRISE
         Me.CategoryToolStripMenuItem1.Image = Global.INVENTORY.My.Resources.Resources.Category_Report
         Me.CategoryToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.CategoryToolStripMenuItem1.Name = "CategoryToolStripMenuItem1"
-        Me.CategoryToolStripMenuItem1.Size = New System.Drawing.Size(184, 42)
+        Me.CategoryToolStripMenuItem1.Size = New System.Drawing.Size(180, 42)
         Me.CategoryToolStripMenuItem1.Text = "Category"
         '
         'ToolStripMenuItem6
         '
         Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
-        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(181, 6)
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(177, 6)
         '
         'SupplierToolStripMenuItem1
         '
         Me.SupplierToolStripMenuItem1.Image = Global.INVENTORY.My.Resources.Resources.Supplier_Report
         Me.SupplierToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.SupplierToolStripMenuItem1.Name = "SupplierToolStripMenuItem1"
-        Me.SupplierToolStripMenuItem1.Size = New System.Drawing.Size(184, 42)
+        Me.SupplierToolStripMenuItem1.Size = New System.Drawing.Size(180, 42)
         Me.SupplierToolStripMenuItem1.Text = "Supplier"
         '
         'CustemerToolStripMenuItem
@@ -336,84 +356,60 @@ Partial Class NEELKANTH_ENTERPRISE
         Me.CustemerToolStripMenuItem.Image = Global.INVENTORY.My.Resources.Resources.Customer_Report
         Me.CustemerToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.CustemerToolStripMenuItem.Name = "CustemerToolStripMenuItem"
-        Me.CustemerToolStripMenuItem.Size = New System.Drawing.Size(184, 42)
+        Me.CustemerToolStripMenuItem.Size = New System.Drawing.Size(180, 42)
         Me.CustemerToolStripMenuItem.Text = "Customer"
         '
         'ToolStripMenuItem7
         '
         Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
-        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(181, 6)
-        '
-        'PurchaseOrderToolStripMenuItem
-        '
-        Me.PurchaseOrderToolStripMenuItem.Name = "PurchaseOrderToolStripMenuItem"
-        Me.PurchaseOrderToolStripMenuItem.Size = New System.Drawing.Size(184, 42)
-        Me.PurchaseOrderToolStripMenuItem.Text = "Purchase Order"
+        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(177, 6)
         '
         'PurchaseReturnToolStripMenuItem1
         '
+        Me.PurchaseReturnToolStripMenuItem1.Image = Global.INVENTORY.My.Resources.Resources.Purchase
+        Me.PurchaseReturnToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.PurchaseReturnToolStripMenuItem1.Name = "PurchaseReturnToolStripMenuItem1"
-        Me.PurchaseReturnToolStripMenuItem1.Size = New System.Drawing.Size(184, 42)
+        Me.PurchaseReturnToolStripMenuItem1.Size = New System.Drawing.Size(180, 42)
         Me.PurchaseReturnToolStripMenuItem1.Text = "Purchase "
         '
         'PurchaseReturnToolStripMenuItem2
         '
+        Me.PurchaseReturnToolStripMenuItem2.Image = Global.INVENTORY.My.Resources.Resources.Return_Purchase
+        Me.PurchaseReturnToolStripMenuItem2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.PurchaseReturnToolStripMenuItem2.Name = "PurchaseReturnToolStripMenuItem2"
-        Me.PurchaseReturnToolStripMenuItem2.Size = New System.Drawing.Size(184, 42)
+        Me.PurchaseReturnToolStripMenuItem2.Size = New System.Drawing.Size(180, 42)
         Me.PurchaseReturnToolStripMenuItem2.Text = "Purchase Return"
         '
         'ToolStripMenuItem8
         '
         Me.ToolStripMenuItem8.Name = "ToolStripMenuItem8"
-        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(181, 6)
-        '
-        'SalesToolStripMenuItem2
-        '
-        Me.SalesToolStripMenuItem2.Name = "SalesToolStripMenuItem2"
-        Me.SalesToolStripMenuItem2.Size = New System.Drawing.Size(184, 42)
-        Me.SalesToolStripMenuItem2.Text = "Sales Order"
+        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(177, 6)
         '
         'SalesToolStripMenuItem3
         '
+        Me.SalesToolStripMenuItem3.Image = Global.INVENTORY.My.Resources.Resources.Purchase
+        Me.SalesToolStripMenuItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.SalesToolStripMenuItem3.Name = "SalesToolStripMenuItem3"
-        Me.SalesToolStripMenuItem3.Size = New System.Drawing.Size(184, 42)
+        Me.SalesToolStripMenuItem3.Size = New System.Drawing.Size(180, 42)
         Me.SalesToolStripMenuItem3.Text = "Sales"
         '
         'SalesReturnToolStripMenuItem
         '
+        Me.SalesReturnToolStripMenuItem.Image = Global.INVENTORY.My.Resources.Resources.Return_Purchase
+        Me.SalesReturnToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.SalesReturnToolStripMenuItem.Name = "SalesReturnToolStripMenuItem"
-        Me.SalesReturnToolStripMenuItem.Size = New System.Drawing.Size(184, 42)
+        Me.SalesReturnToolStripMenuItem.Size = New System.Drawing.Size(180, 42)
         Me.SalesReturnToolStripMenuItem.Text = "Sales Return"
         '
         'ToolStripMenuItem9
         '
         Me.ToolStripMenuItem9.Name = "ToolStripMenuItem9"
-        Me.ToolStripMenuItem9.Size = New System.Drawing.Size(181, 6)
-        '
-        'StatusToolStripMenuItem
-        '
-        Me.StatusToolStripMenuItem.Image = Global.INVENTORY.My.Resources.Resources.Status_Report
-        Me.StatusToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
-        Me.StatusToolStripMenuItem.Name = "StatusToolStripMenuItem"
-        Me.StatusToolStripMenuItem.Size = New System.Drawing.Size(184, 42)
-        Me.StatusToolStripMenuItem.Text = "Status"
+        Me.ToolStripMenuItem9.Size = New System.Drawing.Size(177, 6)
         '
         'ToolStripMenuItem10
         '
         Me.ToolStripMenuItem10.Name = "ToolStripMenuItem10"
-        Me.ToolStripMenuItem10.Size = New System.Drawing.Size(181, 6)
-        '
-        'PaidPaymentToolStripMenuItem
-        '
-        Me.PaidPaymentToolStripMenuItem.Name = "PaidPaymentToolStripMenuItem"
-        Me.PaidPaymentToolStripMenuItem.Size = New System.Drawing.Size(184, 42)
-        Me.PaidPaymentToolStripMenuItem.Text = "Paid Payment "
-        '
-        'ReceivePaymentToolStripMenuItem
-        '
-        Me.ReceivePaymentToolStripMenuItem.Name = "ReceivePaymentToolStripMenuItem"
-        Me.ReceivePaymentToolStripMenuItem.Size = New System.Drawing.Size(184, 42)
-        Me.ReceivePaymentToolStripMenuItem.Text = "Receive Payment"
+        Me.ToolStripMenuItem10.Size = New System.Drawing.Size(177, 6)
         '
         'UTILITYToolStripMenuItem
         '
@@ -445,6 +441,12 @@ Partial Class NEELKANTH_ENTERPRISE
         Me.ExplorerToolStripMenuItem.Name = "ExplorerToolStripMenuItem"
         Me.ExplorerToolStripMenuItem.Size = New System.Drawing.Size(148, 42)
         Me.ExplorerToolStripMenuItem.Text = "Explorer"
+        '
+        'InvoiceToolStripMenuItem
+        '
+        Me.InvoiceToolStripMenuItem.Name = "InvoiceToolStripMenuItem"
+        Me.InvoiceToolStripMenuItem.Size = New System.Drawing.Size(180, 42)
+        Me.InvoiceToolStripMenuItem.Text = "Invoice"
         '
         'NEELKANTH_ENTERPRISE
         '
@@ -500,18 +502,13 @@ Partial Class NEELKANTH_ENTERPRISE
     Friend WithEvents SupplierToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CustemerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem7 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents PurchaseOrderToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PurchaseReturnToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PurchaseReturnToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem8 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents SalesToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SalesToolStripMenuItem3 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SalesReturnToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem9 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents StatusToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem10 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents PaidPaymentToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ReceivePaymentToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents UTILITYToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CalculatorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NotepadToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -520,4 +517,7 @@ Partial Class NEELKANTH_ENTERPRISE
     Friend WithEvents ToolStripMenuItem13 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PaidPaymentToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReceivePaymentToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem15 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents SearchToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents InvoiceToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

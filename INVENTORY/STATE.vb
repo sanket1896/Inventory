@@ -248,4 +248,12 @@ Public Class STATE
             MsgBox("Record Can Not be Deleted.. It Has Reference Records ", MsgBoxStyle.OkOnly, "INVENTORY")
         End Try
     End Sub
+
+    Private Sub TextBox2_KeyPress1(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox2.KeyPress
+        If e.KeyChar = vbBack Then Exit Sub 'BackSpace
+
+        If Not (e.KeyChar) Like "[a-z,A-Z]" Then  'not 0-9 then ignore
+            e.Handled = True
+        End If
+    End Sub
 End Class

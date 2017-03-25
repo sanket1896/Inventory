@@ -161,11 +161,22 @@ Public Class PAID_PAYMENT
         End Try
     End Sub
 
-    Private Sub TextBox2_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox2.KeyPress
+    Private Sub TextBox2_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox2.KeyPress, TextBox4.KeyPress
         If e.KeyChar = vbBack Then Exit Sub 'BackSpace
 
         If Not (e.KeyChar) Like "[0-9]" Then  'not 0-9 then ignore
             e.Handled = True
         End If
     End Sub
+
+
+    Private Sub TextBox5_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox5.KeyPress
+        If e.KeyChar = vbBack Then Exit Sub 'BackSpace
+
+        If Not (e.KeyChar) Like "[a-z,A-Z]" Then  'not 0-9 then ignore
+            e.Handled = True
+        End If
+    End Sub
+
+   
 End Class

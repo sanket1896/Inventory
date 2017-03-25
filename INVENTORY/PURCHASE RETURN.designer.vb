@@ -115,7 +115,7 @@ Partial Class PURCHASE_RETURN
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 20
-        Me.Button1.Text = "INSERT"
+        Me.Button1.Text = "ADD"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'GroupBox1
@@ -196,6 +196,7 @@ Partial Class PURCHASE_RETURN
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(262, 29)
+        Me.TextBox6.MaxLength = 4
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(61, 20)
         Me.TextBox6.TabIndex = 10
@@ -258,7 +259,7 @@ Partial Class PURCHASE_RETURN
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 49
-        Me.Button2.Text = "SAVE"
+        Me.Button2.Text = "INSERT"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'PURCHASE_RETURN

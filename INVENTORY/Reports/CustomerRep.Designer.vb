@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class CustomerRep
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CustomerRep))
         Me.SqlSelectCommand1 = New System.Data.SqlClient.SqlCommand()
         Me.SqlConnection1 = New System.Data.SqlClient.SqlConnection()
         Me.SqlDeleteCommand1 = New System.Data.SqlClient.SqlCommand()
@@ -111,7 +111,7 @@ Partial Class Form1
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Area Name"
         '
-        'Form1
+        'CustomerRep
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -121,7 +121,7 @@ Partial Class Form1
         Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.ComboBox1)
-        Me.Name = "Form1"
+        Me.Name = "CustomerRep"
         Me.Text = "Customer Report"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.ReportDataset1, System.ComponentModel.ISupportInitialize).EndInit()

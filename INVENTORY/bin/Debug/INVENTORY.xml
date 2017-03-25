@@ -34,6 +34,10 @@ Represents the strongly named DataTable class.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
+</member><member name="T:INVENTORY.ReportDataset.CUSTOMERINVOICEDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
 </member><member name="T:INVENTORY.ReportDataset.CustomerRow">
 	<summary>
 Represents strongly named DataRow class.
@@ -59,6 +63,10 @@ Represents strongly named DataRow class.
 Represents strongly named DataRow class.
 </summary>
 </member><member name="T:INVENTORY.ReportDataset.SALESRETURNRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:INVENTORY.ReportDataset.CUSTOMERINVOICERow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
@@ -90,6 +98,10 @@ Row event argument class
 	<summary>
 Row event argument class
 </summary>
+</member><member name="T:INVENTORY.ReportDataset.CUSTOMERINVOICERowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
 </member><member name="T:INVENTORY.ReportDataset">
 	<summary>
 Represents a strongly typed in-memory cache of data.
@@ -113,6 +125,22 @@ Represents a strongly typed in-memory cache of data.
 </member><member name="T:INVENTORY.INVANTORYDataSet2TableAdapters.UOMTableAdapter">
 	<summary>
 Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:INVENTORY.INVDataset.CUSTOMERDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:INVENTORY.INVDataset.CUSTOMERRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:INVENTORY.INVDataset.CUSTOMERRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:INVENTORY.INVDataset">
+	<summary>
+Represents a strongly typed in-memory cache of data.
 </summary>
 </member><member name="T:INVENTORY.INVANTORYDataSet1.CITYDataTable">
 	<summary>
@@ -154,23 +182,11 @@ Represents the connection and commands used to retrieve and save data.
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
-</member><member name="T:INVENTORY.INVANTORYDataSet.PRODUCTDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
 </member><member name="T:INVENTORY.INVANTORYDataSet.CITYRow">
 	<summary>
 Represents strongly named DataRow class.
 </summary>
-</member><member name="T:INVENTORY.INVANTORYDataSet.PRODUCTRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
 </member><member name="T:INVENTORY.INVANTORYDataSet.CITYRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:INVENTORY.INVANTORYDataSet.PRODUCTRowChangeEvent">
 	<summary>
 Row event argument class
 </summary>
@@ -182,38 +198,6 @@ Represents a strongly typed in-memory cache of data.
 	<summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
-</member><member name="M:INVENTORY.INVANTORYDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(INVENTORY.INVANTORYDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Update rows in top-down order.
-</summary>
-</member><member name="M:INVENTORY.INVANTORYDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(INVENTORY.INVANTORYDataSet,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Insert rows in top-down order.
-</summary>
-</member><member name="M:INVENTORY.INVANTORYDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(INVENTORY.INVANTORYDataSet,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Delete rows in bottom-up order.
-</summary>
-</member><member name="M:INVENTORY.INVANTORYDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
-</summary>
-</member><member name="M:INVENTORY.INVANTORYDataSetTableAdapters.TableAdapterManager.UpdateAll(INVENTORY.INVANTORYDataSet)">
-	<summary>
-Update all changes to the dataset.
-</summary>
-</member><member name="T:INVENTORY.INVANTORYDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
-	<summary>
-Update Order Option
-</summary>
-</member><member name="T:INVENTORY.INVANTORYDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
-	<summary>
-Used to sort self-referenced table's rows
-</summary>
-</member><member name="T:INVENTORY.INVANTORYDataSetTableAdapters.TableAdapterManager">
-	<summary>
-TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
-</summary>
 </member><member name="P:INVENTORY.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
@@ -222,98 +206,6 @@ TableAdapterManager is used to coordinate TableAdapters in the dataset to enable
 	<summary>
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.Calculator">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.Category">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.Category_Report">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.Check_Book">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.Company">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.Customer">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.Customer_Report">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.Delivery_36">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.Folder_Open">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.Login_01">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.Logout">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.NAME">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.neelkanthICON">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.New_Product_36">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.Product_Report">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.Purchase">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.Return_Purchase">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.Status_Report">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.Supplier_Report">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.To_do_list">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.UOM">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.User_Add">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:INVENTORY.My.Resources.Resources.User_Delete">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="T:INVENTORY.My.Resources.Resources">
 	<summary>

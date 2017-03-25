@@ -97,6 +97,7 @@ Partial Class CREATE_NEW_USER
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(163, 30)
+        Me.TextBox1.MaxLength = 30
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(125, 20)
         Me.TextBox1.TabIndex = 7
@@ -104,20 +105,25 @@ Partial Class CREATE_NEW_USER
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(163, 67)
+        Me.TextBox2.MaxLength = 30
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.TextBox2.Size = New System.Drawing.Size(125, 20)
         Me.TextBox2.TabIndex = 8
         '
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(163, 108)
+        Me.TextBox3.MaxLength = 30
         Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.TextBox3.Size = New System.Drawing.Size(125, 20)
         Me.TextBox3.TabIndex = 9
         '
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(163, 181)
+        Me.TextBox5.MaxLength = 20
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(125, 20)
         Me.TextBox5.TabIndex = 11

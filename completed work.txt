@@ -17,4 +17,5 @@ PURCHASE_ORDER
 
 Rest of all complited -except Report
 
-sales report date wise not shown
+PURCHASE ORDER ADD MODE (ADD)SAVE BUTTON
+PURCHASE ORDER (SEARCH DELETE KARVA NU)

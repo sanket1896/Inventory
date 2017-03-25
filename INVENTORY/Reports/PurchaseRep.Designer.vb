@@ -36,8 +36,8 @@ Partial Class PurchaseRep
         Me.Button3 = New System.Windows.Forms.Button()
         Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.SqlSelectCommand1 = New System.Data.SqlClient.SqlCommand()
-        Me.SqlDataAdapter1 = New System.Data.SqlClient.SqlDataAdapter()
         Me.SqlConnection1 = New System.Data.SqlClient.SqlConnection()
+        Me.SqlDataAdapter1 = New System.Data.SqlClient.SqlDataAdapter()
         Me.ReportDataset1 = New INVENTORY.ReportDataset()
         CType(Me.ReportDataset1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -157,16 +157,16 @@ Partial Class PurchaseRep
         Me.SqlSelectCommand1.CommandText = resources.GetString("SqlSelectCommand1.CommandText")
         Me.SqlSelectCommand1.Connection = Me.SqlConnection1
         '
-        'SqlDataAdapter1
-        '
-        Me.SqlDataAdapter1.SelectCommand = Me.SqlSelectCommand1
-        Me.SqlDataAdapter1.TableMappings.AddRange(New System.Data.Common.DataTableMapping() {New System.Data.Common.DataTableMapping("Table", "PRODUCT", New System.Data.Common.DataColumnMapping() {New System.Data.Common.DataColumnMapping("PURCHASE_ID", "PURCHASE_ID"), New System.Data.Common.DataColumnMapping("SUPPLIER_NAME", "SUPPLIER_NAME"), New System.Data.Common.DataColumnMapping("PRODUCT_NAME", "PRODUCT_NAME"), New System.Data.Common.DataColumnMapping("QTY", "QTY"), New System.Data.Common.DataColumnMapping("PRICE", "PRICE"), New System.Data.Common.DataColumnMapping("BILL_NO", "BILL_NO"), New System.Data.Common.DataColumnMapping("NET_AMOUNT", "NET_AMOUNT")})})
-        '
         'SqlConnection1
         '
         Me.SqlConnection1.ConnectionString = "Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\INVANTORY.mdf;Integrate" & _
             "d Security=True;User Instance=True"
         Me.SqlConnection1.FireInfoMessageEventOnUserErrors = False
+        '
+        'SqlDataAdapter1
+        '
+        Me.SqlDataAdapter1.SelectCommand = Me.SqlSelectCommand1
+        Me.SqlDataAdapter1.TableMappings.AddRange(New System.Data.Common.DataTableMapping() {New System.Data.Common.DataTableMapping("Table", "PRODUCT", New System.Data.Common.DataColumnMapping() {New System.Data.Common.DataColumnMapping("PURCHASE_ID", "PURCHASE_ID"), New System.Data.Common.DataColumnMapping("SUPPLIER_NAME", "SUPPLIER_NAME"), New System.Data.Common.DataColumnMapping("PRODUCT_NAME", "PRODUCT_NAME"), New System.Data.Common.DataColumnMapping("QTY", "QTY"), New System.Data.Common.DataColumnMapping("PRICE", "PRICE"), New System.Data.Common.DataColumnMapping("BILL_NO", "BILL_NO"), New System.Data.Common.DataColumnMapping("NET_AMOUNT", "NET_AMOUNT")})})
         '
         'ReportDataset1
         '
@@ -192,6 +192,7 @@ Partial Class PurchaseRep
         Me.Controls.Add(Me.RadioButton1)
         Me.Name = "PurchaseRep"
         Me.Text = "PurchaseRep"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.ReportDataset1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

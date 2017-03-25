@@ -30,10 +30,11 @@ Partial Class Login
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.LineShape1 = New Microsoft.VisualBasic.PowerPacks.LineShape()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -77,6 +78,7 @@ Partial Class Login
         '
         Me.TextBox2.Location = New System.Drawing.Point(354, 124)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.TextBox2.Size = New System.Drawing.Size(135, 20)
         Me.TextBox2.TabIndex = 4
         Me.TextBox2.Text = "123"
@@ -100,15 +102,6 @@ Partial Class Login
         Me.Label4.Size = New System.Drawing.Size(95, 13)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Forget Password..."
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.INVENTORY.My.Resources.Resources.neelkanthICON
-        Me.PictureBox1.Location = New System.Drawing.Point(93, 42)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(75, 107)
-        Me.PictureBox1.TabIndex = 7
-        Me.PictureBox1.TabStop = False
         '
         'Label5
         '
@@ -139,12 +132,31 @@ Partial Class Login
         Me.LineShape1.Y1 = 10
         Me.LineShape1.Y2 = 254
         '
+        'Button2
+        '
+        Me.Button2.Image = Global.INVENTORY.My.Resources.Resources.Visible_15
+        Me.Button2.Location = New System.Drawing.Point(489, 123)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(22, 20)
+        Me.Button2.TabIndex = 10
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.INVENTORY.My.Resources.Resources.neelkanthICON
+        Me.PictureBox1.Location = New System.Drawing.Point(93, 42)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(75, 107)
+        Me.PictureBox1.TabIndex = 7
+        Me.PictureBox1.TabStop = False
+        '
         'Login
         '
         Me.AcceptButton = Me.Button1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(529, 263)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label4)
@@ -178,5 +190,6 @@ Partial Class Login
     Friend WithEvents SqlConnectionDB As System.Data.SqlClient.SqlConnection
     Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
     Friend WithEvents LineShape1 As Microsoft.VisualBasic.PowerPacks.LineShape
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 
 End Class

@@ -12,20 +12,6 @@ Public Class PURCHASE_RETURN
     Dim net As Double = 0
     Dim qty As Integer = 0
     Private Sub PURCHASE_RETURN_Load(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-        da.Fill(ds, "PURCHASE_RETURN_MASTER")
-        da1.Fill(ds1, "PRODUCT")
-        da2.Fill(ds2, "PURCHASE_MASTER")
-        da3.Fill(ds2, "PURCHASE_DETAILS")
-        showdata()
-        Dim dr As SqlDataReader
-        cmd.CommandText = "select PURCHASE_ID from PURCHASE_MASTER"
-        cmd.Connection = Login.cn
-        dr = cmd.ExecuteReader
-        Do While dr.Read
-            ComboBox1.Items.Add(dr.GetValue(0).ToString)
-        Loop
-        dr.Close()
     End Sub
 
     Sub showdata()
@@ -50,6 +36,7 @@ Public Class PURCHASE_RETURN
         DA11.Fill(ds4, "PURCHASE_RETURN_DETAIL")
         DataGridView1.DataSource = ds4.Tables(0)
         DataGridView1.Refresh()
+
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -239,5 +226,40 @@ Public Class PURCHASE_RETURN
         Catch ex As Exception
             MsgBox("Record Can Not be Updated... It Has Reference Records ", MsgBoxStyle.OkOnly, "INVENTORY")
         End Try
+    End Sub
+
+    Private Sub PURCHASE_RETURN_Load_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+        da.Fill(ds, "PURCHASE_RETURN_MASTER")
+
+        da1.Fill(ds1, "PRODUCT")
+
+        da2.Fill(ds2, "PURCHASE_MASTER")
+
+        da3.Fill(ds2, "PURCHASE_DETAILS")
+        showdata()
+        Dim dr As SqlDataReader
+        cmd.CommandText = "select PURCHASE_ID from PURCHASE_MASTER"
+        cmd.Connection = Login.cn
+        dr = cmd.ExecuteReader
+        Do While dr.Read
+            ComboBox1.Items.Add(dr.GetValue(0).ToString)
+        Loop
+        dr.Close()
+
+
+
+    End Sub
+
+
+
+
+
+    Private Sub TextBox6_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox6.KeyPress
+        If e.KeyChar = vbBack Then Exit Sub 'BackSpace
+
+        If Not (e.KeyChar) Like "[0-9]" Then  'not 0-9 then ignore
+            e.Handled = True
+        End If
     End Sub
 End Class

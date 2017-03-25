@@ -165,6 +165,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>INVANTORYDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="INVDataset.Designer.vb" />
     <Compile Include="LOGIN.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -187,7 +188,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="NEELKANTH ENTERPRISE.Designer.vb">
+    <Compile Include="NEELKANTH ENTERPRISE.designer.vb">
       <DependentUpon>NEELKANTH ENTERPRISE.vb</DependentUpon>
     </Compile>
     <Compile Include="NEELKANTH ENTERPRISE.vb">
@@ -203,18 +204,6 @@
       <DependentUpon>PRODUCT.vb</DependentUpon>
     </Compile>
     <Compile Include="PRODUCT.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PURCHASE ORDER DETAIL.Designer.vb">
-      <DependentUpon>PURCHASE ORDER DETAIL.vb</DependentUpon>
-    </Compile>
-    <Compile Include="PURCHASE ORDER DETAIL.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PURCHASE ORDER MASTER.designer.vb">
-      <DependentUpon>PURCHASE ORDER MASTER.vb</DependentUpon>
-    </Compile>
-    <Compile Include="PURCHASE ORDER MASTER.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PURCHASE ORDER SELECTION.designer.vb">
@@ -269,6 +258,18 @@
     </Compile>
     <Compile Include="Reports\CustomerRep.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\InvoiceRep.Designer.vb">
+      <DependentUpon>InvoiceRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\InvoiceRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\InvoiceReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InvoiceReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reports\ProductCategoryRep.Designer.vb">
       <DependentUpon>ProductCategoryRep.vb</DependentUpon>
@@ -372,6 +373,12 @@
     <Compile Include="SALES.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SEARCH.designer.vb">
+      <DependentUpon>SEARCH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SEARCH.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="STATE.designer.vb">
       <DependentUpon>STATE.vb</DependentUpon>
     </Compile>
@@ -443,12 +450,6 @@
     <EmbeddedResource Include="PRODUCT.resx">
       <DependentUpon>PRODUCT.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PURCHASE ORDER DETAIL.resx">
-      <DependentUpon>PURCHASE ORDER DETAIL.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PURCHASE ORDER MASTER.resx">
-      <DependentUpon>PURCHASE ORDER MASTER.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PURCHASE ORDER SELECTION.resx">
       <DependentUpon>PURCHASE ORDER SELECTION.vb</DependentUpon>
     </EmbeddedResource>
@@ -473,6 +474,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\CustomerRep.resx">
       <DependentUpon>CustomerRep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InvoiceRep.resx">
+      <DependentUpon>InvoiceRep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InvoiceReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InvoiceReport.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\ProductCategoryRep.resx">
       <DependentUpon>ProductCategoryRep.vb</DependentUpon>
@@ -531,6 +539,9 @@
     <EmbeddedResource Include="SALES.resx">
       <DependentUpon>SALES.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SEARCH.resx">
+      <DependentUpon>SEARCH.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="STATE.resx">
       <DependentUpon>STATE.vb</DependentUpon>
     </EmbeddedResource>
@@ -578,6 +589,13 @@
     </None>
     <None Include="INVANTORYDataSet2.xss">
       <DependentUpon>INVANTORYDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="INVDataset.xsc">
+      <DependentUpon>INVDataset.xsd</DependentUpon>
+    </None>
+    <None Include="INVDataset.xsd" />
+    <None Include="INVDataset.xss">
+      <DependentUpon>INVDataset.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -677,6 +695,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>INVANTORY.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\Visible-15.png" />
+    <None Include="Resources\Visible-10.png" />
+    <None Include="Resources\Search-36.png" />
+    <None Include="Resources\Purchase Order.png" />
+    <None Include="Resources\Coins Filled 36.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">

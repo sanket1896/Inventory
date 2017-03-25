@@ -154,4 +154,58 @@
         myChild.MdiParent = Me
         myChild.Show()
     End Sub
+
+    Private Sub SearchToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SearchToolStripMenuItem.Click
+        Dim mychild As New SEARCH
+        mychild.MdiParent = Me
+        mychild.Show()
+    End Sub
+
+    Private Sub ProductToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ProductToolStripMenuItem1.Click
+        Dim mychild As New ProductRep
+        mychild.MdiParent = Me
+        mychild.Show()
+    End Sub
+
+    Private Sub CategoryToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CategoryToolStripMenuItem1.Click
+        Dim mychild As New ProductCategoryRep
+        mychild.MdiParent = Me
+        mychild.Show()
+    End Sub
+
+    Private Sub CustemerToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CustemerToolStripMenuItem.Click
+        Dim mychild As New CustomerRep
+        mychild.MdiParent = Me
+        mychild.Show()
+    End Sub
+
+    Private Sub PurchaseReturnToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PurchaseReturnToolStripMenuItem1.Click
+        Dim mychild As New PurchaseRep
+        mychild.MdiParent = Me
+        mychild.Show()
+    End Sub
+
+    Private Sub PurchaseReturnToolStripMenuItem2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PurchaseReturnToolStripMenuItem2.Click
+        Dim mychild As New PurchaseReturnRep
+        mychild.MdiParent = Me
+        mychild.Show()
+    End Sub
+
+    Private Sub SalesToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SalesToolStripMenuItem3.Click
+        Dim mychild As New SalesRep
+        mychild.MdiParent = Me
+        mychild.Show()
+    End Sub
+
+    Private Sub SalesReturnToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SalesReturnToolStripMenuItem.Click
+        Dim mychild As New SalesReturnRep
+        mychild.MdiParent = Me
+        mychild.Show()
+    End Sub
+
+    Private Sub InvoiceToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles InvoiceToolStripMenuItem.Click
+        Dim mychild As New InvoiceRep
+        mychild.MdiParent = Me
+        mychild.Show()
+    End Sub
 End Class

@@ -117,6 +117,7 @@ Partial Class PRODUCT
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(143, 62)
+        Me.TextBox2.MaxLength = 15
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(145, 20)
         Me.TextBox2.TabIndex = 9
@@ -124,6 +125,7 @@ Partial Class PRODUCT
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(143, 117)
+        Me.TextBox4.MaxLength = 4
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(145, 20)
         Me.TextBox4.TabIndex = 11
@@ -158,6 +160,7 @@ Partial Class PRODUCT
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(427, 36)
+        Me.TextBox5.MaxLength = 7
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(145, 20)
         Me.TextBox5.TabIndex = 15
@@ -165,6 +168,7 @@ Partial Class PRODUCT
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(427, 62)
+        Me.TextBox6.MaxLength = 2
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(145, 20)
         Me.TextBox6.TabIndex = 16
@@ -172,6 +176,7 @@ Partial Class PRODUCT
         'TextBox7
         '
         Me.TextBox7.Location = New System.Drawing.Point(427, 89)
+        Me.TextBox7.MaxLength = 2
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(145, 20)
         Me.TextBox7.TabIndex = 17
@@ -191,7 +196,7 @@ Partial Class PRODUCT
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 20
-        Me.Button1.Text = "INSERT"
+        Me.Button1.Text = "ADD"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
@@ -200,7 +205,7 @@ Partial Class PRODUCT
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 21
-        Me.Button2.Text = "SAVE"
+        Me.Button2.Text = "INSERT"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'GroupBox1

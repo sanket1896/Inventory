@@ -274,4 +274,14 @@ Public Class PURCHASE
             MsgBox(ex.Message)
         End Try
     End Sub
+
+    Private Sub TextBox3_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox3.KeyPress, TextBox4.KeyPress, TextBox5.KeyPress, TextBox8.KeyPress, TextBox6.KeyPress, TextBox7.KeyPress
+        If e.KeyChar = vbBack Then Exit Sub 'BackSpace
+
+        If Not (e.KeyChar) Like "[0-9]" Then  'not 0-9 then ignore
+            e.Handled = True
+        End If
+    End Sub
+
+   
 End Class

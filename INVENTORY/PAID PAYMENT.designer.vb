@@ -104,6 +104,7 @@ Partial Class PAID_PAYMENT
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(172, 86)
+        Me.TextBox2.MaxLength = 7
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(121, 20)
         Me.TextBox2.TabIndex = 6
@@ -129,6 +130,7 @@ Partial Class PAID_PAYMENT
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(421, 33)
+        Me.TextBox4.MaxLength = 6
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(121, 20)
         Me.TextBox4.TabIndex = 10
@@ -161,6 +163,7 @@ Partial Class PAID_PAYMENT
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(421, 86)
+        Me.TextBox5.MaxLength = 30
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(121, 20)
         Me.TextBox5.TabIndex = 14
@@ -171,7 +174,7 @@ Partial Class PAID_PAYMENT
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 15
-        Me.Button1.Text = "INSERT"
+        Me.Button1.Text = "ADD"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
@@ -180,7 +183,7 @@ Partial Class PAID_PAYMENT
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 16
-        Me.Button2.Text = "SAVE"
+        Me.Button2.Text = "INSERT"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3

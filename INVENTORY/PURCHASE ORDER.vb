@@ -111,7 +111,7 @@ Public Class PURCHASE_ORDER
         End If
     End Sub
 
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         PURCHASE_ORDER_SELECTION.ShowDialog()
     End Sub
 

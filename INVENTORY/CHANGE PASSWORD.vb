@@ -41,4 +41,9 @@ Public Class CHANGE_PASSWORD
             MsgBox("Enter New & Confirm Currect Password", MsgBoxStyle.OkOnly, "INVENTORY")
         End If
     End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Me.Close()
+
+    End Sub
 End Class
