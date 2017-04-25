@@ -13,7 +13,7 @@ Public Class FORGET_PASSWORD
         Label6.Text = userid
 
 
-        cmd.CommandText = "select SEQURITY_ANSWER from LOGIN where USER_ID = '" & Label6.Text & "'"
+        cmd.CommandText = "select SEQURITY_Question from LOGIN where USER_ID = '" & Label6.Text & "'"
         cmd.Connection = Login.cn
         Dim str As String
         str = cmd.ExecuteScalar

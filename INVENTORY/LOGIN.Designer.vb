@@ -72,7 +72,7 @@ Partial Class Login
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(135, 20)
         Me.TextBox1.TabIndex = 3
-        Me.TextBox1.Text = "1"
+        Me.TextBox1.Text = "ADMIN"
         '
         'TextBox2
         '
@@ -101,7 +101,7 @@ Partial Class Login
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(95, 13)
         Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Forget Password..."
+        Me.Label4.Text = "Forgot Password..."
         '
         'Label5
         '

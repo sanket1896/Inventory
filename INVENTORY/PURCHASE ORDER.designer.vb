@@ -76,14 +76,14 @@ Partial Class PURCHASE_ORDER
         Me.TextBox1.Location = New System.Drawing.Point(283, 39)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(168, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(193, 20)
         Me.TextBox1.TabIndex = 15
         '
         'DateTimePicker1
         '
         Me.DateTimePicker1.Location = New System.Drawing.Point(283, 65)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(168, 20)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(193, 20)
         Me.DateTimePicker1.TabIndex = 14
         '
         'Label4
@@ -176,7 +176,7 @@ Partial Class PURCHASE_ORDER
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(283, 91)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(168, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(193, 21)
         Me.ComboBox1.TabIndex = 48
         '
         'DataGridView1

@@ -34,7 +34,7 @@ Public Class CHANGE_PASSWORD
             cmd.CommandText = "update LOGIN set Password ='" & TextBox2.Text & "' where USER_ID='" & Login.userid & "'"
             cmd.Connection = Login.cn
             cmd.ExecuteNonQuery()
-            MsgBox("Your password is changed", MsgBoxStyle.OkOnly, "INVENTORY")
+            MsgBox("Password changed successfully", MsgBoxStyle.OkOnly, "INVENTORY")
             Me.Close()
 
         Else
@@ -44,6 +44,5 @@ Public Class CHANGE_PASSWORD
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.Close()
-
     End Sub
 End Class

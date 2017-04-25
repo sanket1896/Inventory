@@ -223,11 +223,11 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="CUSTOMERINVOICE" msprop:Generator_TableClassName="CUSTOMERINVOICEDataTable" msprop:Generator_TableVarName="tableCUSTOMERINVOICE" msprop:Generator_TablePropName="CUSTOMERINVOICE" msprop:Generator_RowDeletingName="CUSTOMERINVOICERowDeleting" msprop:Generator_RowChangingName="CUSTOMERINVOICERowChanging" msprop:Generator_RowEvHandlerName="CUSTOMERINVOICERowChangeEventHandler" msprop:Generator_RowDeletedName="CUSTOMERINVOICERowDeleted" msprop:Generator_UserTableName="CUSTOMERINVOICE" msprop:Generator_RowChangedName="CUSTOMERINVOICERowChanged" msprop:Generator_RowEvArgName="CUSTOMERINVOICERowChangeEvent" msprop:Generator_RowClassName="CUSTOMERINVOICERow">
+        <xs:element name="SUPPLIER" msprop:Generator_TableClassName="SUPPLIERDataTable" msprop:Generator_TableVarName="tableSUPPLIER" msprop:Generator_RowChangedName="SUPPLIERRowChanged" msprop:Generator_TablePropName="SUPPLIER" msprop:Generator_RowDeletingName="SUPPLIERRowDeleting" msprop:Generator_RowChangingName="SUPPLIERRowChanging" msprop:Generator_RowEvHandlerName="SUPPLIERRowChangeEventHandler" msprop:Generator_RowDeletedName="SUPPLIERRowDeleted" msprop:Generator_RowClassName="SUPPLIERRow" msprop:Generator_UserTableName="SUPPLIER" msprop:Generator_RowEvArgName="SUPPLIERRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="INVOICE_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnINVOICE_ID" msprop:Generator_ColumnPropNameInRow="INVOICE_ID" msprop:Generator_ColumnPropNameInTable="INVOICE_IDColumn" msprop:Generator_UserColumnName="INVOICE_ID" type="xs:int" />
-              <xs:element name="CUSTOMER_NAME" msprop:Generator_ColumnVarNameInTable="columnCUSTOMER_NAME" msprop:Generator_ColumnPropNameInRow="CUSTOMER_NAME" msprop:Generator_ColumnPropNameInTable="CUSTOMER_NAMEColumn" msprop:Generator_UserColumnName="CUSTOMER_NAME" minOccurs="0">
+              <xs:element name="SUPPLIER_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnSUPPLIER_ID" msprop:Generator_ColumnPropNameInRow="SUPPLIER_ID" msprop:Generator_ColumnPropNameInTable="SUPPLIER_IDColumn" msprop:Generator_UserColumnName="SUPPLIER_ID" type="xs:int" />
+              <xs:element name="SUPPLIER_NAME" msprop:Generator_ColumnVarNameInTable="columnSUPPLIER_NAME" msprop:Generator_ColumnPropNameInRow="SUPPLIER_NAME" msprop:Generator_ColumnPropNameInTable="SUPPLIER_NAMEColumn" msprop:Generator_UserColumnName="SUPPLIER_NAME" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
@@ -235,6 +235,42 @@
                 </xs:simpleType>
               </xs:element>
               <xs:element name="ADDRESS" msprop:Generator_ColumnVarNameInTable="columnADDRESS" msprop:Generator_ColumnPropNameInRow="ADDRESS" msprop:Generator_ColumnPropNameInTable="ADDRESSColumn" msprop:Generator_UserColumnName="ADDRESS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AREA" msprop:Generator_ColumnVarNameInTable="columnAREA" msprop:Generator_ColumnPropNameInRow="AREA" msprop:Generator_ColumnPropNameInTable="AREAColumn" msprop:Generator_UserColumnName="AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TIN_NO" msprop:Generator_ColumnVarNameInTable="columnTIN_NO" msprop:Generator_ColumnPropNameInRow="TIN_NO" msprop:Generator_ColumnPropNameInTable="TIN_NOColumn" msprop:Generator_UserColumnName="TIN_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MOBILE_NUMBER" msprop:Generator_ColumnVarNameInTable="columnMOBILE_NUMBER" msprop:Generator_ColumnPropNameInRow="MOBILE_NUMBER" msprop:Generator_ColumnPropNameInTable="MOBILE_NUMBERColumn" msprop:Generator_UserColumnName="MOBILE_NUMBER" type="xs:int" minOccurs="0" />
+              <xs:element name="EMAIL_ID" msprop:Generator_ColumnVarNameInTable="columnEMAIL_ID" msprop:Generator_ColumnPropNameInRow="EMAIL_ID" msprop:Generator_ColumnPropNameInTable="EMAIL_IDColumn" msprop:Generator_UserColumnName="EMAIL_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CUSTOMERINVOICE" msprop:Generator_TableClassName="CUSTOMERINVOICEDataTable" msprop:Generator_TableVarName="tableCUSTOMERINVOICE" msprop:Generator_TablePropName="CUSTOMERINVOICE" msprop:Generator_RowDeletingName="CUSTOMERINVOICERowDeleting" msprop:Generator_RowChangingName="CUSTOMERINVOICERowChanging" msprop:Generator_RowEvHandlerName="CUSTOMERINVOICERowChangeEventHandler" msprop:Generator_RowDeletedName="CUSTOMERINVOICERowDeleted" msprop:Generator_UserTableName="CUSTOMERINVOICE" msprop:Generator_RowChangedName="CUSTOMERINVOICERowChanged" msprop:Generator_RowEvArgName="CUSTOMERINVOICERowChangeEvent" msprop:Generator_RowClassName="CUSTOMERINVOICERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INVOICE_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnINVOICE_ID" msprop:Generator_ColumnPropNameInRow="INVOICE_ID" msprop:Generator_ColumnPropNameInTable="INVOICE_IDColumn" msprop:Generator_UserColumnName="INVOICE_ID" type="xs:int" />
+              <xs:element name="CUSTOMER_NAME" msprop:Generator_ColumnVarNameInTable="columnCUSTOMER_NAME" msprop:Generator_ColumnPropNameInRow="CUSTOMER_NAME" msprop:Generator_ColumnPropNameInTable="CUSTOMER_NAMEColumn" msprop:Generator_UserColumnName="CUSTOMER_NAME" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
@@ -258,6 +294,16 @@
               </xs:element>
               <xs:element name="QTY" msprop:Generator_ColumnVarNameInTable="columnQTY" msprop:Generator_ColumnPropNameInRow="QTY" msprop:Generator_ColumnPropNameInTable="QTYColumn" msprop:Generator_UserColumnName="QTY" type="xs:int" minOccurs="0" />
               <xs:element name="PRICE" msprop:Generator_ColumnVarNameInTable="columnPRICE" msprop:Generator_ColumnPropNameInRow="PRICE" msprop:Generator_ColumnPropNameInTable="PRICEColumn" msprop:Generator_UserColumnName="PRICE" type="xs:int" minOccurs="0" />
+              <xs:element name="ADDRESS" msprop:Generator_ColumnVarNameInTable="columnADDRESS" msprop:Generator_ColumnPropNameInRow="ADDRESS" msprop:Generator_ColumnPropNameInTable="ADDRESSColumn" msprop:Generator_UserColumnName="ADDRESS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VAT" msprop:Generator_ColumnVarNameInTable="columnVAT" msprop:Generator_ColumnPropNameInRow="VAT" msprop:Generator_ColumnPropNameInTable="VATColumn" msprop:Generator_UserColumnName="VAT" type="xs:int" minOccurs="0" />
+              <xs:element name="ADDITIONAL_VAT" msprop:Generator_ColumnVarNameInTable="columnADDITIONAL_VAT" msprop:Generator_ColumnPropNameInRow="ADDITIONAL_VAT" msprop:Generator_ColumnPropNameInTable="ADDITIONAL_VATColumn" msprop:Generator_UserColumnName="ADDITIONAL_VAT" type="xs:int" minOccurs="0" />
+              <xs:element name="NET_AMOUNT" msprop:Generator_ColumnVarNameInTable="columnNET_AMOUNT" msprop:Generator_ColumnPropNameInRow="NET_AMOUNT" msprop:Generator_ColumnPropNameInTable="NET_AMOUNTColumn" msprop:Generator_UserColumnName="NET_AMOUNT" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -274,6 +320,10 @@
     <xs:unique name="SALESRETURN_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:SALESRETURN" />
       <xs:field xpath="mstns:ORDER_ID" />
+    </xs:unique>
+    <xs:unique name="SUPPLIER_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SUPPLIER" />
+      <xs:field xpath="mstns:SUPPLIER_ID" />
     </xs:unique>
     <xs:unique name="CUSTOMERINVOICE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:CUSTOMERINVOICE" />

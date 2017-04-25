@@ -24,13 +24,11 @@ Partial Class SEARCH
     Private Sub InitializeComponent()
         Me.purchasepanel = New System.Windows.Forms.Panel()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.salespanel = New System.Windows.Forms.Panel()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -47,13 +45,12 @@ Partial Class SEARCH
         'purchasepanel
         '
         Me.purchasepanel.Controls.Add(Me.Button2)
-        Me.purchasepanel.Controls.Add(Me.Button1)
         Me.purchasepanel.Controls.Add(Me.DataGridView1)
         Me.purchasepanel.Controls.Add(Me.ComboBox1)
         Me.purchasepanel.Controls.Add(Me.Label1)
         Me.purchasepanel.Location = New System.Drawing.Point(-3, 44)
         Me.purchasepanel.Name = "purchasepanel"
-        Me.purchasepanel.Size = New System.Drawing.Size(514, 462)
+        Me.purchasepanel.Size = New System.Drawing.Size(589, 462)
         Me.purchasepanel.TabIndex = 2
         '
         'Button2
@@ -65,21 +62,12 @@ Partial Class SEARCH
         Me.Button2.Text = "Close"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(113, 411)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 42)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "View Purchase"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(16, 86)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(485, 306)
+        Me.DataGridView1.Size = New System.Drawing.Size(561, 306)
         Me.DataGridView1.TabIndex = 2
         '
         'ComboBox1
@@ -102,13 +90,12 @@ Partial Class SEARCH
         'salespanel
         '
         Me.salespanel.Controls.Add(Me.Button4)
-        Me.salespanel.Controls.Add(Me.Button3)
         Me.salespanel.Controls.Add(Me.DataGridView2)
         Me.salespanel.Controls.Add(Me.ComboBox2)
         Me.salespanel.Controls.Add(Me.Label2)
-        Me.salespanel.Location = New System.Drawing.Point(0, 42)
+        Me.salespanel.Location = New System.Drawing.Point(0, 44)
         Me.salespanel.Name = "salespanel"
-        Me.salespanel.Size = New System.Drawing.Size(514, 462)
+        Me.salespanel.Size = New System.Drawing.Size(586, 462)
         Me.salespanel.TabIndex = 3
         '
         'Button4
@@ -120,21 +107,12 @@ Partial Class SEARCH
         Me.Button4.Text = "Close"
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(110, 413)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 42)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "View Sales"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'DataGridView2
         '
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView2.Location = New System.Drawing.Point(13, 86)
         Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(485, 316)
+        Me.DataGridView2.Size = New System.Drawing.Size(561, 316)
         Me.DataGridView2.TabIndex = 2
         '
         'ComboBox2
@@ -160,7 +138,7 @@ Partial Class SEARCH
         Me.GroupBox1.Controls.Add(Me.RadioButton1)
         Me.GroupBox1.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(500, 38)
+        Me.GroupBox1.Size = New System.Drawing.Size(586, 38)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         '
@@ -168,7 +146,7 @@ Partial Class SEARCH
         '
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.RadioButton2.Location = New System.Drawing.Point(273, 14)
+        Me.RadioButton2.Location = New System.Drawing.Point(328, 14)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(106, 17)
         Me.RadioButton2.TabIndex = 3
@@ -180,7 +158,7 @@ Partial Class SEARCH
         '
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.RadioButton1.Location = New System.Drawing.Point(97, 14)
+        Me.RadioButton1.Location = New System.Drawing.Point(152, 14)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(131, 17)
         Me.RadioButton1.TabIndex = 2
@@ -192,7 +170,7 @@ Partial Class SEARCH
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(509, 503)
+        Me.ClientSize = New System.Drawing.Size(586, 503)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.salespanel)
         Me.Controls.Add(Me.purchasepanel)
@@ -215,11 +193,9 @@ Partial Class SEARCH
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents salespanel As System.Windows.Forms.Panel
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
     Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox

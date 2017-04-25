@@ -68,13 +68,13 @@ Public Class SEARCH
         DataGridView2.DataSource = ds.Tables(0)
         DataGridView2.Refresh()
         If DataGridView2.RowCount = 1 Then
-            MsgBox("No Purchase Order From Selected Customer")
+            MsgBox("No sales order to selected customer")
             DataGridView2.DataBindings.Clear()
             Exit Sub
         End If
     End Sub
 
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         'VIEW SALES BUTTON
         CNAME = ComboBox2.SelectedItem
         cid = DataGridView2.CurrentRow.Cells(0).Value
@@ -87,6 +87,10 @@ Public Class SEARCH
         SNAME = ComboBox1.SelectedItem
         pid = DataGridView1.CurrentRow.Cells(0).Value
         PURCHASE_SERACH.ShowDialog()
+
+    End Sub
+
+    Private Sub RadioButton2_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RadioButton2.CheckedChanged
 
     End Sub
 End Class

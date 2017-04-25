@@ -28,14 +28,14 @@ Public Class PURCHASE
         Loop
         dr2.Close()
 
-        Dim dr11 As SqlDataReader
-        cmd.CommandText = "select PRODUCT_NAME from PRODUCT"
-        cmd.Connection = Login.cn
-        dr11 = cmd.ExecuteReader
-        Do While dr11.Read
-            ComboBox2.Items.Add(dr11.GetValue(0).ToString)
-        Loop
-        dr11.Close()
+        'Dim dr11 As SqlDataReader
+        'cmd.CommandText = "select PRODUCT_NAME from PRODUCT"
+        'cmd.Connection = Login.cn
+        'dr11 = cmd.ExecuteReader
+        'Do While dr11.Read
+        '    ComboBox2.Items.Add(dr11.GetValue(0).ToString)
+        'Loop
+        'dr11.Close()
 
     End Sub
 
@@ -62,6 +62,17 @@ Public Class PURCHASE
         Dim DA11 As New SqlDataAdapter("SELECT PURCHASE_DETAILS.PURCHASE_ID, PRODUCT.PRODUCT_NAME, PURCHASE_DETAILS.QTY, PURCHASE_DETAILS.PRICE FROM PRODUCT INNER JOIN PURCHASE_DETAILS ON PRODUCT.PRODUCT_ID = PURCHASE_DETAILS.PRODUCT_ID WHERE PURCHASE_ID=" & Val(TextBox1.Text), Login.cn)
         DA11.Fill(ds4, "PURCHASE_DETAILS")
         DataGridView1.DataSource = ds4.Tables(0)
+
+        ComboBox2.Items.Clear()
+        Dim dr3 As SqlDataReader
+        cmd.CommandText = "SELECT PRODUCT.PRODUCT_NAME, PURCHASE_ORDER_DETAILS.PURCHASE_ORDER_ID FROM PRODUCT INNER JOIN PURCHASE_ORDER_DETAILS ON PRODUCT.PRODUCT_ID = PURCHASE_ORDER_DETAILS.PRODUCT_ID WHERE (PURCHASE_ORDER_DETAILS.PURCHASE_ORDER_ID = " & TextBox9.Text & ")"
+        cmd.Connection = Login.cn
+        dr3 = cmd.ExecuteReader
+        Do While dr3.Read
+            ComboBox2.Items.Add(dr3.GetValue(0).ToString)
+        Loop
+        dr3.Close()
+
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click

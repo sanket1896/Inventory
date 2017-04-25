@@ -19,10 +19,10 @@ Public Class FORGET_CHANGE_PASSWORD
             Dim str As String
             str = cmd.ExecuteScalar
 
-            MsgBox("Change Password Successfuly")
+            MsgBox("Password changed successfuly")
             Me.Close()
         Else
-            MsgBox("Enter Currect Password")
+            MsgBox("Enter Correct Password")
             TextBox1.Clear()
             TextBox2.Clear()
             TextBox1.Focus()

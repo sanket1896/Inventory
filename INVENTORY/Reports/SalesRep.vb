@@ -18,6 +18,8 @@ Public Class SalesRep
         cmd.Connection = Login.cn
         dr = cmd.ExecuteReader
         Do While dr.Read
+
+
             ComboBox1.Items.Add(dr.GetValue(0).ToString)
         Loop
         dr.Close()

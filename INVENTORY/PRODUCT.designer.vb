@@ -63,7 +63,7 @@ Partial Class PRODUCT
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(26, 12)
+        Me.Label1.Location = New System.Drawing.Point(114, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(138, 13)
         Me.Label1.TabIndex = 0
@@ -72,7 +72,7 @@ Partial Class PRODUCT
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(33, 120)
+        Me.Label4.Location = New System.Drawing.Point(147, 120)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(29, 13)
         Me.Label4.TabIndex = 7
@@ -81,7 +81,7 @@ Partial Class PRODUCT
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(33, 92)
+        Me.Label3.Location = New System.Drawing.Point(147, 92)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(32, 13)
         Me.Label3.TabIndex = 6
@@ -90,7 +90,7 @@ Partial Class PRODUCT
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(33, 65)
+        Me.Label2.Location = New System.Drawing.Point(147, 65)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(94, 13)
         Me.Label2.TabIndex = 5
@@ -99,7 +99,7 @@ Partial Class PRODUCT
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(33, 36)
+        Me.Label5.Location = New System.Drawing.Point(147, 36)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(74, 13)
         Me.Label5.TabIndex = 4
@@ -108,7 +108,7 @@ Partial Class PRODUCT
         'TextBox1
         '
         Me.TextBox1.BackColor = System.Drawing.Color.White
-        Me.TextBox1.Location = New System.Drawing.Point(143, 36)
+        Me.TextBox1.Location = New System.Drawing.Point(257, 36)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(145, 20)
@@ -116,7 +116,7 @@ Partial Class PRODUCT
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(143, 62)
+        Me.TextBox2.Location = New System.Drawing.Point(257, 62)
         Me.TextBox2.MaxLength = 15
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(145, 20)
@@ -124,7 +124,7 @@ Partial Class PRODUCT
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(143, 117)
+        Me.TextBox4.Location = New System.Drawing.Point(257, 117)
         Me.TextBox4.MaxLength = 4
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(145, 20)
@@ -133,7 +133,7 @@ Partial Class PRODUCT
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(310, 39)
+        Me.Label6.Location = New System.Drawing.Point(424, 39)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(39, 13)
         Me.Label6.TabIndex = 12
@@ -142,24 +142,24 @@ Partial Class PRODUCT
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(310, 65)
+        Me.Label7.Location = New System.Drawing.Point(424, 65)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(28, 13)
+        Me.Label7.Size = New System.Drawing.Size(45, 13)
         Me.Label7.TabIndex = 13
-        Me.Label7.Text = "VAT"
+        Me.Label7.Text = "VAT (%)"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(310, 92)
+        Me.Label8.Location = New System.Drawing.Point(424, 92)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(88, 13)
+        Me.Label8.Size = New System.Drawing.Size(105, 13)
         Me.Label8.TabIndex = 14
-        Me.Label8.Text = "ADITIONAL VAT"
+        Me.Label8.Text = "ADITIONAL VAT (%)"
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(427, 36)
+        Me.TextBox5.Location = New System.Drawing.Point(541, 36)
         Me.TextBox5.MaxLength = 7
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(145, 20)
@@ -167,7 +167,7 @@ Partial Class PRODUCT
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(427, 62)
+        Me.TextBox6.Location = New System.Drawing.Point(541, 62)
         Me.TextBox6.MaxLength = 2
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(145, 20)
@@ -175,7 +175,7 @@ Partial Class PRODUCT
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(427, 89)
+        Me.TextBox7.Location = New System.Drawing.Point(541, 89)
         Me.TextBox7.MaxLength = 2
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(145, 20)
@@ -184,7 +184,7 @@ Partial Class PRODUCT
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(310, 120)
+        Me.Label9.Location = New System.Drawing.Point(424, 120)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(100, 13)
         Me.Label9.TabIndex = 18
@@ -192,7 +192,7 @@ Partial Class PRODUCT
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(263, 153)
+        Me.Button1.Location = New System.Drawing.Point(377, 153)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 20
@@ -201,7 +201,7 @@ Partial Class PRODUCT
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(368, 153)
+        Me.Button2.Location = New System.Drawing.Point(482, 153)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 21
@@ -214,7 +214,7 @@ Partial Class PRODUCT
         Me.GroupBox1.Controls.Add(Me.Button5)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 192)
+        Me.GroupBox1.Location = New System.Drawing.Point(126, 192)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(571, 71)
         Me.GroupBox1.TabIndex = 22
@@ -268,14 +268,14 @@ Partial Class PRODUCT
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Location = New System.Drawing.Point(12, 274)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(571, 195)
+        Me.GroupBox2.Size = New System.Drawing.Size(798, 226)
         Me.GroupBox2.TabIndex = 23
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "PRODUCT SELECTION"
         '
         'Button10
         '
-        Me.Button10.Location = New System.Drawing.Point(485, 151)
+        Me.Button10.Location = New System.Drawing.Point(708, 145)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(75, 23)
         Me.Button10.TabIndex = 6
@@ -284,7 +284,7 @@ Partial Class PRODUCT
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(485, 123)
+        Me.Button9.Location = New System.Drawing.Point(708, 117)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(75, 23)
         Me.Button9.TabIndex = 5
@@ -293,7 +293,7 @@ Partial Class PRODUCT
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(485, 94)
+        Me.Button8.Location = New System.Drawing.Point(708, 88)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 23)
         Me.Button8.TabIndex = 4
@@ -302,7 +302,7 @@ Partial Class PRODUCT
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(485, 65)
+        Me.Button7.Location = New System.Drawing.Point(708, 59)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 23)
         Me.Button7.TabIndex = 3
@@ -314,7 +314,7 @@ Partial Class PRODUCT
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(17, 57)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(462, 132)
+        Me.DataGridView1.Size = New System.Drawing.Size(685, 163)
         Me.DataGridView1.TabIndex = 2
         '
         'TextBox9
@@ -336,7 +336,7 @@ Partial Class PRODUCT
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(143, 89)
+        Me.ComboBox1.Location = New System.Drawing.Point(257, 89)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(145, 21)
         Me.ComboBox1.TabIndex = 7
@@ -344,7 +344,7 @@ Partial Class PRODUCT
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(427, 117)
+        Me.ComboBox2.Location = New System.Drawing.Point(541, 117)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(145, 21)
         Me.ComboBox2.TabIndex = 24
@@ -353,7 +353,7 @@ Partial Class PRODUCT
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(595, 481)
+        Me.ClientSize = New System.Drawing.Size(822, 512)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.GroupBox2)

@@ -325,7 +325,6 @@ D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\bin\Debug\INVENTORY.exe
 D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\bin\Debug\INVENTORY.pdb
 D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\bin\Debug\INVENTORY.xml
 C:\Users\sanket\Desktop\INVENTORY\INVENTORY\bin\Debug\INVENTORY.exe.config
-C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.vbprojResolveAssemblyReference.cache
 C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.ProductRep.resources
 C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.ProductCategoryRep.resources
 C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PurchaseRep.resources
@@ -344,15 +343,12 @@ F:\INVENTORY 2016\inventory\INVENTORY\obj\x86\Debug\INVENTORY.CREATE_NEW_USER.re
 F:\INVENTORY 2016\inventory\INVENTORY\obj\x86\Debug\INVENTORY.CUSTOMER.resources
 F:\INVENTORY 2016\inventory\INVENTORY\obj\x86\Debug\INVENTORY.PAID_PAYMENT.resources
 F:\INVENTORY 2016\inventory\INVENTORY\obj\x86\Debug\INVENTORY.PRODUCT.resources
-F:\INVENTORY 2016\inventory\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_ORDER_DETAIL.resources
-F:\INVENTORY 2016\inventory\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_ORDER_MASTER.resources
 F:\INVENTORY 2016\inventory\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_ORDER_SELECTION.resources
 F:\INVENTORY 2016\inventory\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_ORDER.resources
 F:\INVENTORY 2016\inventory\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_RETURN.resources
 F:\INVENTORY 2016\inventory\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE_SERACH.resources
 F:\INVENTORY 2016\inventory\INVENTORY\obj\x86\Debug\INVENTORY.PURCHASE.resources
 F:\INVENTORY 2016\inventory\INVENTORY\obj\x86\Debug\INVENTORY.RECEIVE_PAYMENT.resources
-F:\INVENTORY 2016\inventory\INVENTORY\obj\x86\Debug\INVENTORY.Form1.resources
 F:\INVENTORY 2016\inventory\INVENTORY\obj\x86\Debug\INVENTORY.ProductCategoryRep.resources
 F:\INVENTORY 2016\inventory\INVENTORY\obj\x86\Debug\INVENTORY.ProductRep.resources
 F:\INVENTORY 2016\inventory\INVENTORY\obj\x86\Debug\INVENTORY.PurchaseRep.resources
@@ -469,3 +465,20 @@ C:\Users\sanket\Desktop\inventory123\inventory\INVENTORY\obj\x86\Debug\INVENTORY
 C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.CustomerRep.resources
 C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.InvoiceRep.resources
 C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SEARCH.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SupplierRep.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\bin\Debug\INVENTORY.exe.config
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.CustomerRep.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.InvoiceRep.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.ProductCategoryRep.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.ProductRep.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PurchaseRep.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.PurchaseReturnRep.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SalesRep.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SalesReturnRep.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SupplierRep.resources
+D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SEARCH.resources
+F:\INVENTORY 2016\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.CustomerRep.resources
+F:\INVENTORY 2016\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.InvoiceRep.resources
+F:\INVENTORY 2016\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SupplierRep.resources
+F:\INVENTORY 2016\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.SEARCH.resources
+C:\Users\sanket\Desktop\INVENTORY\INVENTORY\obj\x86\Debug\INVENTORY.vbprojResolveAssemblyReference.cache

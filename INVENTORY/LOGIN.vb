@@ -6,7 +6,7 @@ Public Class Login
 
 
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        cn.ConnectionString = ("Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\sanket\Desktop\INVENTORY\INVENTORY\INVANTORY.mdf;Integrated Security=True;User Instance=True")
+        cn.ConnectionString = ("Data Source=.\SQLEXPRESS;AttachDbFilename=D:\Users\Shadow\Desktop\INVENTORY\INVENTORY\INVANTORY.mdf;Integrated Security=True;User Instance=True")
         cn.Open()
 
         'SqlConnectionDB   ' hidden connection (not shown in code)////////////
@@ -34,7 +34,7 @@ Public Class Login
             TextBox2.Focus()
             Exit Sub
         ElseIf str = "" Then
-            MsgBox("Invalid Username or Password", MsgBoxStyle.OkOnly, "INVENTORY")
+            MsgBox("Invalid login details", MsgBoxStyle.OkOnly, "INVENTORY")
             TextBox1.Clear()
             TextBox2.Clear()
             TextBox1.Focus()
@@ -44,7 +44,7 @@ Public Class Login
             NEELKANTH_ENTERPRISE.Show()
             Me.Hide()
         Else
-            MsgBox("Invalid Username or Password", MsgBoxStyle.OkOnly, "INVENTORY")
+            MsgBox("Invalid login details", MsgBoxStyle.OkOnly, "INVENTORY")
             TextBox1.Clear()
             TextBox2.Clear()
             TextBox1.Focus()

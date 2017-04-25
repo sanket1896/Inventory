@@ -107,7 +107,7 @@ Public Class PRODUCT
 
 
         If TextBox4.Text.Trim = "" Then
-            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            MsgBox("Enter Valid QTY.", MsgBoxStyle.Exclamation)
             TextBox4.Focus()
             Exit Sub
         End If
@@ -288,7 +288,7 @@ Public Class PRODUCT
         Dim uomid As Integer
         Dim catid As Integer
         Try
-            MsgBox("HELLO:")
+            MsgBox("Record successfully updated.")
             cmd.CommandText = "select UOM_ID from UOM where UOM_name='" & DataGridView1.CurrentRow.Cells(6).Value & "'"
             cmd.Connection = Login.cn
             uomid = cmd.ExecuteScalar

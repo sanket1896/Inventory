@@ -65,7 +65,7 @@ Partial Class CREATE_NEW_USER
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(122, 13)
         Me.Label4.TabIndex = 5
-        Me.Label4.Text = "CONFIRM PASSWROD"
+        Me.Label4.Text = "CONFIRM PASSWORD"
         '
         'Label5
         '

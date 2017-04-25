@@ -27,8 +27,8 @@ Partial Class InvoiceRep
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.SqlSelectCommand1 = New System.Data.SqlClient.SqlCommand()
-        Me.SqlDataAdapter1 = New System.Data.SqlClient.SqlDataAdapter()
         Me.SqlConnection1 = New System.Data.SqlClient.SqlConnection()
+        Me.SqlDataAdapter1 = New System.Data.SqlClient.SqlDataAdapter()
         Me.ReportDataset1 = New INVENTORY.ReportDataset()
         CType(Me.ReportDataset1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -45,6 +45,7 @@ Partial Class InvoiceRep
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.Size = New System.Drawing.Size(789, 337)
         Me.CrystalReportViewer1.TabIndex = 5
+        Me.CrystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
         'Label1
         '
@@ -68,16 +69,16 @@ Partial Class InvoiceRep
         Me.SqlSelectCommand1.CommandText = resources.GetString("SqlSelectCommand1.CommandText")
         Me.SqlSelectCommand1.Connection = Me.SqlConnection1
         '
-        'SqlDataAdapter1
-        '
-        Me.SqlDataAdapter1.SelectCommand = Me.SqlSelectCommand1
-        Me.SqlDataAdapter1.TableMappings.AddRange(New System.Data.Common.DataTableMapping() {New System.Data.Common.DataTableMapping("Table", "CUSTOMER", New System.Data.Common.DataColumnMapping() {New System.Data.Common.DataColumnMapping("INVOICE_ID", "INVOICE_ID"), New System.Data.Common.DataColumnMapping("CUSTOMER_NAME", "CUSTOMER_NAME"), New System.Data.Common.DataColumnMapping("ADDRESS", "ADDRESS"), New System.Data.Common.DataColumnMapping("TIN_NO", "TIN_NO"), New System.Data.Common.DataColumnMapping("SALES_DATE", "SALES_DATE"), New System.Data.Common.DataColumnMapping("PRODUCT_NAME", "PRODUCT_NAME"), New System.Data.Common.DataColumnMapping("QTY", "QTY"), New System.Data.Common.DataColumnMapping("PRICE", "PRICE")})})
-        '
         'SqlConnection1
         '
         Me.SqlConnection1.ConnectionString = "Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\INVANTORY.mdf;Integrate" & _
             "d Security=True;User Instance=True"
         Me.SqlConnection1.FireInfoMessageEventOnUserErrors = False
+        '
+        'SqlDataAdapter1
+        '
+        Me.SqlDataAdapter1.SelectCommand = Me.SqlSelectCommand1
+        Me.SqlDataAdapter1.TableMappings.AddRange(New System.Data.Common.DataTableMapping() {New System.Data.Common.DataTableMapping("Table", "CUSTOMER", New System.Data.Common.DataColumnMapping() {New System.Data.Common.DataColumnMapping("INVOICE_ID", "INVOICE_ID"), New System.Data.Common.DataColumnMapping("CUSTOMER_NAME", "CUSTOMER_NAME"), New System.Data.Common.DataColumnMapping("TIN_NO", "TIN_NO"), New System.Data.Common.DataColumnMapping("SALES_DATE", "SALES_DATE"), New System.Data.Common.DataColumnMapping("PRODUCT_NAME", "PRODUCT_NAME"), New System.Data.Common.DataColumnMapping("QTY", "QTY"), New System.Data.Common.DataColumnMapping("PRICE", "PRICE"), New System.Data.Common.DataColumnMapping("ADDRESS", "ADDRESS"), New System.Data.Common.DataColumnMapping("VAT", "VAT"), New System.Data.Common.DataColumnMapping("ADDITIONAL_VAT", "ADDITIONAL_VAT"), New System.Data.Common.DataColumnMapping("NET_AMOUNT", "NET_AMOUNT")})})
         '
         'ReportDataset1
         '

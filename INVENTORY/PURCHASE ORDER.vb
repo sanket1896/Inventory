@@ -56,6 +56,19 @@ Public Class PURCHASE_ORDER
         cmd.Connection = Login.cn
         i = cmd.ExecuteScalar
         ComboBox1.Text = i
+
+        Dim dr3 As SqlDataReader
+        cmd.CommandText = "SELECT PRODUCT.PRODUCT_NAME, PURCHASE_ORDER_DETAILS.PURCHASE_ORDER_ID FROM PRODUCT INNER JOIN PURCHASE_ORDER_DETAILS ON PRODUCT.PRODUCT_ID = PURCHASE_ORDER_DETAILS.PRODUCT_ID WHERE (PURCHASE_ORDER_DETAILS.PURCHASE_ORDER_ID = " & TextBox1.Text & ")"
+        cmd.Connection = Login.cn
+        dr3 = cmd.ExecuteReader
+        Do While dr3.Read
+            ComboBox2.Items.Add(dr3.GetValue(0).ToString)
+        Loop
+        dr3.Close()
+
+
+
+
     End Sub
 
 
@@ -66,6 +79,11 @@ Public Class PURCHASE_ORDER
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         'SAVE BUTTON
+        If DateTimePicker1.Value > Now() Then
+            MsgBox("Order date must be lessthan or equal to today's date...")
+            Exit Sub
+        End If
+
         If ComboBox1.Items.IndexOf(ComboBox1.Text) = -1 Then
 
             MsgBox("Select correct Supplier name.", MsgBoxStyle.Exclamation)

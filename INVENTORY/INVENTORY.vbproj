@@ -343,6 +343,18 @@
       <DependentUpon>SalesReturnReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Reports\SupplierReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SupplierReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SupplierRep.Designer.vb">
+      <DependentUpon>SupplierRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SupplierRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SALES ORDER SEARCH.designer.vb">
       <DependentUpon>SALES ORDER SEARCH.vb</DependentUpon>
     </Compile>
@@ -524,6 +536,13 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>SalesReturnReport.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SupplierReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SupplierReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SupplierRep.resx">
+      <DependentUpon>SupplierRep.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SALES ORDER SEARCH.resx">
       <DependentUpon>SALES ORDER SEARCH.vb</DependentUpon>
     </EmbeddedResource>
@@ -695,6 +714,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>INVANTORY.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\Invoice-36.png" />
     <None Include="Resources\Visible-15.png" />
     <None Include="Resources\Visible-10.png" />
     <None Include="Resources\Search-36.png" />

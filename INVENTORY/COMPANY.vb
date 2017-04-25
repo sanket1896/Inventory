@@ -97,12 +97,16 @@ Public Class COMPANY
         End If
 
         If TextBox4.Text.Trim = "" Then
-            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            MsgBox("Enter Valid area name.", MsgBoxStyle.Exclamation)
             Exit Sub
         End If
 
         If TextBox5.Text.Trim = "" Then
-            MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            MsgBox("Enter Valid Pincode.", MsgBoxStyle.Exclamation)
+            Exit Sub
+        End If
+        If TextBox5.Text.Length < 6 Then
+            MsgBox("Enter 6 digit pincode.")
             Exit Sub
         End If
 
@@ -118,6 +122,10 @@ Public Class COMPANY
 
         If TextBox8.Text.Trim = "" Then
             MsgBox("Enter Valid value", MsgBoxStyle.Exclamation)
+            Exit Sub
+        End If
+        If TextBox8.Text.Length < 9 Then
+            MsgBox("Enter 10 digit Mobile number.")
             Exit Sub
         End If
 

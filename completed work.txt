@@ -1,6 +1,6 @@
 login
-forget password
-forget  change password
+forgot password
+forgot  change password
 Change Password
 Create New User (with combobox2 auto id pass)
 Company_MASTER
@@ -14,8 +14,4 @@ STATUS
 PRODUCT
 PURCHASE_ORDER
 
-
-Rest of all complited -except Report
-
-PURCHASE ORDER ADD MODE (ADD)SAVE BUTTON
-PURCHASE ORDER (SEARCH DELETE KARVA NU)
+Applicatin DONE....

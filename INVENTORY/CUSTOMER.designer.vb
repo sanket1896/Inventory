@@ -77,16 +77,16 @@ Partial Class CUSTOMER
         Me.GroupBox2.Controls.Add(Me.TextBox11)
         Me.GroupBox2.Controls.Add(Me.RadioButton2)
         Me.GroupBox2.Controls.Add(Me.RadioButton1)
-        Me.GroupBox2.Location = New System.Drawing.Point(39, 272)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 272)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(634, 214)
+        Me.GroupBox2.Size = New System.Drawing.Size(1175, 265)
         Me.GroupBox2.TabIndex = 53
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "CUSTOMER SELECTION"
         '
         'Button10
         '
-        Me.Button10.Location = New System.Drawing.Point(531, 150)
+        Me.Button10.Location = New System.Drawing.Point(1094, 182)
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(75, 23)
         Me.Button10.TabIndex = 7
@@ -95,7 +95,7 @@ Partial Class CUSTOMER
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(531, 121)
+        Me.Button9.Location = New System.Drawing.Point(1094, 153)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(75, 23)
         Me.Button9.TabIndex = 6
@@ -104,7 +104,7 @@ Partial Class CUSTOMER
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(531, 92)
+        Me.Button8.Location = New System.Drawing.Point(1094, 124)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(75, 23)
         Me.Button8.TabIndex = 5
@@ -116,12 +116,12 @@ Partial Class CUSTOMER
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(16, 73)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(498, 135)
+        Me.DataGridView1.Size = New System.Drawing.Size(1072, 186)
         Me.DataGridView1.TabIndex = 4
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(332, 33)
+        Me.Button7.Location = New System.Drawing.Point(1094, 95)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 23)
         Me.Button7.TabIndex = 3
@@ -163,7 +163,7 @@ Partial Class CUSTOMER
         Me.GroupBox1.Controls.Add(Me.Button5)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Location = New System.Drawing.Point(147, 201)
+        Me.GroupBox1.Location = New System.Drawing.Point(411, 201)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(418, 60)
         Me.GroupBox1.TabIndex = 52
@@ -208,7 +208,7 @@ Partial Class CUSTOMER
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(371, 168)
+        Me.Button2.Location = New System.Drawing.Point(635, 168)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 51
@@ -217,7 +217,7 @@ Partial Class CUSTOMER
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(267, 168)
+        Me.Button1.Location = New System.Drawing.Point(531, 168)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 50
@@ -226,7 +226,7 @@ Partial Class CUSTOMER
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(504, 110)
+        Me.TextBox6.Location = New System.Drawing.Point(768, 110)
         Me.TextBox6.MaxLength = 50
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(144, 20)
@@ -234,7 +234,7 @@ Partial Class CUSTOMER
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(504, 87)
+        Me.TextBox7.Location = New System.Drawing.Point(768, 87)
         Me.TextBox7.MaxLength = 15
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(144, 20)
@@ -242,7 +242,7 @@ Partial Class CUSTOMER
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(504, 65)
+        Me.TextBox8.Location = New System.Drawing.Point(768, 65)
         Me.TextBox8.MaxLength = 11
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(144, 20)
@@ -250,7 +250,7 @@ Partial Class CUSTOMER
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(504, 42)
+        Me.TextBox9.Location = New System.Drawing.Point(768, 42)
         Me.TextBox9.MaxLength = 16
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(144, 20)
@@ -258,7 +258,7 @@ Partial Class CUSTOMER
         '
         'TextBox10
         '
-        Me.TextBox10.Location = New System.Drawing.Point(504, 19)
+        Me.TextBox10.Location = New System.Drawing.Point(768, 19)
         Me.TextBox10.MaxLength = 6
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(144, 20)
@@ -266,7 +266,7 @@ Partial Class CUSTOMER
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(179, 117)
+        Me.TextBox5.Location = New System.Drawing.Point(443, 117)
         Me.TextBox5.MaxLength = 30
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(144, 20)
@@ -274,7 +274,7 @@ Partial Class CUSTOMER
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(179, 94)
+        Me.TextBox4.Location = New System.Drawing.Point(443, 94)
         Me.TextBox4.MaxLength = 30
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(144, 20)
@@ -282,7 +282,7 @@ Partial Class CUSTOMER
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(179, 72)
+        Me.TextBox3.Location = New System.Drawing.Point(443, 72)
         Me.TextBox3.MaxLength = 30
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(144, 20)
@@ -290,7 +290,7 @@ Partial Class CUSTOMER
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(179, 49)
+        Me.TextBox2.Location = New System.Drawing.Point(443, 49)
         Me.TextBox2.MaxLength = 30
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(144, 20)
@@ -299,7 +299,7 @@ Partial Class CUSTOMER
         'TextBox1
         '
         Me.TextBox1.BackColor = System.Drawing.Color.White
-        Me.TextBox1.Location = New System.Drawing.Point(179, 26)
+        Me.TextBox1.Location = New System.Drawing.Point(443, 26)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(144, 20)
@@ -308,7 +308,7 @@ Partial Class CUSTOMER
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(179, 140)
+        Me.ComboBox1.Location = New System.Drawing.Point(443, 140)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(144, 21)
         Me.ComboBox1.TabIndex = 39
@@ -316,7 +316,7 @@ Partial Class CUSTOMER
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(375, 113)
+        Me.Label12.Location = New System.Drawing.Point(639, 113)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(53, 13)
         Me.Label12.TabIndex = 38
@@ -325,7 +325,7 @@ Partial Class CUSTOMER
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(375, 90)
+        Me.Label11.Location = New System.Drawing.Point(639, 90)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(97, 13)
         Me.Label11.TabIndex = 37
@@ -334,7 +334,7 @@ Partial Class CUSTOMER
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(375, 68)
+        Me.Label10.Location = New System.Drawing.Point(639, 68)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(95, 13)
         Me.Label10.TabIndex = 36
@@ -343,7 +343,7 @@ Partial Class CUSTOMER
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(375, 45)
+        Me.Label9.Location = New System.Drawing.Point(639, 45)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(44, 13)
         Me.Label9.TabIndex = 35
@@ -352,7 +352,7 @@ Partial Class CUSTOMER
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(375, 22)
+        Me.Label8.Location = New System.Drawing.Point(639, 22)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(55, 13)
         Me.Label8.TabIndex = 34
@@ -361,7 +361,7 @@ Partial Class CUSTOMER
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(45, 143)
+        Me.Label7.Location = New System.Drawing.Point(309, 143)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(65, 13)
         Me.Label7.TabIndex = 33
@@ -370,7 +370,7 @@ Partial Class CUSTOMER
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(45, 120)
+        Me.Label6.Location = New System.Drawing.Point(309, 120)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(36, 13)
         Me.Label6.TabIndex = 32
@@ -379,7 +379,7 @@ Partial Class CUSTOMER
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(45, 97)
+        Me.Label5.Location = New System.Drawing.Point(309, 97)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(59, 13)
         Me.Label5.TabIndex = 31
@@ -388,7 +388,7 @@ Partial Class CUSTOMER
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(45, 75)
+        Me.Label4.Location = New System.Drawing.Point(309, 75)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(94, 13)
         Me.Label4.TabIndex = 30
@@ -397,7 +397,7 @@ Partial Class CUSTOMER
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(45, 52)
+        Me.Label3.Location = New System.Drawing.Point(309, 52)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(102, 13)
         Me.Label3.TabIndex = 29
@@ -406,7 +406,7 @@ Partial Class CUSTOMER
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(45, 29)
+        Me.Label2.Location = New System.Drawing.Point(309, 29)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(82, 13)
         Me.Label2.TabIndex = 28
@@ -415,7 +415,7 @@ Partial Class CUSTOMER
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(22, 6)
+        Me.Label1.Location = New System.Drawing.Point(286, 6)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(146, 13)
         Me.Label1.TabIndex = 27
@@ -425,7 +425,7 @@ Partial Class CUSTOMER
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(712, 498)
+        Me.ClientSize = New System.Drawing.Size(1199, 549)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button2)

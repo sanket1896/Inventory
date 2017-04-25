@@ -2,7 +2,7 @@
 
     Private Sub LOGOFFToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LOGOFFToolStripMenuItem.Click
         Dim f As New Login
-        Dim result As Integer = MessageBox.Show("Are you sure you want to Log off and close application.", "LOGOFF", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim result As Integer = MessageBox.Show("Are you sure? Do you want to Logoff?", "LOGOFF", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If result = DialogResult.Yes Then
             Me.Close()
             f.Show()
@@ -112,17 +112,7 @@
         Shell("Explorer", AppWinStyle.NormalFocus)
     End Sub
 
-    Private Sub PaidPaymentToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PaidPaymentToolStripMenuItem1.Click
-        Dim myChild As New PAID_PAYMENT
-        myChild.MdiParent = Me
-        myChild.Show()
-    End Sub
-
-    Private Sub ReceivePaymentToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ReceivePaymentToolStripMenuItem1.Click
-        Dim myChild As New RECEIVE_PAYMENT
-        myChild.MdiParent = Me
-        myChild.Show()
-    End Sub
+   
 
     Private Sub ToolStripMenuItem12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripMenuItem12.Click
         Dim myChild As New PURCHASE_ORDER
@@ -207,5 +197,24 @@
         Dim mychild As New InvoiceRep
         mychild.MdiParent = Me
         mychild.Show()
+    End Sub
+
+    Private Sub SupplierToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SupplierToolStripMenuItem1.Click
+
+        Dim mychild As New SupplierRep
+        mychild.MdiParent = Me
+        mychild.Show()
+    End Sub
+
+    Private Sub PaidPaymentToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PaidPaymentToolStripMenuItem.Click
+        Dim myChild As New PAID_PAYMENT
+        myChild.MdiParent = Me
+        myChild.Show()
+    End Sub
+
+    Private Sub ReceivePaymentToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ReceivePaymentToolStripMenuItem.Click
+        Dim myChild As New RECEIVE_PAYMENT
+        myChild.MdiParent = Me
+        myChild.Show()
     End Sub
 End Class

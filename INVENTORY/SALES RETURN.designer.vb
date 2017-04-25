@@ -164,7 +164,7 @@ Partial Class SALES_RETURN
         Me.GroupBox2.Size = New System.Drawing.Size(502, 226)
         Me.GroupBox2.TabIndex = 60
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "PURCHASE RETURN DETAIL INFORMATION"
+        Me.GroupBox2.Text = "SALES RETURN DETAILS"
         '
         'Button8
         '
@@ -262,9 +262,9 @@ Partial Class SALES_RETURN
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(108, 78)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(80, 13)
+        Me.Label3.Size = New System.Drawing.Size(60, 13)
         Me.Label3.TabIndex = 52
-        Me.Label3.Text = "PURCHASE ID"
+        Me.Label3.Text = "ORDER ID"
         '
         'TextBox1
         '

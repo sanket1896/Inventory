@@ -46,7 +46,7 @@ Public Class CREATE_NEW_USER
                                     MsgBox(ex.Message)
                                 End Try
                             Else
-                                MsgBox("Re-enter password is not same", MsgBoxStyle.OkOnly, "INVENTORY")
+                                MsgBox("Password and confirm password do not match", MsgBoxStyle.OkOnly, "INVENTORY")
                             End If
                         Else
                             MsgBox("Enter security answer", MsgBoxStyle.OkOnly, "INVENTORY")

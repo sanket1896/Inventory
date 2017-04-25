@@ -38,9 +38,9 @@ Partial Class FORGET_CHANGE_PASSWORD
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(50, 48)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(165, 13)
+        Me.Label1.Size = New System.Drawing.Size(109, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "FORGET CHANGE PASSWORD"
+        Me.Label1.Text = "RESET PASSWORD"
         '
         'Label2
         '
@@ -121,7 +121,7 @@ Partial Class FORGET_CHANGE_PASSWORD
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "FORGET_CHANGE_PASSWORD"
-        Me.Text = "FORGET CHANGE PASSWORD"
+        Me.Text = "RESET PASSWORD"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -123,8 +123,17 @@
   <metadata name="SqlSelectCommand1.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
+  <metadata name="SqlSelectCommand1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
   <data name="SqlSelectCommand1.CommandText" xml:space="preserve">
-    <value>SELECT SALES_MASTER.INVOICE_ID, CUSTOMER.CUSTOMER_NAME, CUSTOMER.ADDRESS, CUSTOMER.TIN_NO, SALES_MASTER.SALES_DATE, PRODUCT.PRODUCT_NAME, SALES_DETAIL.QTY, SALES_DETAIL.PRICE FROM CUSTOMER INNER JOIN SALES_ORDER_MASTER ON CUSTOMER.CUSTOMER_ID = SALES_ORDER_MASTER.CUSTOMER_ID INNER JOIN SALES_ORDER_DETAIL ON SALES_ORDER_MASTER.ORDER_ID = SALES_ORDER_DETAIL.ORDER_ID INNER JOIN SALES_MASTER ON SALES_ORDER_MASTER.ORDER_ID = SALES_MASTER.ORDER_ID INNER JOIN SALES_DETAIL ON SALES_MASTER.INVOICE_ID = SALES_DETAIL.INVOICE_ID INNER JOIN PRODUCT ON SALES_ORDER_DETAIL.PRODUCT_ID = PRODUCT.PRODUCT_ID AND SALES_DETAIL.PRODUCT_ID = PRODUCT.PRODUCT_ID</value>
+    <value>SELECT        SALES_MASTER.INVOICE_ID, CUSTOMER.CUSTOMER_NAME, CUSTOMER.TIN_NO, SALES_MASTER.SALES_DATE, PRODUCT.PRODUCT_NAME, SALES_DETAIL.QTY, SALES_DETAIL.PRICE, 
+                         CUSTOMER.ADDRESS, SALES_MASTER.VAT, SALES_MASTER.ADDITIONAL_VAT, SALES_MASTER.NET_AMOUNT
+FROM            CUSTOMER INNER JOIN
+                         SALES_ORDER_MASTER ON CUSTOMER.CUSTOMER_ID = SALES_ORDER_MASTER.CUSTOMER_ID INNER JOIN
+                         SALES_MASTER ON SALES_ORDER_MASTER.ORDER_ID = SALES_MASTER.ORDER_ID INNER JOIN
+                         SALES_DETAIL ON SALES_MASTER.INVOICE_ID = SALES_DETAIL.INVOICE_ID INNER JOIN
+                         PRODUCT ON SALES_DETAIL.PRODUCT_ID = PRODUCT.PRODUCT_ID</value>
   </data>
   <metadata name="SqlConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>161, 17</value>
@@ -134,5 +143,8 @@
   </metadata>
   <metadata name="ReportDataset1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>298, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>53</value>
   </metadata>
 </root>
